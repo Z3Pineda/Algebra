@@ -58,16 +58,21 @@ Cada página sigue la misma estructura para que siempre sepas dónde estás:
 
 1. **Contexto de ingeniería** — un problema real que motiva el tema
 2. **Teoría** — definiciones, fórmulas y tablas
-3. **Visualización interactiva** — applet de GeoGebra que puedes manipular
+3. **Visualización** — videos para reforzar la teoría con ejemplos explícitos 
 4. **Actividades** — ejercicios con retroalimentación inmediata
 5. **Quiz** — evaluación al final de cada unidad
+6. **Apuntes** — material de apoyo con los contenidos de la clase, problemas resueltos y problemas sugeridos.
 
 ```{tip}
-En los applets de GeoGebra puedes mover puntos, cambiar valores con deslizadores y explorar libremente. No hay forma de "romperlos" — experimenta con confianza.
+Usa los videos para repasar la teoría vista en la clase.
 ```
 
 ```{tip}
-Las actividades H5P te dicen si tu respuesta es correcta en el momento. Si fallas, vuelve a la teoría, relee y vuelve a intentarlo. El número de intentos no tiene límite.
+Usa los apuntes para autoestudio y ejercicios de clase.
+```
+
+```{tip}
+Contesta todos los Quiz.
 ```
 
 ---
@@ -77,9 +82,9 @@ Las actividades H5P te dicen si tu respuesta es correcta en el momento. Si falla
 | Herramienta | Para qué | Cómo accedes |
 |---|---|---|
 | **Este libro** | Leer la teoría y navegar el curso | Ya estás aquí |
-| **GeoGebra** | Ver y explorar visualizaciones matemáticas | Incrustado en cada página |
-| **H5P** | Practicar con ejercicios interactivos | Incrustado en cada página |
-| **Google Classroom** | Recibir tareas y entregas formales | Link de tu docente |
+| **Youtube** | Ver y explorar material visual | Incrustado en cada página |
+| **Cuenta de google** | Acceder a los Quiz | Incrustado en cada página |
+| **Teams** | Recibir tareas y entregas formales | Link de tu docente |
 
 ---
 

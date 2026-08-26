@@ -107,7 +107,7 @@ El orden es: **P**aréntesis → **E**xponentes → **M**ultiplicación/**D**ivi
 
 ### Porcentajes y proporciones
 
-$$\text{20\% de 150} = \frac{20}{100} \times 150 = 30$$
+$$\text{20} \% \text{de 150} = \frac{20}{100} \times 150 = 30$$
 
 **Regla de tres directa:**
 
@@ -122,36 +122,17 @@ $$\frac{5}{200} = \frac{8}{x} \implies x = \frac{8 \times 200}{5} = 320$$
 ```{raw} html
 <div class="video-container">
   <iframe
-    src="https://www.youtube.com/embed/REEMPLAZA_ID_YOUTUBE_INTRO_CURSO"
+    src="https://www.youtube.com/embed/CKnobKPNWwM"
     allowfullscreen>
   </iframe>
 </div>
-```
-
-```{note}
-**Para el docente — guion Manim (~3 min)**
-
-Script listo: `manim/algebra_curso_trailer.py` → escena `AlgebraCursoTrailer`
-
-Renderizar: `manim -pql algebra_curso_trailer.py AlgebraCursoTrailer` (480p) o `-pqh` (1080p).
-
-**Paleta:** azul `#1d4ed8`, naranja `#f97316`, fondo `#0f172a`. Sin imágenes externas — solo formas Manim.
-
-| Sección | ~s | Contenido |
-|---------|:--:|-----------|
-| 1 | 40 | Título del curso. Engranaje naranja girando + contenedor azul. Texto: *«¿Cuántas piezas caben en el contenedor?»*. Seis piezas entran en rejilla. |
-| 2 | 45 | Subtítulo: *«Al cambiar los datos, cambia la respuesta»*. Panel con Largo / Ancho / Pieza Ø (`DecimalNumber`) y respuesta (`Integer`). Cinco escenarios animados; contenedor y piezas se transforman. |
-| 3 | 75 | Puente: *«Para resolverlo necesitas herramientas de todo el curso…»*. Cinco tarjetas (ícono geométrico + subtítulo ingeniería): **Conjuntos** (Venn), **Números Reales** (recta), **Expresiones** ($x^2+3x$), **Ecuaciones** (balanza $2x=10$), **Valor Absoluto** (gráfica V). |
-| 4 | 25 | Cierre: *«Esto es lo que podrás hacer al final del semestre»* + *Modelar · calcular · verificar · decidir* + fila de mini-íconos. |
-
-Sube el MP4 a YouTube y reemplaza `REEMPLAZA_ID_YOUTUBE_INTRO_CURSO` arriba.
 ```
 
 ---
 
 ## Visualización interactiva — La recta numérica
 
-Mueve el punto sobre la recta y observa cómo los números enteros, negativos y fracciones tienen una posición exacta. Esto es la base para todo lo que viene.
+Mueve el punto sobre la recta y observa cómo los números enteros, negativos y fracciones tienen una posición exacta. El punto azul se puede arrastrar a lo largo de la recta numérica. La etiqueta muestra el valor exacto con dos decimales. El texto inferior indica si el número es positivo, negativo o cero.
 
 ```{raw} html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraph.min.css">
@@ -210,10 +191,6 @@ Mueve el punto sobre la recta y observa cómo los números enteros, negativos y 
 </script>
 ```
 
-```{note}
-**Para el docente — visualización:**
-El punto azul se puede arrastrar a lo largo de la recta numérica. La etiqueta muestra el valor exacto con dos decimales. El texto inferior indica si el número es positivo, negativo o cero.
-```
 
 ---
 

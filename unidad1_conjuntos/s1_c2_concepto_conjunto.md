@@ -132,7 +132,17 @@ Si $|L| > 0$, hay al menos una pieza defectuosa — se detiene la línea.
 
 ---
 
+## Descargar clase en PDF
 
+```{raw} html
+<div class="quizizz-link">
+  <a href="../_static/s1_c2_concepto_conjunto.pdf" target="_blank" class="quizizz-btn" download>
+    📄 Descargar clase en PDF
+  </a>
+</div>
+```
+
+---
 
 ## Actividad — Quizizz
 

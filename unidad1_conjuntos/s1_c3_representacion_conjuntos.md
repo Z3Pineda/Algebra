@@ -155,6 +155,18 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 
 ---
 
+## Descargar clase en PDF
+
+```{raw} html
+<div class="quizizz-link">
+  <a href="../_static/s1_c3_representacion_conjuntos.pdf" target="_blank" class="quizizz-btn" download>
+    📄 Descargar clase en PDF
+  </a>
+</div>
+```
+
+---
+
 ## Actividad — Quizizz
 
 ```{raw} html

@@ -19,10 +19,20 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install jupyter-book
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install jupyter-book
 
       - name: Build book
-        run: jupyter-book build .
+        run: |
+          jupyter-book build . --verbose
+          if [ ! -f _build/html/index.html ]; then
+            echo "ERROR: _build/html/index.html was not created."
+            ls -la _build || true
+            exit 1
+          fi
+          echo "Build OK — pages generated:"
+          ls _build/html | head
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

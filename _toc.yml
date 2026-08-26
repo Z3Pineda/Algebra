@@ -1,0 +1,119 @@
+format: jb-book
+root: landing
+
+parts:
+  # ── UNIDAD 1: Conjuntos y Lógica (Semanas 1–3) ─────────────
+  - caption: "Unidad 1 — Conjuntos y Lógica"
+    numbered: true
+    chapters:
+      - file: unidad1_conjuntos/s1_c1_presentacion_diagnostico
+      - file: unidad1_conjuntos/s1_c2_concepto_conjunto
+      - file: unidad1_conjuntos/s1_c3_representacion_conjuntos
+      - file: unidad1_conjuntos/s1_c4_operaciones_basicas
+      - file: unidad1_conjuntos/s1_auto_repaso_conjuntos
+      - file: unidad1_conjuntos/s2_c1_proposicion_valor_verdad
+      - file: unidad1_conjuntos/s2_c2_conjunto_solucion
+      - file: unidad1_conjuntos/s2_c3_conjuncion_disyuncion
+      - file: unidad1_conjuntos/s2_c4_implicacion_negacion
+      - file: unidad1_conjuntos/s2_auto_ejercicios_logica
+      - file: unidad1_conjuntos/s3_c1_tipos_conjuntos
+      - file: unidad1_conjuntos/s3_c2_venn_dos_conjuntos
+      - file: unidad1_conjuntos/s3_c3_venn_tres_conjuntos
+      - file: unidad1_conjuntos/s3_c4_problemas_aplicados
+      - file: unidad1_conjuntos/s3_auto_tarea_integradora
+
+  # ── UNIDAD 2: Números Reales y Funciones (Semanas 4–5) ──────
+  - caption: "Unidad 2 — Números Reales y Funciones"
+    numbered: true
+    chapters:
+      - file: unidad2_funciones/s4_c1_numeros_naturales_enteros
+      - file: unidad2_funciones/s4_c2_recta_numerica
+      - file: unidad2_funciones/s4_c3_propiedades_reales
+      - file: unidad2_funciones/s4_c4_producto_cartesiano
+      - file: unidad2_funciones/s4_auto_clasificacion_numeros
+      - file: unidad2_funciones/s5_c1_concepto_relacion
+      - file: unidad2_funciones/s5_c2_concepto_funcion
+      - file: unidad2_funciones/s5_c3_relacion_vs_funcion
+      - file: unidad2_funciones/s5_c4_dominio_rango
+      - file: unidad2_funciones/s5_auto_identificacion_funciones
+
+  # ── UNIDAD 3: Expresiones Algebraicas (Semanas 6–10) ────────
+  - caption: "Unidad 3 — Expresiones Algebraicas"
+    numbered: true
+    chapters:
+      # Semana 6
+      - file: unidad3_expresiones/s6_c1_propiedades_igualdad
+      - file: unidad3_expresiones/s6_c2_expresion_algebraica_terminos
+      - file: unidad3_expresiones/s6_c3_suma_resta_expresiones
+      - file: unidad3_expresiones/s6_c4_multiplicacion_expresiones
+      - file: unidad3_expresiones/s6_auto_simplificacion_algebraica
+      # Semana 7
+      - file: unidad3_expresiones/s7_c1_binomio_cuadrado
+      - file: unidad3_expresiones/s7_c2_binomios_conjugados
+      - file: unidad3_expresiones/s7_c3_binomio_cubo
+      - file: unidad3_expresiones/s7_c4_binomio_por_trinomio
+      - file: unidad3_expresiones/s7_auto_productos_notables
+      # Semana 8
+      - file: unidad3_expresiones/s8_c1_factor_comun
+      - file: unidad3_expresiones/s8_c2_factorizacion_trinomios
+      - file: unidad3_expresiones/s8_c3_diferencia_cuadrados
+      - file: unidad3_expresiones/s8_c4_cubos_agrupacion
+      - file: unidad3_expresiones/s8_auto_factorizacion
+      # Semana 9
+      - file: unidad3_expresiones/s9_c1_division_monomios
+      - file: unidad3_expresiones/s9_c2_division_polinomio_monomio
+      - file: unidad3_expresiones/s9_c3_division_polinomios
+      - file: unidad3_expresiones/s9_c4_fracciones_algebraicas
+      - file: unidad3_expresiones/s9_auto_fracciones_algebraicas
+      # Semana 10
+      - file: unidad3_expresiones/s10_c1_exponentes_enteros
+      - file: unidad3_expresiones/s10_c2_exponentes_negativos_fraccionarios
+      - file: unidad3_expresiones/s10_c3_radicales
+      - file: unidad3_expresiones/s10_c4_factorial_combinatorios_binomio
+      - file: unidad3_expresiones/s10_auto_repaso_unidad3
+
+  # ── UNIDAD 4: Ecuaciones (Semanas 11–…) ───────────────────
+  - caption: "Unidad 4 — Ecuaciones"
+    numbered: true
+    chapters:
+      # Semana 11
+      - file: unidad4_ecuaciones/s11_c1_concepto_ecuacion_identidad
+      - file: unidad4_ecuaciones/s11_c2_ecuaciones_lineales
+      - file: unidad4_ecuaciones/s11_c3_ecuaciones_con_literales
+      - file: unidad4_ecuaciones/s11_c4_ecuaciones_con_fracciones
+      - file: unidad4_ecuaciones/s11_auto_modelacion_ecuaciones
+      # Semana 12
+      - file: unidad4_ecuaciones/s12_c1_modelacion_ecuaciones_lineales
+      - file: unidad4_ecuaciones/s12_c2_sistemas_dos_ecuaciones
+      - file: unidad4_ecuaciones/s12_c3_metodo_sustitucion
+      - file: unidad4_ecuaciones/s12_c4_metodo_suma_resta_grafico
+      - file: unidad4_ecuaciones/s12_auto_comparacion_metodos
+      # Semana 13
+      - file: unidad4_ecuaciones/s13_c1_concepto_ecuacion_cuadratica
+      - file: unidad4_ecuaciones/s13_c2_solucion_factorizacion
+      - file: unidad4_ecuaciones/s13_c3_forma_x_mas_a_cuadrado
+      - file: unidad4_ecuaciones/s13_c4_completando_cuadrados
+      - file: unidad4_ecuaciones/s13_auto_ecuaciones_cuadraticas
+      # Semana 14
+      - file: unidad4_ecuaciones/s14_c1_formula_general
+      - file: unidad4_ecuaciones/s14_c2_ecuaciones_con_radicales
+      - file: unidad4_ecuaciones/s14_c3_ecuaciones_forma_cuadratica
+      - file: unidad4_ecuaciones/s14_c4_sistemas_lineal_cuadratica
+      - file: unidad4_ecuaciones/s14_auto_aplicacion_verificacion
+      # Semana 15
+      - file: unidad4_ecuaciones/s15_c1_sistemas_cuadraticos
+      - file: unidad4_ecuaciones/s15_c2_funcion_polinomial_grado_n
+      - file: unidad4_ecuaciones/s15_c3_division_sintetica_residuo
+      - file: unidad4_ecuaciones/s15_c4_teorema_factor_raices
+      - file: unidad4_ecuaciones/s15_auto_repaso_unidad4
+
+  # ── UNIDAD 5: Desigualdades (Semana 16) ───────────────────
+  - caption: "Unidad 5 — Desigualdades"
+    numbered: true
+    chapters:
+      # Semana 16
+      - file: unidad5_desigualdades/s16_c1_valor_absoluto_grafico
+      - file: unidad5_desigualdades/s16_c2_ecuaciones_valor_absoluto
+      - file: unidad5_desigualdades/s16_c3_desigualdades_valor_absoluto
+      - file: unidad5_desigualdades/s16_c4_repaso_general
+      - file: unidad5_desigualdades/s16_auto_cierre_curso

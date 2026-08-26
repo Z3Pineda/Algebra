@@ -1,0 +1,62 @@
+{
+  "bloques": [
+    {
+      "archivo": "venn_bloque1.mp3",
+      "titulo": "Apertura",
+      "inicio_s": 0.0,
+      "duracion_s": 13.375,
+      "fin_s": 13.375
+    },
+    {
+      "archivo": "venn_bloque2.mp3",
+      "titulo": "Universo U",
+      "inicio_s": 13.375,
+      "duracion_s": 14.341,
+      "fin_s": 27.716
+    },
+    {
+      "archivo": "venn_bloque3.mp3",
+      "titulo": "Conjuntos A y B",
+      "inicio_s": 27.716,
+      "duracion_s": 18.887,
+      "fin_s": 46.602
+    },
+    {
+      "archivo": "venn_bloque4.mp3",
+      "titulo": "Cuatro regiones",
+      "inicio_s": 46.602,
+      "duracion_s": 24.686,
+      "fin_s": 71.288
+    },
+    {
+      "archivo": "venn_bloque5.mp3",
+      "titulo": "Elementos en regiones",
+      "inicio_s": 71.288,
+      "duracion_s": 21.447,
+      "fin_s": 92.735
+    },
+    {
+      "archivo": "venn_bloque6.mp3",
+      "titulo": "Como leer el diagrama",
+      "inicio_s": 92.735,
+      "duracion_s": 24.372,
+      "fin_s": 117.107
+    },
+    {
+      "archivo": "venn_bloque7.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 117.107,
+      "duracion_s": 8.359,
+      "fin_s": 125.466
+    }
+  ],
+  "section_starts": [
+    0.0,
+    13.375,
+    27.716,
+    46.602,
+    71.288,
+    92.735,
+    117.107
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "_instrucciones": "Pon el ID de YouTube (11 caracteres) o la URL completa en youtubeId. Deja vacio si aun no subes el video. Luego: python apps_script/apply_video_urls.py apps_script/video_urls.json",
+  "videos": [
+    {
+      "slug": "s1_c1_presentacion_diagnostico",
+      "youtubeId": "",
+      "titulo": "S1·C1 Presentación del curso y diagnóstico de aritmética"
+    },
+    {
+      "slug": "s1_c2_concepto_conjunto",
+      "youtubeId": "vCjUGfuUo2Y",
+      "titulo": "S1·C2 Concepto de conjunto"
+    },
+    {
+      "slug": "s1_c3_representacion_conjuntos",
+      "youtubeId": "",
+      "titulo": "S1·C3 Representación de conjuntos"
+    },
+    {
+      "slug": "s1_c4_operaciones_basicas",
+      "youtubeId": "",
+      "titulo": "S1·C4 Operaciones básicas con conjuntos"
+    },
+    {
+      "slug": "s2_c1_proposicion_valor_verdad",
+      "youtubeId": "",
+      "titulo": "S2·C1 Proposición y valor de verdad"
+    },
+    {
+      "slug": "s2_c2_conjunto_solucion",
+      "youtubeId": "",
+      "titulo": "S2·C2 Conjunto solución de una proposición abierta"
+    },
+    {
+      "slug": "s2_c3_conjuncion_disyuncion",
+      "youtubeId": "",
+      "titulo": "S2·C3 Conjunción y disyunción"
+    },
+    {
+      "slug": "s2_c4_implicacion_negacion",
+      "youtubeId": "",
+      "titulo": "S2·C4 Implicación y negación"
+    },
+    {
+      "slug": "s3_c1_tipos_conjuntos",
+      "youtubeId": "",
+      "titulo": "S3·C1 Tipos de conjuntos"
+    },
+    {
+      "slug": "s3_c2_venn_dos_conjuntos",
+      "youtubeId": "",
+      "titulo": "S3·C2 Diagramas de Venn con dos conjuntos"
+    },
+    {
+      "slug": "s3_c3_venn_tres_conjuntos",
+      "youtubeId": "",
+      "titulo": "S3·C3 Diagramas de Venn con tres conjuntos"
+    },
+    {
+      "slug": "s3_c4_problemas_aplicados",
+      "youtubeId": "",
+      "titulo": "S3·C4 Problemas aplicados con conjuntos y lógica"
+    },
+    {
+      "slug": "s4_c1_numeros_naturales_enteros",
+      "youtubeId": "",
+      "titulo": "S4·C1 Números naturales, enteros, racionales, irracionales y reales"
+    },
+    {
+      "slug": "s4_c2_recta_numerica",
+      "youtubeId": "",
+      "titulo": "S4·C2 La recta numérica"
+    },
+    {
+      "slug": "s4_c3_propiedades_reales",
+      "youtubeId": "",
+      "titulo": "S4·C3 Propiedades de los números reales"
+    },
+    {
+      "slug": "s4_c4_producto_cartesiano",
+      "youtubeId": "",
+      "titulo": "S4·C4 Producto cartesiano"
+    },
+    {
+      "slug": "s5_c1_concepto_relacion",
+      "youtubeId": "",
+      "titulo": "S5·C1 Concepto de relación"
+    },
+    {
+      "slug": "s5_c2_concepto_funcion",
+      "youtubeId": "",
+      "titulo": "S5·C2 Concepto de función"
+    },
+    {
+      "slug": "s5_c3_relacion_vs_funcion",
+      "youtubeId": "",
+      "titulo": "S5·C3 Diferencia entre relación y función"
+    },
+    {
+      "slug": "s5_c4_dominio_rango",
+      "youtubeId": "",
+      "titulo": "S5·C4 Dominio y rango de una función"
+    },
+    {
+      "slug": "s10_c1_exponentes_enteros",
+      "youtubeId": "",
+      "titulo": "S10·C1 Exponentes enteros y exponente cero"
+    },
+    {
+      "slug": "s10_c2_exponentes_negativos_fraccionarios",
+      "youtubeId": "",
+      "titulo": "S10·C2 Exponentes negativos y fraccionarios"
+    },
+    {
+      "slug": "s10_c3_radicales",
+      "youtubeId": "",
+      "titulo": "S10·C3 Radicales — suma, resta, producto y división"
+    },
+    {
+      "slug": "s10_c4_factorial_combinatorios_binomio",
+      "youtubeId": "",
+      "titulo": "S10·C4 Factorial, combinatorios y teorema del binomio"
+    },
+    {
+      "slug": "s6_c1_propiedades_igualdad",
+      "youtubeId": "",
+      "titulo": "S6·C1 Propiedades de la igualdad"
+    },
+    {
+      "slug": "s6_c2_expresion_algebraica_terminos",
+      "youtubeId": "",
+      "titulo": "S6·C2 Expresión algebraica y términos semejantes"
+    },
+    {
+      "slug": "s6_c3_suma_resta_expresiones",
+      "youtubeId": "",
+      "titulo": "S6·C3 Suma y resta de expresiones algebraicas"
+    },
+    {
+      "slug": "s6_c4_multiplicacion_expresiones",
+      "youtubeId": "",
+      "titulo": "S6·C4 Multiplicación de expresiones algebraicas"
+    },
+    {
+      "slug": "s7_c1_binomio_cuadrado",
+      "youtubeId": "",
+      "titulo": "S7·C1 Binomio al cuadrado"
+    },
+    {
+      "slug": "s7_c2_binomios_conjugados",
+      "youtubeId": "",
+      "titulo": "S7·C2 Producto de binomios conjugados"
+    },
+    {
+      "slug": "s7_c3_binomio_cubo",
+      "youtubeId": "",
+      "titulo": "S7·C3 Binomio al cubo"
+    },
+    {
+      "slug": "s7_c4_binomio_por_trinomio",
+      "youtubeId": "",
+      "titulo": "S7·C4 Producto de un binomio por un trinomio"
+    },
+    {
+      "slug": "s8_c1_factor_comun",
+      "youtubeId": "",
+      "titulo": "S8·C1 Factor común"
+    },
+    {
+      "slug": "s8_c2_factorizacion_trinomios",
+      "youtubeId": "",
+      "titulo": "S8·C2 Factorización de trinomios"
+    },
+    {
+      "slug": "s8_c3_diferencia_cuadrados",
+      "youtubeId": "",
+      "titulo": "S8·C3 Diferencia de cuadrados"
+    },
+    {
+      "slug": "s8_c4_cubos_agrupacion",
+      "youtubeId": "",
+      "titulo": "S8·C4 Cubos y agrupación"
+    },
+    {
+      "slug": "s9_c1_division_monomios",
+      "youtubeId": "",
+      "titulo": "S9·C1 División de monomios"
+    },
+    {
+      "slug": "s9_c2_division_polinomio_monomio",
+      "youtubeId": "",
+      "titulo": "S9·C2 División de polinomio entre monomio"
+    },
+    {
+      "slug": "s9_c3_division_polinomios",
+      "youtubeId": "",
+      "titulo": "S9·C3 División de polinomios — algoritmo de la división"
+    },
+    {
+      "slug": "s9_c4_fracciones_algebraicas",
+      "youtubeId": "",
+      "titulo": "S9·C4 Simplificación, multiplicación y división de fracciones algebraicas"
+    },
+    {
+      "slug": "s11_c1_concepto_ecuacion_identidad",
+      "youtubeId": "",
+      "titulo": "S11·C1 Concepto de ecuación e identidad"
+    },
+    {
+      "slug": "s11_c2_ecuaciones_lineales",
+      "youtubeId": "",
+      "titulo": "S11·C2 Ecuaciones lineales"
+    },
+    {
+      "slug": "s11_c3_ecuaciones_con_literales",
+      "youtubeId": "",
+      "titulo": "S11·C3 Ecuaciones con literales"
+    },
+    {
+      "slug": "s11_c4_ecuaciones_con_fracciones",
+      "youtubeId": "",
+      "titulo": "S11·C4 Ecuaciones con fracciones"
+    },
+    {
+      "slug": "s12_c1_modelacion_ecuaciones_lineales",
+      "youtubeId": "",
+      "titulo": "S12·C1 Modelación de situaciones con ecuaciones lineales"
+    },
+    {
+      "slug": "s12_c2_sistemas_dos_ecuaciones",
+      "youtubeId": "",
+      "titulo": "S12·C2 Sistemas de dos ecuaciones con dos incógnitas"
+    },
+    {
+      "slug": "s12_c3_metodo_sustitucion",
+      "youtubeId": "",
+      "titulo": "S12·C3 Método de sustitución"
+    },
+    {
+      "slug": "s12_c4_metodo_suma_resta_grafico",
+      "youtubeId": "",
+      "titulo": "S12·C4 Método de suma o resta y solución gráfica"
+    },
+    {
+      "slug": "s13_c1_concepto_ecuacion_cuadratica",
+      "youtubeId": "",
+      "titulo": "S13·C1 Concepto de ecuación cuadrática"
+    },
+    {
+      "slug": "s13_c2_solucion_factorizacion",
+      "youtubeId": "",
+      "titulo": "S13·C2 Solución por factorización"
+    },
+    {
+      "slug": "s13_c3_forma_x_mas_a_cuadrado",
+      "youtubeId": "",
+      "titulo": "S13·C3 Ecuaciones de la forma (x+a)²=b"
+    },
+    {
+      "slug": "s13_c4_completando_cuadrados",
+      "youtubeId": "",
+      "titulo": "S13·C4 Completando el cuadrado"
+    },
+    {
+      "slug": "s14_c1_formula_general",
+      "youtubeId": "",
+      "titulo": "S14·C1 Fórmula general"
+    },
+    {
+      "slug": "s14_c2_ecuaciones_con_radicales",
+      "youtubeId": "",
+      "titulo": "S14·C2 Ecuaciones con radicales"
+    },
+    {
+      "slug": "s14_c3_ecuaciones_forma_cuadratica",
+      "youtubeId": "",
+      "titulo": "S14·C3 Ecuaciones de forma cuadrática"
+    },
+    {
+      "slug": "s14_c4_sistemas_lineal_cuadratica",
+      "youtubeId": "",
+      "titulo": "S14·C4 Sistemas con una ecuación lineal y una cuadrática"
+    },
+    {
+      "slug": "s15_c1_sistemas_cuadraticos",
+      "youtubeId": "",
+      "titulo": "S15·C1 Sistemas de ecuaciones cuadráticas"
+    },
+    {
+      "slug": "s15_c2_funcion_polinomial_grado_n",
+      "youtubeId": "",
+      "titulo": "S15·C2 Función polinomial de grado n"
+    },
+    {
+      "slug": "s15_c3_division_sintetica_residuo",
+      "youtubeId": "",
+      "titulo": "S15·C3 División sintética y teorema del residuo"
+    },
+    {
+      "slug": "s15_c4_teorema_factor_raices",
+      "youtubeId": "",
+      "titulo": "S15·C4 Teorema del factor, raíces y teorema fundamental"
+    },
+    {
+      "slug": "s16_c1_valor_absoluto_grafico",
+      "youtubeId": "",
+      "titulo": "S16·C1 Valor absoluto e interpretación gráfica"
+    },
+    {
+      "slug": "s16_c2_ecuaciones_valor_absoluto",
+      "youtubeId": "",
+      "titulo": "S16·C2 Ecuaciones con valor absoluto"
+    },
+    {
+      "slug": "s16_c3_desigualdades_valor_absoluto",
+      "youtubeId": "",
+      "titulo": "S16·C3 Desigualdades con valor absoluto"
+    },
+    {
+      "slug": "s16_c4_repaso_general",
+      "youtubeId": "",
+      "titulo": "S16·C4 Repaso general del curso"
+    }
+  ]
+}

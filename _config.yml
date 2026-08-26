@@ -1,0 +1,73 @@
+# =============================================================
+# _config.yml — Configuración del Jupyter Book
+# Álgebra · Ingeniería Mecánica Administrativa · Primer Semestre
+# =============================================================
+
+title      : "Álgebra para Ingeniería Mecánica"
+author     : "Dra. Zaira Pineda Rico — Ingeniería Mecánica Administrativa"
+copyright  : "2026"
+
+only_build_toc_files : true
+
+execute:
+  execute_notebooks  : "off"
+  timeout            : 30
+  allow_errors       : false
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_image
+    - linkify
+    - substitution
+    - tasklist
+  myst_dmath_double_inline: true
+
+html:
+  use_edit_page_button      : false
+  use_repository_button     : false
+  use_issues_button         : false
+  use_multitoc_numbering    : true
+  extra_navbar              : ""
+  extra_footer              : |
+    <p style="font-size:0.85em; color:#888;">
+      Álgebra · Ingeniería Mecánica Administrativa · Primer Semestre
+    </p>
+  home_page_in_navbar       : true
+  navbar_number_sections    : true
+  extra_css:
+    - custom.css
+
+repository:
+  url         : https://github.com/Z3Pineda/Algebra
+  path_to_book: .
+  branch      : main
+
+sphinx:
+  config:
+    html_baseurl         : https://z3pineda.github.io/Algebra/
+    html_static_path:
+      - assets
+    exclude_patterns:
+      - _build/**
+      - .git/**
+      - manim/**
+      - pipeline_*/**
+      - apps_script/**
+      - VideosManim/**
+      - public/**
+      - "**/.venv/**"
+      - "**/__pycache__/**"
+      - system_prompt.md
+    language             : es
+    html_show_sourcelink : false
+    suppress_warnings    :
+      - "myst.header"
+    html_css_files:
+      - custom.css
+  extra_extensions:
+    - sphinx_design
+

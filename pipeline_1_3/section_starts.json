@@ -1,0 +1,46 @@
+{
+  "bloques": [
+    {
+      "archivo": "1_3_bloque1.mp3",
+      "titulo": "Notacion por comprension",
+      "inicio_s": 0.0,
+      "duracion_s": 13.244,
+      "fin_s": 13.244
+    },
+    {
+      "archivo": "1_3_bloque2.mp3",
+      "titulo": "Partes de la notacion",
+      "inicio_s": 13.244,
+      "duracion_s": 20.428,
+      "fin_s": 33.672
+    },
+    {
+      "archivo": "1_3_bloque3.mp3",
+      "titulo": "Ejemplos en ingenieria mecanica",
+      "inicio_s": 33.672,
+      "duracion_s": 40.751,
+      "fin_s": 74.423
+    },
+    {
+      "archivo": "1_3_bloque4.mp3",
+      "titulo": "Errores comunes",
+      "inicio_s": 74.423,
+      "duracion_s": 26.436,
+      "fin_s": 100.859
+    },
+    {
+      "archivo": "1_3_bloque5.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 100.859,
+      "duracion_s": 12.513,
+      "fin_s": 113.371
+    }
+  ],
+  "section_starts": [
+    0.0,
+    13.244,
+    33.672,
+    74.423,
+    100.859
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "bloques": [
+    {
+      "archivo": "1_9_bloque1.mp3",
+      "titulo": "Principio de inclusion-exclusion",
+      "inicio_s": 0.0,
+      "duracion_s": 21.316,
+      "fin_s": 21.316
+    },
+    {
+      "archivo": "1_9_bloque2.mp3",
+      "titulo": "Por que no basta sumar",
+      "inicio_s": 21.316,
+      "duracion_s": 31.556,
+      "fin_s": 52.872
+    },
+    {
+      "archivo": "1_9_bloque3.mp3",
+      "titulo": "La formula parte por parte",
+      "inicio_s": 52.872,
+      "duracion_s": 19.644,
+      "fin_s": 72.516
+    },
+    {
+      "archivo": "1_9_bloque4.mp3",
+      "titulo": "Aplicacion numerica",
+      "inicio_s": 72.516,
+      "duracion_s": 22.361,
+      "fin_s": 94.877
+    },
+    {
+      "archivo": "1_9_bloque5.mp3",
+      "titulo": "Errores comunes",
+      "inicio_s": 94.877,
+      "duracion_s": 21.708,
+      "fin_s": 116.584
+    },
+    {
+      "archivo": "1_9_bloque6.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 116.584,
+      "duracion_s": 13.949,
+      "fin_s": 130.534
+    }
+  ],
+  "section_starts": [
+    0.0,
+    21.316,
+    52.872,
+    72.516,
+    94.877,
+    116.584
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "bloques": [
+    {
+      "archivo": "piezas_bloque1.mp3",
+      "titulo": "Mesa con piezas mezcladas",
+      "inicio_s": 0.0,
+      "duracion_s": 6.217,
+      "fin_s": 6.217
+    },
+    {
+      "archivo": "piezas_bloque2.mp3",
+      "titulo": "Bolsa y agrupacion",
+      "inicio_s": 6.217,
+      "duracion_s": 8.594,
+      "fin_s": 14.811
+    },
+    {
+      "archivo": "piezas_bloque3.mp3",
+      "titulo": "Notacion por extension",
+      "inicio_s": 14.811,
+      "duracion_s": 8.49,
+      "fin_s": 23.301
+    },
+    {
+      "archivo": "piezas_bloque4.mp3",
+      "titulo": "Pertenencia",
+      "inicio_s": 23.301,
+      "duracion_s": 7.419,
+      "fin_s": 30.72
+    },
+    {
+      "archivo": "piezas_bloque5.mp3",
+      "titulo": "Universo U",
+      "inicio_s": 30.72,
+      "duracion_s": 7.288,
+      "fin_s": 38.008
+    },
+    {
+      "archivo": "piezas_bloque6.mp3",
+      "titulo": "Conjunto vacio",
+      "inicio_s": 38.008,
+      "duracion_s": 9.927,
+      "fin_s": 47.934
+    },
+    {
+      "archivo": "piezas_bloque7.mp3",
+      "titulo": "Cardinalidad",
+      "inicio_s": 47.934,
+      "duracion_s": 7.837,
+      "fin_s": 55.771
+    }
+  ],
+  "section_starts": [
+    0.0,
+    6.217,
+    14.811,
+    23.301,
+    30.72,
+    38.008,
+    47.934
+  ]
+}

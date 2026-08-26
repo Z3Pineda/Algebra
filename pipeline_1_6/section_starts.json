@@ -1,0 +1,46 @@
+{
+  "bloques": [
+    {
+      "archivo": "1_6_bloque1.mp3",
+      "titulo": "Interseccion de conjuntos",
+      "inicio_s": 0.0,
+      "duracion_s": 12.826,
+      "fin_s": 12.826
+    },
+    {
+      "archivo": "1_6_bloque2.mp3",
+      "titulo": "Definicion",
+      "inicio_s": 12.826,
+      "duracion_s": 18.991,
+      "fin_s": 31.817
+    },
+    {
+      "archivo": "1_6_bloque3.mp3",
+      "titulo": "Procedimiento paso a paso",
+      "inicio_s": 31.817,
+      "duracion_s": 49.006,
+      "fin_s": 80.823
+    },
+    {
+      "archivo": "1_6_bloque4.mp3",
+      "titulo": "Errores comunes",
+      "inicio_s": 80.823,
+      "duracion_s": 25.626,
+      "fin_s": 106.449
+    },
+    {
+      "archivo": "1_6_bloque5.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 106.449,
+      "duracion_s": 10.919,
+      "fin_s": 117.368
+    }
+  ],
+  "section_starts": [
+    0.0,
+    12.826,
+    31.817,
+    80.823,
+    106.449
+  ]
+}

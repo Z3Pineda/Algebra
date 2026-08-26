@@ -1,0 +1,54 @@
+{
+  "bloques": [
+    {
+      "archivo": "1_7_bloque1.mp3",
+      "titulo": "Diferencia de conjuntos",
+      "inicio_s": 0.0,
+      "duracion_s": 12.669,
+      "fin_s": 12.669
+    },
+    {
+      "archivo": "1_7_bloque2.mp3",
+      "titulo": "Definicion",
+      "inicio_s": 12.669,
+      "duracion_s": 17.633,
+      "fin_s": 30.302
+    },
+    {
+      "archivo": "1_7_bloque3.mp3",
+      "titulo": "Procedimiento paso a paso",
+      "inicio_s": 30.302,
+      "duracion_s": 40.281,
+      "fin_s": 70.583
+    },
+    {
+      "archivo": "1_7_bloque4.mp3",
+      "titulo": "La diferencia no es conmutativa",
+      "inicio_s": 70.583,
+      "duracion_s": 24.686,
+      "fin_s": 95.269
+    },
+    {
+      "archivo": "1_7_bloque5.mp3",
+      "titulo": "Errores comunes",
+      "inicio_s": 95.269,
+      "duracion_s": 21.473,
+      "fin_s": 116.741
+    },
+    {
+      "archivo": "1_7_bloque6.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 116.741,
+      "duracion_s": 8.986,
+      "fin_s": 125.727
+    }
+  ],
+  "section_starts": [
+    0.0,
+    12.669,
+    30.302,
+    70.583,
+    95.269,
+    116.741
+  ]
+}

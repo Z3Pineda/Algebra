@@ -1,0 +1,62 @@
+{
+  "bloques": [
+    {
+      "archivo": "numericos_bloque1.mp3",
+      "titulo": "Apertura",
+      "inicio_s": 0.0,
+      "duracion_s": 13.27,
+      "fin_s": 13.27
+    },
+    {
+      "archivo": "numericos_bloque2.mp3",
+      "titulo": "Naturales",
+      "inicio_s": 13.27,
+      "duracion_s": 19.827,
+      "fin_s": 33.097
+    },
+    {
+      "archivo": "numericos_bloque3.mp3",
+      "titulo": "Enteros",
+      "inicio_s": 33.097,
+      "duracion_s": 27.115,
+      "fin_s": 60.212
+    },
+    {
+      "archivo": "numericos_bloque4.mp3",
+      "titulo": "Racionales",
+      "inicio_s": 60.212,
+      "duracion_s": 36.258,
+      "fin_s": 96.47
+    },
+    {
+      "archivo": "numericos_bloque5.mp3",
+      "titulo": "Reales",
+      "inicio_s": 96.47,
+      "duracion_s": 39.941,
+      "fin_s": 136.411
+    },
+    {
+      "archivo": "numericos_bloque6.mp3",
+      "titulo": "Contencion",
+      "inicio_s": 136.411,
+      "duracion_s": 20.375,
+      "fin_s": 156.787
+    },
+    {
+      "archivo": "numericos_bloque7.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 156.787,
+      "duracion_s": 21.812,
+      "fin_s": 178.599
+    }
+  ],
+  "section_starts": [
+    0.0,
+    13.27,
+    33.097,
+    60.212,
+    96.47,
+    136.411,
+    156.787
+  ]
+}

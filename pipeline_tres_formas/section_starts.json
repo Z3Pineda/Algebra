@@ -1,0 +1,54 @@
+{
+  "bloques": [
+    {
+      "archivo": "tres_formas_bloque1.mp3",
+      "titulo": "Apertura",
+      "inicio_s": 0.0,
+      "duracion_s": 12.382,
+      "fin_s": 12.382
+    },
+    {
+      "archivo": "tres_formas_bloque2.mp3",
+      "titulo": "Extension",
+      "inicio_s": 12.382,
+      "duracion_s": 20.193,
+      "fin_s": 32.575
+    },
+    {
+      "archivo": "tres_formas_bloque3.mp3",
+      "titulo": "Comprension",
+      "inicio_s": 32.575,
+      "duracion_s": 39.941,
+      "fin_s": 72.516
+    },
+    {
+      "archivo": "tres_formas_bloque4.mp3",
+      "titulo": "Diagrama de Venn",
+      "inicio_s": 72.516,
+      "duracion_s": 24.607,
+      "fin_s": 97.123
+    },
+    {
+      "archivo": "tres_formas_bloque5.mp3",
+      "titulo": "Las tres formas",
+      "inicio_s": 97.123,
+      "duracion_s": 17.502,
+      "fin_s": 114.625
+    },
+    {
+      "archivo": "tres_formas_bloque6.mp3",
+      "titulo": "Conclusion",
+      "inicio_s": 114.625,
+      "duracion_s": 12.565,
+      "fin_s": 127.19
+    }
+  ],
+  "section_starts": [
+    0.0,
+    12.382,
+    32.575,
+    72.516,
+    97.123,
+    114.625
+  ]
+}

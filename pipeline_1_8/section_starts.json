@@ -1,0 +1,46 @@
+{
+  "bloques": [
+    {
+      "archivo": "1_8_bloque1.mp3",
+      "titulo": "Complemento de un conjunto",
+      "inicio_s": 0.0,
+      "duracion_s": 14.838,
+      "fin_s": 14.838
+    },
+    {
+      "archivo": "1_8_bloque2.mp3",
+      "titulo": "Definicion",
+      "inicio_s": 14.838,
+      "duracion_s": 15.882,
+      "fin_s": 30.72
+    },
+    {
+      "archivo": "1_8_bloque3.mp3",
+      "titulo": "Procedimiento paso a paso",
+      "inicio_s": 30.72,
+      "duracion_s": 54.909,
+      "fin_s": 85.629
+    },
+    {
+      "archivo": "1_8_bloque4.mp3",
+      "titulo": "Errores comunes",
+      "inicio_s": 85.629,
+      "duracion_s": 32.601,
+      "fin_s": 118.23
+    },
+    {
+      "archivo": "1_8_bloque5.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 118.23,
+      "duracion_s": 8.986,
+      "fin_s": 127.216
+    }
+  ],
+  "section_starts": [
+    0.0,
+    14.838,
+    30.72,
+    85.629,
+    118.23
+  ]
+}

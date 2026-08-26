@@ -1,0 +1,46 @@
+{
+  "bloques": [
+    {
+      "archivo": "1_5_bloque1.mp3",
+      "titulo": "Union de conjuntos",
+      "inicio_s": 0.0,
+      "duracion_s": 12.199,
+      "fin_s": 12.199
+    },
+    {
+      "archivo": "1_5_bloque2.mp3",
+      "titulo": "Definicion",
+      "inicio_s": 12.199,
+      "duracion_s": 13.793,
+      "fin_s": 25.992
+    },
+    {
+      "archivo": "1_5_bloque3.mp3",
+      "titulo": "Procedimiento paso a paso",
+      "inicio_s": 25.992,
+      "duracion_s": 46.681,
+      "fin_s": 72.673
+    },
+    {
+      "archivo": "1_5_bloque4.mp3",
+      "titulo": "Errores comunes",
+      "inicio_s": 72.673,
+      "duracion_s": 21.629,
+      "fin_s": 94.302
+    },
+    {
+      "archivo": "1_5_bloque5.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 94.302,
+      "duracion_s": 6.426,
+      "fin_s": 100.728
+    }
+  ],
+  "section_starts": [
+    0.0,
+    12.199,
+    25.992,
+    72.673,
+    94.302
+  ]
+}

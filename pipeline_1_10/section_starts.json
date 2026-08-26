@@ -1,0 +1,54 @@
+{
+  "bloques": [
+    {
+      "archivo": "1_10_bloque1.mp3",
+      "titulo": "Diagramas de Venn y conteo",
+      "inicio_s": 0.0,
+      "duracion_s": 13.949,
+      "fin_s": 13.949
+    },
+    {
+      "archivo": "1_10_bloque2.mp3",
+      "titulo": "Las cuatro regiones",
+      "inicio_s": 13.949,
+      "duracion_s": 29.153,
+      "fin_s": 43.102
+    },
+    {
+      "archivo": "1_10_bloque3.mp3",
+      "titulo": "Llenar el diagrama con datos",
+      "inicio_s": 43.102,
+      "duracion_s": 33.567,
+      "fin_s": 76.669
+    },
+    {
+      "archivo": "1_10_bloque4.mp3",
+      "titulo": "Encontrar un dato faltante",
+      "inicio_s": 76.669,
+      "duracion_s": 26.122,
+      "fin_s": 102.792
+    },
+    {
+      "archivo": "1_10_bloque5.mp3",
+      "titulo": "Errores comunes",
+      "inicio_s": 102.792,
+      "duracion_s": 25.966,
+      "fin_s": 128.757
+    },
+    {
+      "archivo": "1_10_bloque6.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 128.757,
+      "duracion_s": 7.706,
+      "fin_s": 136.464
+    }
+  ],
+  "section_starts": [
+    0.0,
+    13.949,
+    43.102,
+    76.669,
+    102.792,
+    128.757
+  ]
+}

@@ -1,0 +1,656 @@
+{
+  "generado": "2026-06-19T16:57:19",
+  "origen": "recuperarEnlacesDesdeDrive",
+  "escaneados": 107,
+  "unicos": 81,
+  "forms": [
+    {
+      "formTitle": "Blank Quiz",
+      "titulo": "Blank Quiz",
+      "editUrl": "https://docs.google.com/forms/d/1LmeQKetJAM6KDj3Z6ts0U4vgBYLtXhlph15XmOJBLhY/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSetOx6ByjBnNywvvGfh3124mTt0xWky6xa_xjqDOVayTAPhEg/viewform",
+      "modified": "2026-02-12T15:23:21.083Z",
+      "fileId": "1LmeQKetJAM6KDj3Z6ts0U4vgBYLtXhlph15XmOJBLhY"
+    },
+    {
+      "formTitle": "Quiz de Matemáticas — 15 preguntas",
+      "titulo": "Quiz de Matemáticas",
+      "editUrl": "https://docs.google.com/forms/d/19EGXNKK2Depn7dl4mTXfhaMEWzhSCjFBo5UCg3hU_7Q/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScD6JJIJCxNbo-lGINYK64AZ9ym8AT8S3KE2Kcy_EVMDyUj9g/viewform",
+      "modified": "2026-06-18T22:38:49.645Z",
+      "fileId": "19EGXNKK2Depn7dl4mTXfhaMEWzhSCjFBo5UCg3hU_7Q"
+    },
+    {
+      "formTitle": "S1·Auto Repaso de conjuntos — Quiz",
+      "titulo": "S1·Auto Repaso de conjuntos",
+      "editUrl": "https://docs.google.com/forms/d/17rjpy4Q7MxyG56IOMC1CTVALhP7gdn62Q3shRRPHuOM/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfEyKGEIjYzaOsIv5JlUZGj6XjSCDc8T2zfBLXprMZOzi4XAQ/viewform",
+      "modified": "2026-06-19T22:33:29.006Z",
+      "fileId": "17rjpy4Q7MxyG56IOMC1CTVALhP7gdn62Q3shRRPHuOM"
+    },
+    {
+      "formTitle": "S1·C2 Concepto de conjunto — Quiz",
+      "titulo": "S1·C2 Concepto de conjunto",
+      "editUrl": "https://docs.google.com/forms/d/1-ssVwZXwrJH4Ne5qs4oY4UtNefENNfIGjTS3lL-m6q0/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf9Co87huKKh7TlNIrBYYWAg_O3oaKb2ciX2CjlQfKxTJUqtA/viewform",
+      "modified": "2026-06-19T22:22:32.503Z",
+      "fileId": "1-ssVwZXwrJH4Ne5qs4oY4UtNefENNfIGjTS3lL-m6q0"
+    },
+    {
+      "formTitle": "S1·C3 Representación de conjuntos — Quiz",
+      "titulo": "S1·C3 Representación de conjuntos",
+      "editUrl": "https://docs.google.com/forms/d/1M_bU4qO3SSjFQSEvWyXf2N5uR27oG7zSll3Nd-Iwj00/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf7eCtJvgcZPhIF47oJVae53lAjiyd68jEVyN0dJB6eJjCF-w/viewform",
+      "modified": "2026-06-19T22:22:40.981Z",
+      "fileId": "1M_bU4qO3SSjFQSEvWyXf2N5uR27oG7zSll3Nd-Iwj00"
+    },
+    {
+      "formTitle": "S1·C4 Operaciones básicas con conjuntos — Quiz",
+      "titulo": "S1·C4 Operaciones básicas con conjuntos",
+      "editUrl": "https://docs.google.com/forms/d/1T9TAQlXxiqLCJ9qjV3rlRcRbTRfKsXH8s8V49iF1MkU/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSesBAUUWEnXhkhn1vDMCQryihaq3zeJ1mV84s6CPQkrPt8ufw/viewform",
+      "modified": "2026-06-19T22:22:51.166Z",
+      "fileId": "1T9TAQlXxiqLCJ9qjV3rlRcRbTRfKsXH8s8V49iF1MkU"
+    },
+    {
+      "formTitle": "S10·Auto Repaso general Unidad 3 — Quiz",
+      "titulo": "S10·Auto Repaso general Unidad 3",
+      "editUrl": "https://docs.google.com/forms/d/1hQ-C00ccii961sFVUHz_ndmIU2B8fXkj2cEf2Zz9z20/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSetn7Fkv0qDJHChvH3v1LPohUBWlW_c5Gh0AaJM5F5DN_S02A/viewform",
+      "modified": "2026-06-19T22:26:06.385Z",
+      "fileId": "1hQ-C00ccii961sFVUHz_ndmIU2B8fXkj2cEf2Zz9z20"
+    },
+    {
+      "formTitle": "S10·C1 Exponentes enteros y exponente cero — Quiz",
+      "titulo": "S10·C1 Exponentes enteros y exponente cero",
+      "editUrl": "https://docs.google.com/forms/d/1RfGfuJ4ClMbJSe3YNlvvHetgXy8O-N8RWJ3nh36Dmsw/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd0jmROeLCpVbnZ9qFd11Mb36EvF50OqSg5QYCVJ2YW-ZOPGA/viewform",
+      "modified": "2026-06-19T22:26:14.298Z",
+      "fileId": "1RfGfuJ4ClMbJSe3YNlvvHetgXy8O-N8RWJ3nh36Dmsw"
+    },
+    {
+      "formTitle": "S10·C2 Exponentes negativos y fraccionarios — Quiz",
+      "titulo": "S10·C2 Exponentes negativos y fraccionarios",
+      "editUrl": "https://docs.google.com/forms/d/14rlSjdwpNrxx2dAvs8ozdX9tm-2ilb5HCU_D0wFkIUQ/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSftZrqWw7WAT6lBPKDexNVoMjlepMzjk5rd5ANSnyiXMomq1A/viewform",
+      "modified": "2026-06-19T22:26:22.257Z",
+      "fileId": "14rlSjdwpNrxx2dAvs8ozdX9tm-2ilb5HCU_D0wFkIUQ"
+    },
+    {
+      "formTitle": "S10·C3 Radicales — suma, resta, producto y división — Quiz",
+      "titulo": "S10·C3 Radicales — suma, resta, producto y división",
+      "editUrl": "https://docs.google.com/forms/d/1fpdtGQB3sx0rhi7axwOzeF51Yl0AV_5VEeHSpHvHNOc/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdneenDl-IsIesmT87KdmfdSBZatQ8ylGAyILA9DxXAunONsw/viewform",
+      "modified": "2026-06-19T22:26:28.237Z",
+      "fileId": "1fpdtGQB3sx0rhi7axwOzeF51Yl0AV_5VEeHSpHvHNOc"
+    },
+    {
+      "formTitle": "S10·C4 Factorial, combinatorios y teorema del binomio — Quiz",
+      "titulo": "S10·C4 Factorial, combinatorios y teorema del binomio",
+      "editUrl": "https://docs.google.com/forms/d/1Id_FLWoZJujGbiilE8TP5eglMIibH2yUYKrhGNy857o/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdOxgj3nJpkGHwbMvsbrLSCm4pCgTGE_r9iHWejJgVoY7ljhw/viewform",
+      "modified": "2026-06-19T22:26:36.122Z",
+      "fileId": "1Id_FLWoZJujGbiilE8TP5eglMIibH2yUYKrhGNy857o"
+    },
+    {
+      "formTitle": "S11·Auto Problemas de modelación con ecuaciones lineales — Quiz",
+      "titulo": "S11·Auto Problemas de modelación con ecuaciones lineales",
+      "editUrl": "https://docs.google.com/forms/d/1ohpgMBCcl8oF0_aZKL1nOemKQD5CuXOeN3jnq314D3s/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfqe5sLxjz1hlsqNmRi85kwaegfzrJSYfH4x5K5w50azFVuAg/viewform",
+      "modified": "2026-06-19T22:38:32.551Z",
+      "fileId": "1ohpgMBCcl8oF0_aZKL1nOemKQD5CuXOeN3jnq314D3s"
+    },
+    {
+      "formTitle": "S11·C1 Concepto de ecuación e identidad — Quiz",
+      "titulo": "S11·C1 Concepto de ecuación e identidad",
+      "editUrl": "https://docs.google.com/forms/d/1P4z6BZsrh2TzMtmc1uNhjfV7SXiUAp6Y80eSbjR4TY0/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfuT9_l2OFt6jbXZCB7ed5-mlG-KR2Pb93GkaiKh52DfwW7EA/viewform",
+      "modified": "2026-06-19T22:38:50.318Z",
+      "fileId": "1P4z6BZsrh2TzMtmc1uNhjfV7SXiUAp6Y80eSbjR4TY0"
+    },
+    {
+      "formTitle": "S11·C2 Ecuaciones lineales — Quiz",
+      "titulo": "S11·C2 Ecuaciones lineales",
+      "editUrl": "https://docs.google.com/forms/d/17vA8NwYI35UAzPcfc14fpTRAV8XT80CvHNE5-4vPP0Q/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeFK5NOCgRkVaCIQEmRZavObnyOJiQpKGDrwTUhLwAecl_zIA/viewform",
+      "modified": "2026-06-19T22:39:08.348Z",
+      "fileId": "17vA8NwYI35UAzPcfc14fpTRAV8XT80CvHNE5-4vPP0Q"
+    },
+    {
+      "formTitle": "S11·C3 Ecuaciones con literales — Quiz",
+      "titulo": "S11·C3 Ecuaciones con literales",
+      "editUrl": "https://docs.google.com/forms/d/1DuZqXHt1Cyl5wt-XEekff8yF3brkbs9npfNecASkGs8/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScPuMtMrizUw-jck8eDE3CmIDUcI8__K1K0DVbAIwCYD-LOwA/viewform",
+      "modified": "2026-06-19T22:39:25.828Z",
+      "fileId": "1DuZqXHt1Cyl5wt-XEekff8yF3brkbs9npfNecASkGs8"
+    },
+    {
+      "formTitle": "S11·C4 Ecuaciones con fracciones — Quiz",
+      "titulo": "S11·C4 Ecuaciones con fracciones",
+      "editUrl": "https://docs.google.com/forms/d/1YUhu6wPBXwKhrr9sJOzxvMt-B4CeAM-wTgWVaGuZ8TE/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf654suXp11tEh3Ac2msVQj5Y8oWUaH4EhL5t02AiJ-WmI2NA/viewform",
+      "modified": "2026-06-19T22:39:44.691Z",
+      "fileId": "1YUhu6wPBXwKhrr9sJOzxvMt-B4CeAM-wTgWVaGuZ8TE"
+    },
+    {
+      "formTitle": "S12·Auto Ejercicios comparativos de métodos de solución — Quiz",
+      "titulo": "S12·Auto Ejercicios comparativos de métodos de solución",
+      "editUrl": "https://docs.google.com/forms/d/10ZDnPYldE5p69COaT0SlhugMI-2a9tGN4uYjWC_DreU/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfMIIsIyvNq8Zh5J8zC3rphTxuobECTbXqB_Xyua9UJXEExcA/viewform",
+      "modified": "2026-06-19T22:40:14.166Z",
+      "fileId": "10ZDnPYldE5p69COaT0SlhugMI-2a9tGN4uYjWC_DreU"
+    },
+    {
+      "formTitle": "S12·C1 Modelación de situaciones con ecuaciones lineales — Quiz",
+      "titulo": "S12·C1 Modelación de situaciones con ecuaciones lineales",
+      "editUrl": "https://docs.google.com/forms/d/1KdFV5duhHQHk7xv160rFbgBvLPwNoGPUSq-ATWXPC5E/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSee92-s_Qh_qXuLOTpZwD8pT1XrtIj7MG9ylZMRoLgqh_XtyA/viewform",
+      "modified": "2026-06-19T22:40:32.737Z",
+      "fileId": "1KdFV5duhHQHk7xv160rFbgBvLPwNoGPUSq-ATWXPC5E"
+    },
+    {
+      "formTitle": "S12·C2 Sistemas de dos ecuaciones con dos incógnitas — Quiz",
+      "titulo": "S12·C2 Sistemas de dos ecuaciones con dos incógnitas",
+      "editUrl": "https://docs.google.com/forms/d/1HEx1UmiblXYv7m6va1Wwgl4JNVluVgBAJwQfyvGo7zM/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdAp7aQzv7Bpa9WwP4l0l6bv9cNKTXHEgXRA8AmsKNuOq3YSg/viewform",
+      "modified": "2026-06-19T22:43:23.964Z",
+      "fileId": "1HEx1UmiblXYv7m6va1Wwgl4JNVluVgBAJwQfyvGo7zM"
+    },
+    {
+      "formTitle": "S12·C3 Método de sustitución — Quiz",
+      "titulo": "S12·C3 Método de sustitución",
+      "editUrl": "https://docs.google.com/forms/d/1ALyVctRA1qimm8PUaDRVrlkZmPgjmq7BWHOzaFfdtYI/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScJ7nWW-eQ8uM0f776QQYIvf87YxGpA86EtU2kZhXL2LUcuBQ/viewform",
+      "modified": "2026-06-19T22:43:32.850Z",
+      "fileId": "1ALyVctRA1qimm8PUaDRVrlkZmPgjmq7BWHOzaFfdtYI"
+    },
+    {
+      "formTitle": "S12·C4 Método de suma o resta y solución gráfica — Quiz",
+      "titulo": "S12·C4 Método de suma o resta y solución gráfica",
+      "editUrl": "https://docs.google.com/forms/d/1e4ImsvgR_bEQQBkgnzUIC31SJ8s8NQKik9Na92vzmZI/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf93rDwtbqL8kQ-V0ExhlDqQkrb1fCjpbZp5boZ6YPxf4PKRQ/viewform",
+      "modified": "2026-06-19T22:43:41.646Z",
+      "fileId": "1e4ImsvgR_bEQQBkgnzUIC31SJ8s8NQKik9Na92vzmZI"
+    },
+    {
+      "formTitle": "S13·Auto Práctica de ecuaciones cuadráticas — Quiz",
+      "titulo": "S13·Auto Práctica de ecuaciones cuadráticas",
+      "editUrl": "https://docs.google.com/forms/d/1ZSRPJqBY_4K1JVSkVuPxoRfbIke-k0QXQtRRARS9tPE/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfv2t0nKp-gCGWULekZh5WMWoCcKiyYY4IZ-avOWX5subF8Tg/viewform",
+      "modified": "2026-06-19T22:44:13.203Z",
+      "fileId": "1ZSRPJqBY_4K1JVSkVuPxoRfbIke-k0QXQtRRARS9tPE"
+    },
+    {
+      "formTitle": "S13·C1 Concepto de ecuación cuadrática — Quiz",
+      "titulo": "S13·C1 Concepto de ecuación cuadrática",
+      "editUrl": "https://docs.google.com/forms/d/1dzM1yHaWKkIyhzSvbM_V3gEPOdZPG9quEqrFStXBg48/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe9tWTqMM2gINAqY-7uPv3K89_QZZaxjOIVD8_GaHGOR5DlWQ/viewform",
+      "modified": "2026-06-19T22:44:22.501Z",
+      "fileId": "1dzM1yHaWKkIyhzSvbM_V3gEPOdZPG9quEqrFStXBg48"
+    },
+    {
+      "formTitle": "S13·C2 Solución por factorización — Quiz",
+      "titulo": "S13·C2 Solución por factorización",
+      "editUrl": "https://docs.google.com/forms/d/1UDzPOr0sYw9cxd3tWJ8i8F5T1HkX_KTw9kGUZSFEcLk/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf9l4XMRjPLfkMinhJLraZuggndOjQKehjMKdlop97CKt_qhA/viewform",
+      "modified": "2026-06-19T22:44:32.459Z",
+      "fileId": "1UDzPOr0sYw9cxd3tWJ8i8F5T1HkX_KTw9kGUZSFEcLk"
+    },
+    {
+      "formTitle": "S13·C3 Ecuaciones de la forma (x+a)²=b — Quiz",
+      "titulo": "S13·C3 Ecuaciones de la forma (x+a)²=b",
+      "editUrl": "https://docs.google.com/forms/d/1Kn_asxBQPaE1GjVtpFC60u8WFI5-6bCIKyzqTZFycxI/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfPT01x-2naH1cw_QenU8z_A3Loz6lri9QqSB55zRxXWx2zRQ/viewform",
+      "modified": "2026-06-19T22:44:41.398Z",
+      "fileId": "1Kn_asxBQPaE1GjVtpFC60u8WFI5-6bCIKyzqTZFycxI"
+    },
+    {
+      "formTitle": "S13·C4 Completando el cuadrado — Quiz",
+      "titulo": "S13·C4 Completando el cuadrado",
+      "editUrl": "https://docs.google.com/forms/d/1Jp5tOQSbOxyk0_YNge06NTKviSUm0kZjLiNPwQl-_Eo/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScYaKPokooHbnknk6ClzSU1ARq1nnA2LDIWURGdvqvMBfHAQA/viewform",
+      "modified": "2026-06-19T22:44:51.321Z",
+      "fileId": "1Jp5tOQSbOxyk0_YNge06NTKviSUm0kZjLiNPwQl-_Eo"
+    },
+    {
+      "formTitle": "S14·Auto Ejercicios de aplicación y verificación — Quiz",
+      "titulo": "S14·Auto Ejercicios de aplicación y verificación",
+      "editUrl": "https://docs.google.com/forms/d/1Jz_gIy46n-zgR_JrbNv9YCTswZtWXJVwLNyfX86xi8I/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeGTV77OsHR9RRi_WYMX5xUIzusNANHxg9-uxgVckUpcCDqEw/viewform",
+      "modified": "2026-06-19T22:45:02.044Z",
+      "fileId": "1Jz_gIy46n-zgR_JrbNv9YCTswZtWXJVwLNyfX86xi8I"
+    },
+    {
+      "formTitle": "S14·C1 Fórmula general — Quiz",
+      "titulo": "S14·C1 Fórmula general",
+      "editUrl": "https://docs.google.com/forms/d/1peK59jSFKeWcwT0f4N9GuSaBxNYe4jeQc5g89vEBjxU/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeHRm51pIOz0n5rqotPitYapiz0bPhHtrKyN-mu77O_6f87HQ/viewform",
+      "modified": "2026-06-19T22:45:10.247Z",
+      "fileId": "1peK59jSFKeWcwT0f4N9GuSaBxNYe4jeQc5g89vEBjxU"
+    },
+    {
+      "formTitle": "S14·C2 Ecuaciones con radicales — Quiz",
+      "titulo": "S14·C2 Ecuaciones con radicales",
+      "editUrl": "https://docs.google.com/forms/d/1cpWoJhvNqGRN6KNNTX_eBN2Lhsgr46TiePnEog0yfN8/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeUO5_BKUnAQP9V-h_PQ9ZrbEit-Ne5BryOiAT_I964GUhTFA/viewform",
+      "modified": "2026-06-19T22:45:19.182Z",
+      "fileId": "1cpWoJhvNqGRN6KNNTX_eBN2Lhsgr46TiePnEog0yfN8"
+    },
+    {
+      "formTitle": "S14·C3 Ecuaciones de forma cuadrática — Quiz",
+      "titulo": "S14·C3 Ecuaciones de forma cuadrática",
+      "editUrl": "https://docs.google.com/forms/d/1c5G7HO7LMRF7GSI3EPfKukJiA6N08RVOQ_9-zfqCS7k/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfJl9RMGTYcGCKHqLmoJKUJrNSAJsT589dBvN5cPWoh_K7tGw/viewform",
+      "modified": "2026-06-19T22:45:26.920Z",
+      "fileId": "1c5G7HO7LMRF7GSI3EPfKukJiA6N08RVOQ_9-zfqCS7k"
+    },
+    {
+      "formTitle": "S14·C4 Sistemas con una ecuación lineal y una cuadrática — Quiz",
+      "titulo": "S14·C4 Sistemas con una ecuación lineal y una cuadrática",
+      "editUrl": "https://docs.google.com/forms/d/1pAAcHaMoozOdo2LH8SGREThiLvBmpO_dZqH6tefNL0o/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScQRde-72knYrWN1VTRQsdLtU2hixzjeBl7ADdnf3iIaKBiJw/viewform",
+      "modified": "2026-06-19T22:45:34.898Z",
+      "fileId": "1pAAcHaMoozOdo2LH8SGREThiLvBmpO_dZqH6tefNL0o"
+    },
+    {
+      "formTitle": "S15·Auto Repaso general Unidad 4 — Quiz",
+      "titulo": "S15·Auto Repaso general Unidad 4",
+      "editUrl": "https://docs.google.com/forms/d/1sIxtgAF5SSeuEtyEpl61aT5re5iZmg9gQ_FtGoJrE-Y/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScGBHOCSBCmBaQ8Ob1SeC3YgsBhVmWQ3fC_yLqXb_QIRUZt3A/viewform",
+      "modified": "2026-06-19T22:47:40.698Z",
+      "fileId": "1sIxtgAF5SSeuEtyEpl61aT5re5iZmg9gQ_FtGoJrE-Y"
+    },
+    {
+      "formTitle": "S15·C1 Sistemas de ecuaciones cuadráticas — Quiz",
+      "titulo": "S15·C1 Sistemas de ecuaciones cuadráticas",
+      "editUrl": "https://docs.google.com/forms/d/153vb02M1hGubN8FP-p0ig_MJCnNNCAFFx-ksLb0su3g/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfhkCAimkdz3tD76MWJddZIXrPXLdbQ_ZLLgsmCT99BJEXKJg/viewform",
+      "modified": "2026-06-19T22:47:50.199Z",
+      "fileId": "153vb02M1hGubN8FP-p0ig_MJCnNNCAFFx-ksLb0su3g"
+    },
+    {
+      "formTitle": "S15·C2 Función polinomial de grado n — Quiz",
+      "titulo": "S15·C2 Función polinomial de grado n",
+      "editUrl": "https://docs.google.com/forms/d/1wBbAfbHZ-PtGJPPnl7rgLC2gvLmR53XAfiiuHsg-344/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScDPaQeONj7b6zZRSUE_EXpaZIkOKn-hz38mM_wzJ1PmQLC9w/viewform",
+      "modified": "2026-06-19T22:47:58.664Z",
+      "fileId": "1wBbAfbHZ-PtGJPPnl7rgLC2gvLmR53XAfiiuHsg-344"
+    },
+    {
+      "formTitle": "S15·C3 División sintética y teorema del residuo — Quiz",
+      "titulo": "S15·C3 División sintética y teorema del residuo",
+      "editUrl": "https://docs.google.com/forms/d/13Rv9LrU0f1cB76R6BEo2d-qjUfS5HqHKzVHoqrYf6uI/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfTZFd5d_ZhVAQhpzpJYCUJDWAK3Y7r7uM-q6Z-6y7DeCKwkw/viewform",
+      "modified": "2026-06-19T22:48:08.270Z",
+      "fileId": "13Rv9LrU0f1cB76R6BEo2d-qjUfS5HqHKzVHoqrYf6uI"
+    },
+    {
+      "formTitle": "S15·C4 Teorema del factor, raíces y teorema fundamental — Quiz",
+      "titulo": "S15·C4 Teorema del factor, raíces y teorema fundamental",
+      "editUrl": "https://docs.google.com/forms/d/1ui64_rFUz0TLKWbESaO0GwD04FnVSbooz9_N4Lt55Yw/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSecjOca64u9bKRohfakbWRnhALYgDZPcyC6oliCKjFUV11PLg/viewform",
+      "modified": "2026-06-19T22:48:17.041Z",
+      "fileId": "1ui64_rFUz0TLKWbESaO0GwD04FnVSbooz9_N4Lt55Yw"
+    },
+    {
+      "formTitle": "S16·Auto Entrega de evidencias y preparación para examen final — Quiz",
+      "titulo": "S16·Auto Entrega de evidencias y preparación para examen final",
+      "editUrl": "https://docs.google.com/forms/d/1K18t1yBH8MYD2_DiInz3S_5sI_vinat7xNA51a6il1Y/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScpEsHjUgqqi7CVjFQcpWZsrrJ-79kgR75GywV1T2hzoyX5pQ/viewform",
+      "modified": "2026-06-19T22:48:25.029Z",
+      "fileId": "1K18t1yBH8MYD2_DiInz3S_5sI_vinat7xNA51a6il1Y"
+    },
+    {
+      "formTitle": "S16·C1 Valor absoluto e interpretación gráfica — Quiz",
+      "titulo": "S16·C1 Valor absoluto e interpretación gráfica",
+      "editUrl": "https://docs.google.com/forms/d/10cF1Ru3jgYySw3wcL5ctB9ucKsbF3StxKrdqI20s5hs/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfrBVj5iGh55mlvpbRiwta5Tb_E5VP_ERpRDdae4ywxlrx1nw/viewform",
+      "modified": "2026-06-19T22:48:33.915Z",
+      "fileId": "10cF1Ru3jgYySw3wcL5ctB9ucKsbF3StxKrdqI20s5hs"
+    },
+    {
+      "formTitle": "S16·C2 Ecuaciones con valor absoluto — Quiz",
+      "titulo": "S16·C2 Ecuaciones con valor absoluto",
+      "editUrl": "https://docs.google.com/forms/d/108NeFAe4_pNEL9RJNZiOFCUzhdPxma1tnKsRnS1VzsY/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfaWAHeZQ4exbUW0cNjk1vjYRx9kVxekiE8cTmuZUgxFWWaVw/viewform",
+      "modified": "2026-06-19T22:48:42.362Z",
+      "fileId": "108NeFAe4_pNEL9RJNZiOFCUzhdPxma1tnKsRnS1VzsY"
+    },
+    {
+      "formTitle": "S16·C3 Desigualdades con valor absoluto — Quiz",
+      "titulo": "S16·C3 Desigualdades con valor absoluto",
+      "editUrl": "https://docs.google.com/forms/d/136--EA60-KaddTKn5fojgJmaGPl9EbJgGxY86I8s9aE/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScxYGK7oCugdOElaN3tcT8-FK-wRBA-xwWJMJ8QtCjmz1tUww/viewform",
+      "modified": "2026-06-19T22:48:50.573Z",
+      "fileId": "136--EA60-KaddTKn5fojgJmaGPl9EbJgGxY86I8s9aE"
+    },
+    {
+      "formTitle": "S16·C4 Repaso general del curso — Quiz",
+      "titulo": "S16·C4 Repaso general del curso",
+      "editUrl": "https://docs.google.com/forms/d/1ya0eKh0hTqhnp3v2ti8eEiNzAMeJrOts0NEeuBKi6n4/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfCT1sDG3AuLWrRObsmJsWZc48NRNJm3sAjdghEnapBM0droA/viewform",
+      "modified": "2026-06-19T22:49:02.423Z",
+      "fileId": "1ya0eKh0hTqhnp3v2ti8eEiNzAMeJrOts0NEeuBKi6n4"
+    },
+    {
+      "formTitle": "S2·Auto Ejercicios de lógica — Quiz",
+      "titulo": "S2·Auto Ejercicios de lógica",
+      "editUrl": "https://docs.google.com/forms/d/1z3L6dlSJFh679Z3qZNEBI0aLxyCwzU_3ias3vniYeSM/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSckv7fr9S6yzUua5Wf7daXZQ-wxTmHNVSjy_pSaltwfJRPHEg/viewform",
+      "modified": "2026-06-19T22:23:04.243Z",
+      "fileId": "1z3L6dlSJFh679Z3qZNEBI0aLxyCwzU_3ias3vniYeSM"
+    },
+    {
+      "formTitle": "S2·C1 Proposición y valor de verdad — Quiz",
+      "titulo": "S2·C1 Proposición y valor de verdad",
+      "editUrl": "https://docs.google.com/forms/d/1mezoTk1KPn1jjyIf8Jzy1GqdsMjoSXQ8VoVSq5cSwHs/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdn9eM0bMArqVvKcIQCyLF6cM3UdEXOBNEGOiK8TjJanJxDCw/viewform",
+      "modified": "2026-06-19T22:23:12.698Z",
+      "fileId": "1mezoTk1KPn1jjyIf8Jzy1GqdsMjoSXQ8VoVSq5cSwHs"
+    },
+    {
+      "formTitle": "S2·C2 Conjunto solución de una proposición abierta — Quiz",
+      "titulo": "S2·C2 Conjunto solución de una proposición abierta",
+      "editUrl": "https://docs.google.com/forms/d/1P7ewu2KmAV6XhUHMQLtXojZMKOwzD1sapPf5m2kTdYk/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe6obcpFFiQG4qlcof50_PExNAB1Yp0syi5PHnZE5vwI6ioQQ/viewform",
+      "modified": "2026-06-19T22:23:20.953Z",
+      "fileId": "1P7ewu2KmAV6XhUHMQLtXojZMKOwzD1sapPf5m2kTdYk"
+    },
+    {
+      "formTitle": "S2·C3 Conjunción y disyunción — Quiz",
+      "titulo": "S2·C3 Conjunción y disyunción",
+      "editUrl": "https://docs.google.com/forms/d/1CiBspvYT3Xx45u2dj3gi0kz55lZ0XrA1imkzlIEAm9A/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdoVjyyP-_GbEHo-EHr3U0WzvQoqYfeZ0-yALxyJ1C6wxFFtQ/viewform",
+      "modified": "2026-06-19T22:23:31.292Z",
+      "fileId": "1CiBspvYT3Xx45u2dj3gi0kz55lZ0XrA1imkzlIEAm9A"
+    },
+    {
+      "formTitle": "S2·C4 Implicación y negación — Quiz",
+      "titulo": "S2·C4 Implicación y negación",
+      "editUrl": "https://docs.google.com/forms/d/1jrVQ097Axmvgwo5BFnKP8nRH6R0UckUd1qieZdTDNL0/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfDKngwapLiAWMwSIRnVzsQUUo4esrm8KN6nzc2yDM0zWrQmA/viewform",
+      "modified": "2026-06-19T22:23:39.382Z",
+      "fileId": "1jrVQ097Axmvgwo5BFnKP8nRH6R0UckUd1qieZdTDNL0"
+    },
+    {
+      "formTitle": "S3·Auto Tarea integradora — Unidad 1 — Quiz",
+      "titulo": "S3·Auto Tarea integradora — Unidad 1",
+      "editUrl": "https://docs.google.com/forms/d/1cwUPoFtgy25ElL9WD6jBI9j_fOH8OGZyN23HYMbAVNQ/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeFOpqGRfBT8a5wrZ9-VHe9TkM2Jp6Q7-lOWQBFsLTvw5ypUw/viewform",
+      "modified": "2026-06-19T22:23:52.640Z",
+      "fileId": "1cwUPoFtgy25ElL9WD6jBI9j_fOH8OGZyN23HYMbAVNQ"
+    },
+    {
+      "formTitle": "S3·C1 Tipos de conjuntos — Quiz",
+      "titulo": "S3·C1 Tipos de conjuntos",
+      "editUrl": "https://docs.google.com/forms/d/1D1FVhQpktdIAzOB4aWBOWa7elEFJ7WuM3S7sX3BnMjo/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfLKXmY4JYpa5osysCAnfGNGgkBMc8oS3tetJIrvC3OVvnGdA/viewform",
+      "modified": "2026-06-19T22:24:01.580Z",
+      "fileId": "1D1FVhQpktdIAzOB4aWBOWa7elEFJ7WuM3S7sX3BnMjo"
+    },
+    {
+      "formTitle": "S3·C2 Diagramas de Venn con dos conjuntos — Quiz",
+      "titulo": "S3·C2 Diagramas de Venn con dos conjuntos",
+      "editUrl": "https://docs.google.com/forms/d/1800z7oxahGf7NWwf_Tu-0Bc17BLnW-xftMD1I7aIpw0/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeRYZM1rOwtjul5lsBv2roibmU5lHEMb0zzfeogQxvzjphvTw/viewform",
+      "modified": "2026-06-19T22:24:09.066Z",
+      "fileId": "1800z7oxahGf7NWwf_Tu-0Bc17BLnW-xftMD1I7aIpw0"
+    },
+    {
+      "formTitle": "S3·C3 Diagramas de Venn con tres conjuntos — Quiz",
+      "titulo": "S3·C3 Diagramas de Venn con tres conjuntos",
+      "editUrl": "https://docs.google.com/forms/d/14GftFq94cnGhVpf0B3ORnloi0TtZEdWomEOdwD8uEDU/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdFkg0BBLyon-5yidQkKKVrmnXU-1RYy6rzd_QIJRUunJlfTw/viewform",
+      "modified": "2026-06-19T22:24:17.629Z",
+      "fileId": "14GftFq94cnGhVpf0B3ORnloi0TtZEdWomEOdwD8uEDU"
+    },
+    {
+      "formTitle": "S3·C4 Problemas aplicados con conjuntos y lógica — Quiz",
+      "titulo": "S3·C4 Problemas aplicados con conjuntos y lógica",
+      "editUrl": "https://docs.google.com/forms/d/1GB2cUtfS5rdOmQ0VJmuWtRD5L8qWR4Mep9RH_nVL218/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSezVHKTq5UTGEG1ETBl4vFXjzVxhgP_wO89QI61IRm8Bm0oIg/viewform",
+      "modified": "2026-06-19T22:24:25.865Z",
+      "fileId": "1GB2cUtfS5rdOmQ0VJmuWtRD5L8qWR4Mep9RH_nVL218"
+    },
+    {
+      "formTitle": "S4·Auto Clasificación de números y producto cartesiano — Quiz",
+      "titulo": "S4·Auto Clasificación de números y producto cartesiano",
+      "editUrl": "https://docs.google.com/forms/d/1RnN1AJteMUbaLSlRzFFXvt0mHQb1uNb7TtDkVQY0o1U/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScgfEcBi6kKQlBoef8vrDlzqe_H1RVzZ5a9RNgtuXAPafTh9w/viewform",
+      "modified": "2026-06-19T22:24:35.909Z",
+      "fileId": "1RnN1AJteMUbaLSlRzFFXvt0mHQb1uNb7TtDkVQY0o1U"
+    },
+    {
+      "formTitle": "S4·C1 Números naturales, enteros, racionales, irracionales y reales — Quiz",
+      "titulo": "S4·C1 Números naturales, enteros, racionales, irracionales y reales",
+      "editUrl": "https://docs.google.com/forms/d/1NrG6cZPbBo3fLkwtIb15uiHc-R8Yjrj09dXUJrh1m40/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfC0ghB8lfdpfUG-YFPcOUkTdteP4eH6ZubA_sCbz5VrnvccA/viewform",
+      "modified": "2026-06-19T22:24:44.713Z",
+      "fileId": "1NrG6cZPbBo3fLkwtIb15uiHc-R8Yjrj09dXUJrh1m40"
+    },
+    {
+      "formTitle": "S4·C2 La recta numérica — Quiz",
+      "titulo": "S4·C2 La recta numérica",
+      "editUrl": "https://docs.google.com/forms/d/16ou529FcLqBQ1DNKtc6sLSz_wO0qmayV14vjohxAn5E/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf-gxMkaHwGGAQVdpSMiPIWXiLXwFTO-vhCAWRj0NWTuKLaEw/viewform",
+      "modified": "2026-06-19T22:24:50.730Z",
+      "fileId": "16ou529FcLqBQ1DNKtc6sLSz_wO0qmayV14vjohxAn5E"
+    },
+    {
+      "formTitle": "S4·C3 Propiedades de los números reales — Quiz",
+      "titulo": "S4·C3 Propiedades de los números reales",
+      "editUrl": "https://docs.google.com/forms/d/11pyITDqPReFBgzT0TFlhzYMtoYLkF3dYuycC2Zf8idk/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdMaOS2OKbyNfRuiAmlf7ELtTlC43lfBfRVUjuf2KMCE3g-4Q/viewform",
+      "modified": "2026-06-19T22:24:57.179Z",
+      "fileId": "11pyITDqPReFBgzT0TFlhzYMtoYLkF3dYuycC2Zf8idk"
+    },
+    {
+      "formTitle": "S4·C4 Producto cartesiano — Quiz",
+      "titulo": "S4·C4 Producto cartesiano",
+      "editUrl": "https://docs.google.com/forms/d/1sUIrEa4N0cMlaimOQTsqIjR16dLY0z6VCknNFTruvvs/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeX_XcH5sySMYQv080btGKjM5_6w-Z7hUC3gt6YzAMAi2RAsg/viewform",
+      "modified": "2026-06-19T22:25:04.624Z",
+      "fileId": "1sUIrEa4N0cMlaimOQTsqIjR16dLY0z6VCknNFTruvvs"
+    },
+    {
+      "formTitle": "S5·Auto Identificación de funciones, dominio y rango — Quiz",
+      "titulo": "S5·Auto Identificación de funciones, dominio y rango",
+      "editUrl": "https://docs.google.com/forms/d/1lmPRjZOyluQPxnzDNuuotGFsAcjtCg_2CEH3neEeDOI/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdc8R2NOVoSgrivpisJM5Pv5T14091M3TF-aqPLeFm12nJXiQ/viewform",
+      "modified": "2026-06-19T22:25:19.486Z",
+      "fileId": "1lmPRjZOyluQPxnzDNuuotGFsAcjtCg_2CEH3neEeDOI"
+    },
+    {
+      "formTitle": "S5·C1 Concepto de relación — Quiz",
+      "titulo": "S5·C1 Concepto de relación",
+      "editUrl": "https://docs.google.com/forms/d/1CZlC9hfZ41qeEFZuV1niEN3VQE6qlPDzPP-Gg5IsJvQ/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfbpsFvnaTJOwz-LEj25f5AcXy33I5E3xXqrjEs4w1hDBDZhA/viewform",
+      "modified": "2026-06-19T22:25:28.150Z",
+      "fileId": "1CZlC9hfZ41qeEFZuV1niEN3VQE6qlPDzPP-Gg5IsJvQ"
+    },
+    {
+      "formTitle": "S5·C2 Concepto de función — Quiz",
+      "titulo": "S5·C2 Concepto de función",
+      "editUrl": "https://docs.google.com/forms/d/1jORNlzTbxD8wMAwU61yr7NWIdQgygY_eFXlguFqrgYI/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeV_XeQZf7r-5NqLetgV9B_T4kqoBUfwSVnsk98pok2VGhrgw/viewform",
+      "modified": "2026-06-19T22:25:34.973Z",
+      "fileId": "1jORNlzTbxD8wMAwU61yr7NWIdQgygY_eFXlguFqrgYI"
+    },
+    {
+      "formTitle": "S5·C3 Diferencia entre relación y función — Quiz",
+      "titulo": "S5·C3 Diferencia entre relación y función",
+      "editUrl": "https://docs.google.com/forms/d/1XLVmjNvL_24bKDhvkfkO_HPayZl41Is3JqmkvaB0r2c/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeov4WUggVTijvj-UKJCcVQK16PUVJY3EwwAa5XAtNTvWzlug/viewform",
+      "modified": "2026-06-19T22:25:43.927Z",
+      "fileId": "1XLVmjNvL_24bKDhvkfkO_HPayZl41Is3JqmkvaB0r2c"
+    },
+    {
+      "formTitle": "S5·C4 Dominio y rango de una función — Quiz",
+      "titulo": "S5·C4 Dominio y rango de una función",
+      "editUrl": "https://docs.google.com/forms/d/1U8EwZmjJDH58ncTokgyvwW-ZDikoMAyH2q0HpxjRzmE/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScXObkX0V0Y35vc_WJ5STbX6-R9jk91acPzLiT21e0bjG8HiA/viewform",
+      "modified": "2026-06-19T22:25:52.082Z",
+      "fileId": "1U8EwZmjJDH58ncTokgyvwW-ZDikoMAyH2q0HpxjRzmE"
+    },
+    {
+      "formTitle": "S6·Auto Ejercicios de simplificación algebraica — Quiz",
+      "titulo": "S6·Auto Ejercicios de simplificación algebraica",
+      "editUrl": "https://docs.google.com/forms/d/1sTQv0lj_neG04Hwoi7jxGRMJjfSnWnPrzGInQfqcvc0/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeSLVKiC9lYcjgKvKEAESdJ3gnlyqqTj-iEVsTlhWsI1sbIRA/viewform",
+      "modified": "2026-06-19T22:26:43.730Z",
+      "fileId": "1sTQv0lj_neG04Hwoi7jxGRMJjfSnWnPrzGInQfqcvc0"
+    },
+    {
+      "formTitle": "S6·C1 Propiedades de la igualdad — Quiz",
+      "titulo": "S6·C1 Propiedades de la igualdad",
+      "editUrl": "https://docs.google.com/forms/d/1gIS6U_hM-vQMzHIGhHkIj1Z8ypLCrZ2WfPnKmal-DvU/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdwotub2Znx01E4pKsoN5tIe5ZiS8kO1SUDrUO0A3RF43IOqg/viewform",
+      "modified": "2026-06-19T22:26:52.422Z",
+      "fileId": "1gIS6U_hM-vQMzHIGhHkIj1Z8ypLCrZ2WfPnKmal-DvU"
+    },
+    {
+      "formTitle": "S6·C2 Expresión algebraica y términos semejantes — Quiz",
+      "titulo": "S6·C2 Expresión algebraica y términos semejantes",
+      "editUrl": "https://docs.google.com/forms/d/1gExcgiUveFeVbWEaYam5yWqQfuAQDqWLIKWk9lcOxAw/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScxmkH1NJGIflZGXP7PQ_S4cgjT1fN0iqBtxA0FdSPB31nOhw/viewform",
+      "modified": "2026-06-19T22:26:59.618Z",
+      "fileId": "1gExcgiUveFeVbWEaYam5yWqQfuAQDqWLIKWk9lcOxAw"
+    },
+    {
+      "formTitle": "S6·C3 Suma y resta de expresiones algebraicas — Quiz",
+      "titulo": "S6·C3 Suma y resta de expresiones algebraicas",
+      "editUrl": "https://docs.google.com/forms/d/1w7eTWwTNBlfNP6RCdahNN3b53bRr6NTLxosjeos3P6o/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd3uElGMvEAaqgtS8qZks9QgK6B55y0kNnfSr1BwExPkWPSUw/viewform",
+      "modified": "2026-06-19T22:27:06.082Z",
+      "fileId": "1w7eTWwTNBlfNP6RCdahNN3b53bRr6NTLxosjeos3P6o"
+    },
+    {
+      "formTitle": "S6·C4 Multiplicación de expresiones algebraicas — Quiz",
+      "titulo": "S6·C4 Multiplicación de expresiones algebraicas",
+      "editUrl": "https://docs.google.com/forms/d/1ZG7wVoN7yKqKt49pK3emX_6EYCaMxVM_LKPyExMTU0s/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf-oetGWhvtpCDFfQGxPmaqw6DijNr7FrM0stxrMPkBWpqqHw/viewform",
+      "modified": "2026-06-19T22:27:15.950Z",
+      "fileId": "1ZG7wVoN7yKqKt49pK3emX_6EYCaMxVM_LKPyExMTU0s"
+    },
+    {
+      "formTitle": "S7·Auto Práctica de productos notables — Quiz",
+      "titulo": "S7·Auto Práctica de productos notables",
+      "editUrl": "https://docs.google.com/forms/d/14al-mnI6L6vV6RZW8lCRu666ZVe-7-QeTz_Mx6ulE5c/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfQQP98ufwuXYKfkisCvUfqtFoqZ-CefGyYxlh8SECu7Y2SwQ/viewform",
+      "modified": "2026-06-19T22:27:30.954Z",
+      "fileId": "14al-mnI6L6vV6RZW8lCRu666ZVe-7-QeTz_Mx6ulE5c"
+    },
+    {
+      "formTitle": "S7·C1 Binomio al cuadrado — Quiz",
+      "titulo": "S7·C1 Binomio al cuadrado",
+      "editUrl": "https://docs.google.com/forms/d/14uDHnpu-KPJDGo2Ae2BWJriXN-_N6TWAOI9BP9e1ekE/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScY9OMn687osaYdFK1SDXd_67aSkpBz3bXbkfMaMKnufcD-aw/viewform",
+      "modified": "2026-06-19T22:27:39.705Z",
+      "fileId": "14uDHnpu-KPJDGo2Ae2BWJriXN-_N6TWAOI9BP9e1ekE"
+    },
+    {
+      "formTitle": "S7·C2 Producto de binomios conjugados — Quiz",
+      "titulo": "S7·C2 Producto de binomios conjugados",
+      "editUrl": "https://docs.google.com/forms/d/1YOxeKQjODZw3XGb5ZaLCqDT3n9GSL3enSDBmYWtWLxk/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd0MaPkLbw54KApNUMU6SzA1GZRR2_rfWnrhYOPP1_OuJcNug/viewform",
+      "modified": "2026-06-19T22:27:47.298Z",
+      "fileId": "1YOxeKQjODZw3XGb5ZaLCqDT3n9GSL3enSDBmYWtWLxk"
+    },
+    {
+      "formTitle": "S7·C3 Binomio al cubo — Quiz",
+      "titulo": "S7·C3 Binomio al cubo",
+      "editUrl": "https://docs.google.com/forms/d/1nCYYaeB9ymBUcCPF4cLTES2POjc3IxDFqjdooETtIIk/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdJSUBci-C50OSov5SG2yYXjhYqbxiS4890tyw4INVL-lhfOg/viewform",
+      "modified": "2026-06-19T22:27:54.512Z",
+      "fileId": "1nCYYaeB9ymBUcCPF4cLTES2POjc3IxDFqjdooETtIIk"
+    },
+    {
+      "formTitle": "S7·C4 Producto de un binomio por un trinomio — Quiz",
+      "titulo": "S7·C4 Producto de un binomio por un trinomio",
+      "editUrl": "https://docs.google.com/forms/d/1tVg97OrgVA1iBkPrcIrd5FkdVT856K4s_f7SXhOvEpw/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfZnTbEzMVs5ddf18riDXiI_ElyRgP1JM8jXX2NdQc8su7u2g/viewform",
+      "modified": "2026-06-19T22:28:02.556Z",
+      "fileId": "1tVg97OrgVA1iBkPrcIrd5FkdVT856K4s_f7SXhOvEpw"
+    },
+    {
+      "formTitle": "S8·Auto Ejercicios de factorización — Quiz",
+      "titulo": "S8·Auto Ejercicios de factorización",
+      "editUrl": "https://docs.google.com/forms/d/1sqD1TNywBGDHj7f-4haJZZdwKPEePalW_vrp83JhoWA/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfPliAXhO3kqCPLWd3HGzT5uQX9TdyggEkFNi0mJaiucqWD-A/viewform",
+      "modified": "2026-06-19T22:35:06.149Z",
+      "fileId": "1sqD1TNywBGDHj7f-4haJZZdwKPEePalW_vrp83JhoWA"
+    },
+    {
+      "formTitle": "S8·C1 Factor común — Quiz",
+      "titulo": "S8·C1 Factor común",
+      "editUrl": "https://docs.google.com/forms/d/1aqmw5aoojL8OJOs3cb0NWxUdaG1jN9_eHpU5vQKRJiM/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdqC62-dwpR_EtXzy9hX_I185EDkxJFxv_4bdWjLpsUdjk2oQ/viewform",
+      "modified": "2026-06-19T22:35:25.638Z",
+      "fileId": "1aqmw5aoojL8OJOs3cb0NWxUdaG1jN9_eHpU5vQKRJiM"
+    },
+    {
+      "formTitle": "S8·C2 Factorización de trinomios — Quiz",
+      "titulo": "S8·C2 Factorización de trinomios",
+      "editUrl": "https://docs.google.com/forms/d/1vp9NbVm69wmSID6Xk-zibyZ5JT2I1eLD8nIefnNPeao/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdbCga5BHcS-ZO9vsmevThUnVu1EQz4foMvYrY4LczHi_gDfQ/viewform",
+      "modified": "2026-06-19T22:35:43.779Z",
+      "fileId": "1vp9NbVm69wmSID6Xk-zibyZ5JT2I1eLD8nIefnNPeao"
+    },
+    {
+      "formTitle": "S8·C3 Diferencia de cuadrados — Quiz",
+      "titulo": "S8·C3 Diferencia de cuadrados",
+      "editUrl": "https://docs.google.com/forms/d/1VtHdolWKk_DQ9YfcpGpPdAIZLhD3iTpQXLabOnXGgQQ/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScVyXjuUlz5_CtPcvyGYg--qOEXXbjiGhRMMiFq9e3jdFBEwg/viewform",
+      "modified": "2026-06-19T22:36:04.374Z",
+      "fileId": "1VtHdolWKk_DQ9YfcpGpPdAIZLhD3iTpQXLabOnXGgQQ"
+    },
+    {
+      "formTitle": "S8·C4 Cubos y agrupación — Quiz",
+      "titulo": "S8·C4 Cubos y agrupación",
+      "editUrl": "https://docs.google.com/forms/d/1_ZhRvGSUlcR-QqWgHV3B_kKi4xGHKyUpQgXIHq1ZrvM/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf7l9sxFuDTYq3CS5-4o74zT4ZyXIm40oN8_jju-huichs-fg/viewform",
+      "modified": "2026-06-19T22:36:22.408Z",
+      "fileId": "1_ZhRvGSUlcR-QqWgHV3B_kKi4xGHKyUpQgXIHq1ZrvM"
+    },
+    {
+      "formTitle": "S9·Auto Ejercicios de fracciones algebraicas — Quiz",
+      "titulo": "S9·Auto Ejercicios de fracciones algebraicas",
+      "editUrl": "https://docs.google.com/forms/d/1-3kX3wkXSyZy6jxk_DmzUVjlY6U5_bcVuM6327ZovgI/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSevCuvmh-rrtWkEHAjBrC2PyLEPmsMHjCPvqKsjxgYTskiToA/viewform",
+      "modified": "2026-06-19T22:36:53.507Z",
+      "fileId": "1-3kX3wkXSyZy6jxk_DmzUVjlY6U5_bcVuM6327ZovgI"
+    },
+    {
+      "formTitle": "S9·C1 División de monomios — Quiz",
+      "titulo": "S9·C1 División de monomios",
+      "editUrl": "https://docs.google.com/forms/d/18pK64YpajdZRAfTtSdf1EztuWKWOfLkYvj1ZUa6wNkA/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf6rsQ8PHvJ9Mw-rDndHJ-2skkt3rm0GUgPXugbvjZ7Xqyepg/viewform",
+      "modified": "2026-06-19T22:37:11.403Z",
+      "fileId": "18pK64YpajdZRAfTtSdf1EztuWKWOfLkYvj1ZUa6wNkA"
+    },
+    {
+      "formTitle": "S9·C2 División de polinomio entre monomio — Quiz",
+      "titulo": "S9·C2 División de polinomio entre monomio",
+      "editUrl": "https://docs.google.com/forms/d/1YQZaXU1a5FbfHp6wpjC89Y0qaNjzbf395XaMz5_STJU/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLScCYlLhX7Q5PzPSDTe256W9ilxmyB-LNyTyH2e9T_oi08jNBg/viewform",
+      "modified": "2026-06-19T22:37:30.120Z",
+      "fileId": "1YQZaXU1a5FbfHp6wpjC89Y0qaNjzbf395XaMz5_STJU"
+    },
+    {
+      "formTitle": "S9·C3 División de polinomios — algoritmo de la división — Quiz",
+      "titulo": "S9·C3 División de polinomios — algoritmo de la división",
+      "editUrl": "https://docs.google.com/forms/d/1KHy3530qXXQZgB5oA2nN12gfR_wx-el4Lqu_1c_kSW4/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe6hcb19Gu0AW-vGkTdjZ11YOjrdkHRmyOaN90epkmjCdB_9w/viewform",
+      "modified": "2026-06-19T22:37:48.157Z",
+      "fileId": "1KHy3530qXXQZgB5oA2nN12gfR_wx-el4Lqu_1c_kSW4"
+    },
+    {
+      "formTitle": "S9·C4 Simplificación, multiplicación y división de fracciones algebraicas — Quiz",
+      "titulo": "S9·C4 Simplificación, multiplicación y división de fracciones algebraicas",
+      "editUrl": "https://docs.google.com/forms/d/1Y_Q1e5Rzx8xHrBR5jlRemL3QF9q2nZp0RnahPPNR6jQ/edit",
+      "publicUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfIwQG3jfh0gbOG4NeDfkkeJN_mQfN72jE3DS-z4ZBEu36c6A/viewform",
+      "modified": "2026-06-19T22:38:06.789Z",
+      "fileId": "1Y_Q1e5Rzx8xHrBR5jlRemL3QF9q2nZp0RnahPPNR6jQ"
+    }
+  ]
+}

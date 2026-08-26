@@ -1,0 +1,46 @@
+{
+  "bloques": [
+    {
+      "archivo": "1_4_bloque1.mp3",
+      "titulo": "Pertenencia",
+      "inicio_s": 0.0,
+      "duracion_s": 20.506,
+      "fin_s": 20.506
+    },
+    {
+      "archivo": "1_4_bloque2.mp3",
+      "titulo": "Los dos simbolos",
+      "inicio_s": 20.506,
+      "duracion_s": 18.364,
+      "fin_s": 38.87
+    },
+    {
+      "archivo": "1_4_bloque3.mp3",
+      "titulo": "Ejemplos en ingenieria mecanica",
+      "inicio_s": 38.87,
+      "duracion_s": 31.791,
+      "fin_s": 70.661
+    },
+    {
+      "archivo": "1_4_bloque4.mp3",
+      "titulo": "Errores comunes",
+      "inicio_s": 70.661,
+      "duracion_s": 23.797,
+      "fin_s": 94.459
+    },
+    {
+      "archivo": "1_4_bloque5.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 94.459,
+      "duracion_s": 14.367,
+      "fin_s": 108.826
+    }
+  ],
+  "section_starts": [
+    0.0,
+    20.506,
+    38.87,
+    70.661,
+    94.459
+  ]
+}

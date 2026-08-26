@@ -51,18 +51,15 @@ sphinx:
     html_baseurl         : https://z3pineda.github.io/Algebra/
     html_static_path:
       - assets
-      - custom.css
     exclude_patterns:
-      - _build/**
-      - .git/**
-      - manim/**
-      - pipeline_*/**
-      - apps_script/**
-      - VideosManim/**
-      - public/**
-      - "**/.venv/**"
-      - "**/__pycache__/**"
+      - _build
+      - .git
+      - manim
+      - apps_script
+      - VideosManim
+      - public
       - system_prompt.md
+      - pipeline_*
     language             : es
     html_show_sourcelink : false
     suppress_warnings    :

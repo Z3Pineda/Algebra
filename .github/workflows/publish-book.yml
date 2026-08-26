@@ -21,18 +21,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install jupyter-book
+          python -m pip install "jupyter-book==1.0.4.post1"
 
       - name: Build book
         run: |
-          jupyter-book build . --verbose
-          if [ ! -f _build/html/index.html ]; then
-            echo "ERROR: _build/html/index.html was not created."
-            ls -la _build || true
-            exit 1
-          fi
-          echo "Build OK — pages generated:"
-          ls _build/html | head
+          set -euxo pipefail
+          jupyter-book build . --verbose 2>&1 | tee build.log
+          test -f _build/html/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

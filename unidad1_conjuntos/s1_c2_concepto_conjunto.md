@@ -134,10 +134,12 @@ Si $|L| > 0$, hay al menos una pieza defectuosa — se detiene la línea.
 
 ## Descargar clase en PDF
 
+Descarga el **apunte completo de esta clase** (PDF preparado por la docente). No uses el menú del navegador «Imprimir»; ese genera otra versión de la página web.
+
 ```{raw} html
 <div class="quizizz-link">
-  <a href="../_static/s1_c2_concepto_conjunto.pdf" target="_blank" class="quizizz-btn" download>
-    📄 Descargar clase en PDF
+  <a href="../_static/s1_c2_concepto_conjunto.pdf" class="pdf-btn" download="s1_c2_concepto_conjunto.pdf">
+    📄 Descargar apunte en PDF
   </a>
 </div>
 ```

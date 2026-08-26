@@ -157,10 +157,12 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 
 ## Descargar clase en PDF
 
+Descarga el **apunte completo de esta clase** (PDF preparado por la docente). No uses el menú del navegador «Imprimir»; ese genera otra versión de la página web.
+
 ```{raw} html
 <div class="quizizz-link">
-  <a href="../_static/s1_c3_representacion_conjuntos.pdf" target="_blank" class="quizizz-btn" download>
-    📄 Descargar clase en PDF
+  <a href="../_static/s1_c3_representacion_conjuntos.pdf" class="pdf-btn" download="s1_c3_representacion_conjuntos.pdf">
+    📄 Descargar apunte en PDF
   </a>
 </div>
 ```

@@ -48,6 +48,8 @@ repository:
 
 sphinx:
   config:
+    html_theme_options:
+      use_download_button : false
     html_baseurl         : https://z3pineda.github.io/Algebra/
     html_static_path:
       - assets

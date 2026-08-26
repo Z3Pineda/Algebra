@@ -41,7 +41,7 @@ $$P = \{2,\ 4,\ 6,\ \ldots,\ 100\} \qquad \mathbb{N} = \{0,\ 1,\ 2,\ 3,\ \ldots\
 ```{raw} html
 <div class="video-container">
   <iframe
-    src="https://youtu.be/5mSR9vn-Q7c"
+    src="https://www.youtube.com/embed/5mSR9vn-Q7c"
     allowfullscreen>
   </iframe>
 </div>
@@ -73,7 +73,7 @@ Escribirlo por extensión sería imposible — hay infinitos valores reales entr
 ```{raw} html
 <div class="video-container">
   <iframe
-    src="https://youtu.be/Odm3Eo7gSI0"
+    src="https://www.youtube.com/embed/Odm3Eo7gSI0"
     allowfullscreen>
   </iframe>
 </div>
@@ -83,7 +83,7 @@ Escribirlo por extensión sería imposible — hay infinitos valores reales entr
 ```{raw} html
 <div class="video-container">
   <iframe
-    src="https://youtu.be/IgPsLRBy-JA"
+    src="https://www.youtube.com/embed/IgPsLRBy-JA"
     allowfullscreen>
   </iframe>
 </div>
@@ -107,7 +107,7 @@ Representación **visual** usando figuras geométricas:
 ```{raw} html
 <div class="video-container">
   <iframe
-    src="https://youtu.be/MOlPgpg1gc0"
+    src="https://www.youtube.com/embed/MOlPgpg1gc0"
     allowfullscreen>
   </iframe>
 </div>
@@ -121,7 +121,7 @@ Representación **visual** usando figuras geométricas:
 ```{raw} html
 <div class="video-container">
   <iframe
-    src="https://youtu.be/oDUlQkI_Vek"
+    src="https://www.youtube.com/embed/oDUlQkI_Vek"
     allowfullscreen>
   </iframe>
 </div>
@@ -147,7 +147,7 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 ```{raw} html
 <div class="video-container">
   <iframe
-    src="https://youtu.be/45rgzcvWcNM"
+    src="https://www.youtube.com/embed/45rgzcvWcNM"
     allowfullscreen>
   </iframe>
 </div>

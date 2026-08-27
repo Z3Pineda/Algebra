@@ -98,6 +98,19 @@ Representación **visual** usando figuras geométricas:
 - Los **círculos** = cada conjunto
 - Los **puntos** dentro = elementos
 
+### Video
+
+```{raw} html
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/TDnw6p9uACc"
+    allowfullscreen>
+  </iframe>
+</div>
+```
+
+
+
 **Problema**
 
 >En un taller hay 30 piezas. 18 necesitan lubricación. 12 tienen dureza mayor a 60 HRC. 7 cumplen las dos condiciones. ¿Cuántas piezas cumplen al menos una?"

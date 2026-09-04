@@ -151,116 +151,12 @@ $$S = \{0, 1, 6, 7\}$$
 ```{raw} html
 <div class="video-container">
   <iframe
-    src="https://www.youtube.com/embed/REEMPLAZA_ID_YOUTUBE_CONJUNTO_SOLUCION"
+    src="https://www.youtube.com/embed/Gt6NUQh1g5U"
     allowfullscreen>
   </iframe>
 </div>
 ```
 
-```{note}
-**Para el docente — video Manim sugerido (~4 min):**
-1. Mostrar una proposición abierta P(x): x+3>6 con el universo U={1,...,7}
-2. Animar la evaluación uno a uno: cada valor se prueba, los que pasan se iluminan en verde
-3. Los valores verdes forman el conjunto S={4,5,6,7}
-4. Mostrar el caso S=∅ con animación (ningún valor pasa)
-5. Mostrar S=U (todos pasan)
-6. Cierre: la línea CNC evaluando ejes — los aprobados forman el conjunto solución
-```
-
----
-
-## Visualización interactiva
-
-Mueve el deslizador para cambiar el límite de la proposición $P(x): x > k$ y observa cómo cambia el conjunto solución en el universo $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$.
-
-```{raw} html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraph.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js"></script>
-
-<div id="jxg-s2c2-solucion" class="jsxgraph-container"></div>
-
-<script>
-(function() {
-    function init() {
-        if (typeof JXG === 'undefined') { setTimeout(init, 200); return; }
-        JXG.Options.text.useMathJax = false;
-        var board = JXG.JSXGraph.initBoard('jxg-s2c2-solucion', {
-            boundingbox: [-1, 6, 12, -4],
-            axis: false, showCopyright: false, showNavigation: false,
-            pan: { enabled: false }, zoom: { enabled: false }
-        });
-
-        var universo = [1,2,3,4,5,6,7,8,9,10];
-
-        // Deslizador para k
-        var slK = board.create('slider',
-            [[0, -1],[10, -1],[0, 4, 10]], {
-            name: 'k', snapWidth: 1,
-            label: { fontSize: 12 },
-            baseline: { strokeColor: '#374151' },
-            highline:  { strokeColor: '#7c3aed' },
-            fillColor: '#7c3aed'
-        });
-
-        // Recta numérica
-        board.create('line', [[0.5, 1],[10.5, 1]], {
-            strokeColor: '#374151', strokeWidth: 2,
-            straightFirst: false, straightLast: false
-        });
-
-        // Puntos del universo
-        universo.forEach(function(n) {
-            board.create('point', [n, 1], {
-                size: function() { return 8; },
-                color: function() {
-                    return n > Math.round(slK.Value()) ? '#16a34a' : '#9ca3af';
-                },
-                fixed: true, name: String(n),
-                label: {
-                    offset: [0, -20], fontSize: 12,
-                    color: function() {
-                        return n > Math.round(slK.Value()) ? '#166534' : '#6b7280';
-                    }
-                }
-            });
-        });
-
-        // Proposición dinámica
-        board.create('text', [5.5, 4.5, function() {
-            return 'P(x): x > ' + Math.round(slK.Value());
-        }], { fontSize: 16, color: '#7c3aed', fontWeight: 'bold', anchorX: 'middle' });
-
-        // Conjunto solución
-        board.create('text', [5.5, 3.5, function() {
-            var k = Math.round(slK.Value());
-            var sol = universo.filter(function(n) { return n > k; });
-            if (sol.length === 0) return 'S = vacio  |S| = 0';
-            if (sol.length === universo.length) return 'S = U  |S| = ' + universo.length;
-            return 'S = {' + sol.join(', ') + '}  |S| = ' + sol.length;
-        }], { fontSize: 14, color: '#16a34a', fontWeight: 'bold', anchorX: 'middle' });
-
-        // Complemento
-        board.create('text', [5.5, 2.5, function() {
-            var k = Math.round(slK.Value());
-            var noSol = universo.filter(function(n) { return n <= k; });
-            if (noSol.length === 0) return 'S\' = vacio  (P(x) siempre verdadera)';
-            return 'S\' = {' + noSol.join(', ') + '}  (no cumplen P(x))';
-        }], { fontSize: 12, color: '#dc2626', anchorX: 'middle' });
-
-        board.create('text', [5.5, -2.5,
-            'Mueve el deslizador para cambiar k'], {
-            fontSize: 11, color: '#6b7280', fontStyle: 'italic', anchorX: 'middle'
-        });
-    }
-    init();
-})();
-</script>
-```
-
-```{note}
-**Para el docente — visualización:**
-El deslizador controla el valor k en la proposición P(x): x > k. Los puntos cambian de gris a verde según si cumplen la condición. El conjunto solución S y su complemento S' se actualizan en tiempo real. Cuando k=0 todos entran (S=U); cuando k=10 ninguno entra (S=∅).
-```
 
 ---
 
@@ -274,28 +170,7 @@ El deslizador controla el valor k en la proposición P(x): x > k. Los puntos cam
 </div>
 ```
 
-```{note}
-**Para el docente — actividad Quizizz (8 preguntas, ~10 min):**
 
-P1 (Fill): "Sea P(x): x-2=5, U=ℤ. El conjunto solución es S={___}." → 7
-
-P2 (MC): "Sea P(x): x²=4, U=ℤ. ¿Cuál es S?"
-- a) {4}  b) {2}  c) {-2, 2} ✅  d) {-4, 4}
-
-P3 (Fill): "Sea P(x): x>3, U={1,2,3,4,5}. S={___,___}." → 4, 5
-
-P4 (T/F): "Si ningún valor de U hace verdadera P(x), entonces S=U." → Falso (S=∅)
-
-P5 (MC ingeniería): "Se evalúa P(d): 24.5≤d≤25.5 para d={24.3, 25.0, 25.7}. ¿Cuál es S?"
-- a) {24.3, 25.0}  b) {25.0} ✅  c) {24.3, 25.7}  d) {24.3, 25.0, 25.7}
-
-P6 (Fill): "Sea P(x): x>2 ∧ x<6, U=ℕ. S={___,___,___}." → 3, 4, 5
-
-P7 (MC): "Sea P(x): x<1 ∨ x>4, U={0,1,2,3,4,5,6}. ¿Cuál es S?"
-- a) {0,5,6} ✅  b) {1,2,3,4}  c) {0,1,5,6}  d) {2,3}
-
-P8 (T/F): "P(x): x=x siempre es verdadera, por lo tanto S=U." → Verdadero
-```
 
 ---
 

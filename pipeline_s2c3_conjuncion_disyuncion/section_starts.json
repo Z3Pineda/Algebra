@@ -1,0 +1,78 @@
+{
+  "bloques": [
+    {
+      "archivo": "s2c3_bloque1.mp3",
+      "titulo": "Apertura prensa y alarma",
+      "inicio_s": 0.0,
+      "duracion_s": 39.967,
+      "fin_s": 39.967
+    },
+    {
+      "archivo": "s2c3_bloque2.mp3",
+      "titulo": "Conjuncion",
+      "inicio_s": 39.967,
+      "duracion_s": 32.784,
+      "fin_s": 72.751
+    },
+    {
+      "archivo": "s2c3_bloque3.mp3",
+      "titulo": "Prensa interlock",
+      "inicio_s": 72.751,
+      "duracion_s": 37.433,
+      "fin_s": 110.184
+    },
+    {
+      "archivo": "s2c3_bloque4.mp3",
+      "titulo": "Disyuncion",
+      "inicio_s": 110.184,
+      "duracion_s": 19.487,
+      "fin_s": 129.672
+    },
+    {
+      "archivo": "s2c3_bloque5.mp3",
+      "titulo": "Sistema alarma",
+      "inicio_s": 129.672,
+      "duracion_s": 25.626,
+      "fin_s": 155.298
+    },
+    {
+      "archivo": "s2c3_bloque6.mp3",
+      "titulo": "Diferencia clave",
+      "inicio_s": 155.298,
+      "duracion_s": 18.808,
+      "fin_s": 174.106
+    },
+    {
+      "archivo": "s2c3_bloque7.mp3",
+      "titulo": "Conexion conjuntos",
+      "inicio_s": 174.106,
+      "duracion_s": 32.914,
+      "fin_s": 207.02
+    },
+    {
+      "archivo": "s2c3_bloque8.mp3",
+      "titulo": "Ejemplo numerico",
+      "inicio_s": 207.02,
+      "duracion_s": 41.221,
+      "fin_s": 248.241
+    },
+    {
+      "archivo": "s2c3_bloque9.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 248.241,
+      "duracion_s": 12.016,
+      "fin_s": 260.258
+    }
+  ],
+  "section_starts": [
+    0.0,
+    39.967,
+    72.751,
+    110.184,
+    129.672,
+    155.298,
+    174.106,
+    207.02,
+    248.241
+  ]
+}

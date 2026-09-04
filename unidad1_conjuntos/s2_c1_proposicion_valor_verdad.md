@@ -115,19 +115,6 @@ El conjunto $A$ contiene exactamente los valores de $x$ para los que $P(x)$ es *
 </div>
 ```
 
-```{note}
-**Para el docente — actividad Quizizz (8 preguntas, ~10 min):**
-
-P1 (MC): "¿Cuál es una proposición?" → "La presión hidráulica es 55 bar"
-P2 (T/F): "'¡Detener la operación!' es una proposición." → Falso
-P3 (MC): "¿Por qué 'temperatura alta' NO es proposición?" → "alta" es ambiguo
-P4 (T/F): "Una proposición abierta P(x) tiene valor de verdad fijo." → Falso
-P5 (Fill): "Sea P(x): x+3=10. El valor de P(7) es ___." → Verdadero
-P6 (Fill): "Sea P(x): x+3=10. El valor de P(5) es ___." → Falso
-P7 (MC): "Conjunto solución de P(x): x²=16 en ℤ:" → {-4, 4}
-P8 (MC ingeniería): "Sistema evalúa P(d): 24.5≤d≤25.5. Eje con d=25.6..." → Se rechaza
-```
-
 ---
 
 ## Resumen

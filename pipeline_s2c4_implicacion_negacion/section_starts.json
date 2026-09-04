@@ -1,0 +1,86 @@
+{
+  "bloques": [
+    {
+      "archivo": "s2c4_bloque1.mp3",
+      "titulo": "Apertura horno",
+      "inicio_s": 0.0,
+      "duracion_s": 26.749,
+      "fin_s": 26.749
+    },
+    {
+      "archivo": "s2c4_bloque2.mp3",
+      "titulo": "Negacion",
+      "inicio_s": 26.749,
+      "duracion_s": 15.882,
+      "fin_s": 42.632
+    },
+    {
+      "archivo": "s2c4_bloque3.mp3",
+      "titulo": "Negacion en ingenieria",
+      "inicio_s": 42.632,
+      "duracion_s": 31.895,
+      "fin_s": 74.527
+    },
+    {
+      "archivo": "s2c4_bloque4.mp3",
+      "titulo": "De Morgan",
+      "inicio_s": 74.527,
+      "duracion_s": 43.886,
+      "fin_s": 118.413
+    },
+    {
+      "archivo": "s2c4_bloque5.mp3",
+      "titulo": "Implicacion",
+      "inicio_s": 118.413,
+      "duracion_s": 23.719,
+      "fin_s": 142.132
+    },
+    {
+      "archivo": "s2c4_bloque6.mp3",
+      "titulo": "p falsa en implicacion",
+      "inicio_s": 142.132,
+      "duracion_s": 19.174,
+      "fin_s": 161.306
+    },
+    {
+      "archivo": "s2c4_bloque7.mp3",
+      "titulo": "Horno industrial",
+      "inicio_s": 161.306,
+      "duracion_s": 40.02,
+      "fin_s": 201.326
+    },
+    {
+      "archivo": "s2c4_bloque8.mp3",
+      "titulo": "Negacion implicacion",
+      "inicio_s": 201.326,
+      "duracion_s": 18.286,
+      "fin_s": 219.611
+    },
+    {
+      "archivo": "s2c4_bloque9.mp3",
+      "titulo": "Tabla cuatro conectivos",
+      "inicio_s": 219.611,
+      "duracion_s": 26.096,
+      "fin_s": 245.708
+    },
+    {
+      "archivo": "s2c4_bloque10.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 245.708,
+      "duracion_s": 21.812,
+      "fin_s": 267.52
+    }
+  ],
+  "section_starts": [
+    0.0,
+    26.749,
+    42.632,
+    74.527,
+    118.413,
+    142.132,
+    161.306,
+    201.326,
+    219.611,
+    245.708
+  ]
+}

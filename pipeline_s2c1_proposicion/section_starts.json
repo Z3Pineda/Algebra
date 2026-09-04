@@ -1,0 +1,62 @@
+{
+  "bloques": [
+    {
+      "archivo": "s2c1_bloque1.mp3",
+      "titulo": "Apertura",
+      "inicio_s": 0.0,
+      "duracion_s": 25.731,
+      "fin_s": 25.731
+    },
+    {
+      "archivo": "s2c1_bloque2.mp3",
+      "titulo": "Panel fresadora",
+      "inicio_s": 25.731,
+      "duracion_s": 49.215,
+      "fin_s": 74.945
+    },
+    {
+      "archivo": "s2c1_bloque3.mp3",
+      "titulo": "Definicion",
+      "inicio_s": 74.945,
+      "duracion_s": 29.858,
+      "fin_s": 104.803
+    },
+    {
+      "archivo": "s2c1_bloque4.mp3",
+      "titulo": "Ambiguo vs preciso",
+      "inicio_s": 104.803,
+      "duracion_s": 25.495,
+      "fin_s": 130.299
+    },
+    {
+      "archivo": "s2c1_bloque5.mp3",
+      "titulo": "Proposicion abierta",
+      "inicio_s": 130.299,
+      "duracion_s": 28.682,
+      "fin_s": 158.981
+    },
+    {
+      "archivo": "s2c1_bloque6.mp3",
+      "titulo": "Conjunto solucion",
+      "inicio_s": 158.981,
+      "duracion_s": 36.545,
+      "fin_s": 195.526
+    },
+    {
+      "archivo": "s2c1_bloque7.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 195.526,
+      "duracion_s": 23.667,
+      "fin_s": 219.193
+    }
+  ],
+  "section_starts": [
+    0.0,
+    25.731,
+    74.945,
+    104.803,
+    130.299,
+    158.981,
+    195.526
+  ]
+}

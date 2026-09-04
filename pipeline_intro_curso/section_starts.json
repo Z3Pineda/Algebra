@@ -1,0 +1,38 @@
+{
+  "bloques": [
+    {
+      "archivo": "intro_bloque1.mp3",
+      "titulo": "Pregunta detonadora",
+      "inicio_s": 0.0,
+      "duracion_s": 23.719,
+      "fin_s": 23.719
+    },
+    {
+      "archivo": "intro_bloque2.mp3",
+      "titulo": "Datos que cambian",
+      "inicio_s": 23.719,
+      "duracion_s": 24.607,
+      "fin_s": 48.326
+    },
+    {
+      "archivo": "intro_bloque3.mp3",
+      "titulo": "Cinco unidades",
+      "inicio_s": 48.326,
+      "duracion_s": 49.998,
+      "fin_s": 98.325
+    },
+    {
+      "archivo": "intro_bloque4.mp3",
+      "titulo": "Cierre",
+      "inicio_s": 98.325,
+      "duracion_s": 15.177,
+      "fin_s": 113.502
+    }
+  ],
+  "section_starts": [
+    0.0,
+    23.719,
+    48.326,
+    98.325
+  ]
+}

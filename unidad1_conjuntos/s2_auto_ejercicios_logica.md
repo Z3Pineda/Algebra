@@ -373,11 +373,6 @@ Selecciona una expresión y observa su tabla de verdad completa con interpretaci
 </script>
 ```
 
-```{note}
-**Para el docente — visualización:**
-Cuatro botones muestran la tabla de verdad de cada conectivo. Las filas se colorean en verde (V) o rojo (F). Útil para que el alumno compare visualmente los cuatro conectivos y detecte patrones (cuándo cada uno es V o F).
-```
-
 ---
 
 ## Quiz de cierre — Semana 2
@@ -390,16 +385,7 @@ Cuatro botones muestran la tabla de verdad de cada conectivo. Las filas se color
 </div>
 ```
 
-```{note}
-**Para el docente — Quiz Quizizz (12 preguntas, ~15 min):**
 
-Proposiciones (2): "3×4=13" es proposición F, "¿Cuántos engranes...?" no es proposición
-Conjunto solución (3): 2x-1=7 → S={4}, x²-4=0 → S={-2,2}, x>3∧x<8 con U dado → S={4,5,6,7}
-Tablas de verdad (3): ¬p∧q es V solo cuando p=F y q=V, p→¬q es F cuando p=V y q=V, p∧q es V solo si ambas V
-Implicación y De Morgan (4): ¬(p∧q)≡¬p∨¬q, ¬(v∨s)≡¬v∧¬s, (p∧q)→r es F cuando p∧q=V y r=F, condición de arranque CNC
-
-Configuración: mostrar respuesta correcta al terminar, sin tiempo límite.
-```
 
 ---
 

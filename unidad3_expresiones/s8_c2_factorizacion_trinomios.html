@@ -1,0 +1,1000 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>37. S8·C2 Factorización de trinomios &#8212; Álgebra para Ingeniería Mecánica</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=5f4a6556" />
+    <link rel="stylesheet" type="text/css" href="../_static/js/jsxgraph.css?v=fe8723f5" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unidad3_expresiones/s8_c2_factorizacion_trinomios';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/js/jsxgraphcore.js?v=976eb28f"></script>
+    <link rel="canonical" href="https://z3pineda.github.io/Algebra/unidad3_expresiones/s8_c2_factorizacion_trinomios.html" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="38. S8·C3 Diferencia de cuadrados" href="s8_c3_diferencia_cuadrados.html" />
+    <link rel="prev" title="36. S8·C1 Factor común" href="s8_c1_factor_comun.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../landing.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Álgebra para Ingeniería Mecánica</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 1 — Conjuntos y Lógica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c1_presentacion_diagnostico.html">1. S1·C1 Presentación del curso y diagnóstico de aritmética</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c2_concepto_conjunto.html">2. S1·C2 Concepto de conjunto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c3_representacion_conjuntos.html">3. S1·C3 Representación de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c4_operaciones_basicas.html">4. S1·C4 Operaciones básicas con conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_auto_repaso_conjuntos.html">5. S1·Auto Repaso de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c1_proposicion_valor_verdad.html">6. S2·C1 Proposición y valor de verdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c2_conjunto_solucion.html">7. S2·C2 Conjunto solución de una proposición abierta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c3_conjuncion_disyuncion.html">8. S2·C3 Conjunción y disyunción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c4_implicacion_negacion.html">9. S2·C4 Implicación y negación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_auto_ejercicios_logica.html">10. S2·Auto Ejercicios de lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c1_tipos_conjuntos.html">11. S3·C1 Tipos de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c2_venn_dos_conjuntos.html">12. S3·C2 Diagramas de Venn con dos conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c3_venn_tres_conjuntos.html">13. S3·C3 Diagramas de Venn con tres conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c4_problemas_aplicados.html">14. S3·C4 Problemas aplicados con conjuntos y lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_auto_tarea_integradora.html">15. S3·Auto Tarea integradora — Unidad 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 2 — Números Reales y Funciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c1_numeros_naturales_enteros.html">16. S4·C1 Números naturales, enteros, racionales, irracionales y reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c2_recta_numerica.html">17. S4·C2 La recta numérica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c3_propiedades_reales.html">18. S4·C3 Propiedades de los números reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c4_producto_cartesiano.html">19. S4·C4 Producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_auto_clasificacion_numeros.html">20. S4·Auto Clasificación de números y producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c1_concepto_relacion.html">21. S5·C1 Concepto de relación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c2_concepto_funcion.html">22. S5·C2 Concepto de función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c3_relacion_vs_funcion.html">23. S5·C3 Diferencia entre relación y función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c4_dominio_rango.html">24. S5·C4 Dominio y rango de una función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_auto_identificacion_funciones.html">25. S5·Auto Identificación de funciones, dominio y rango</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 3 — Expresiones Algebraicas</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="s6_c1_propiedades_igualdad.html">26. S6·C1 Propiedades de la igualdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c2_expresion_algebraica_terminos.html">27. S6·C2 Expresión algebraica y términos semejantes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c3_suma_resta_expresiones.html">28. S6·C3 Suma y resta de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c4_multiplicacion_expresiones.html">29. S6·C4 Multiplicación de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_auto_simplificacion_algebraica.html">30. S6·Auto Ejercicios de simplificación algebraica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c1_binomio_cuadrado.html">31. S7·C1 Binomio al cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c2_binomios_conjugados.html">32. S7·C2 Producto de binomios conjugados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c3_binomio_cubo.html">33. S7·C3 Binomio al cubo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c4_binomio_por_trinomio.html">34. S7·C4 Producto de un binomio por un trinomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_auto_productos_notables.html">35. S7·Auto Práctica de productos notables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c1_factor_comun.html">36. S8·C1 Factor común</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">37. S8·C2 Factorización de trinomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c3_diferencia_cuadrados.html">38. S8·C3 Diferencia de cuadrados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c4_cubos_agrupacion.html">39. S8·C4 Cubos y agrupación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_auto_factorizacion.html">40. S8·Auto Ejercicios de factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c1_division_monomios.html">41. S9·C1 División de monomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c2_division_polinomio_monomio.html">42. S9·C2 División de polinomio entre monomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c3_division_polinomios.html">43. S9·C3 División de polinomios — algoritmo de la división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c4_fracciones_algebraicas.html">44. S9·C4 Simplificación, multiplicación y división de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_auto_fracciones_algebraicas.html">45. S9·Auto Ejercicios de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c1_exponentes_enteros.html">46. S10·C1 Exponentes enteros y exponente cero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c2_exponentes_negativos_fraccionarios.html">47. S10·C2 Exponentes negativos y fraccionarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c3_radicales.html">48. S10·C3 Radicales — suma, resta, producto y división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c4_factorial_combinatorios_binomio.html">49. S10·C4 Factorial, combinatorios y teorema del binomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_auto_repaso_unidad3.html">50. S10·Auto Repaso general Unidad 3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 4 — Ecuaciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c1_concepto_ecuacion_identidad.html">51. S11·C1 Concepto de ecuación e identidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c2_ecuaciones_lineales.html">52. S11·C2 Ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c3_ecuaciones_con_literales.html">53. S11·C3 Ecuaciones con literales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c4_ecuaciones_con_fracciones.html">54. S11·C4 Ecuaciones con fracciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_auto_modelacion_ecuaciones.html">55. S11·Auto Problemas de modelación con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c1_modelacion_ecuaciones_lineales.html">56. S12·C1 Modelación de situaciones con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c2_sistemas_dos_ecuaciones.html">57. S12·C2 Sistemas de dos ecuaciones con dos incógnitas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c3_metodo_sustitucion.html">58. S12·C3 Método de sustitución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c4_metodo_suma_resta_grafico.html">59. S12·C4 Método de suma o resta y solución gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_auto_comparacion_metodos.html">60. S12·Auto Ejercicios comparativos de métodos de solución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c1_concepto_ecuacion_cuadratica.html">61. S13·C1 Concepto de ecuación cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c2_solucion_factorizacion.html">62. S13·C2 Solución por factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c3_forma_x_mas_a_cuadrado.html">63. S13·C3 Ecuaciones de la forma (x+a)²=b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c4_completando_cuadrados.html">64. S13·C4 Completando el cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_auto_ecuaciones_cuadraticas.html">65. S13·Auto Práctica de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c1_formula_general.html">66. S14·C1 Fórmula general</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c2_ecuaciones_con_radicales.html">67. S14·C2 Ecuaciones con radicales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c3_ecuaciones_forma_cuadratica.html">68. S14·C3 Ecuaciones de forma cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c4_sistemas_lineal_cuadratica.html">69. S14·C4 Sistemas con una ecuación lineal y una cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_auto_aplicacion_verificacion.html">70. S14·Auto Ejercicios de aplicación y verificación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c1_sistemas_cuadraticos.html">71. S15·C1 Sistemas de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c2_funcion_polinomial_grado_n.html">72. S15·C2 Función polinomial de grado n</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c3_division_sintetica_residuo.html">73. S15·C3 División sintética y teorema del residuo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c4_teorema_factor_raices.html">74. S15·C4 Teorema del factor, raíces y teorema fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_auto_repaso_unidad4.html">75. S15·Auto Repaso general Unidad 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 5 — Desigualdades</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c1_valor_absoluto_grafico.html">76. S16·C1 Valor absoluto e interpretación gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c2_ecuaciones_valor_absoluto.html">77. S16·C2 Ecuaciones con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c3_desigualdades_valor_absoluto.html">78. S16·C3 Desigualdades con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c4_repaso_general.html">79. S16·C4 Repaso general del curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_auto_cierre_curso.html">80. S16·Auto Entrega de evidencias y preparación para examen final</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S8·C2 Factorización de trinomios</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">37.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-trinomio-cuadratico">37.1.1. ¿Qué es un trinomio cuadrático?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-1-x-2-bx-c-coeficiente-principal-a-1">37.1.2. Caso 1: <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span> (coeficiente principal <span class="math notranslate nohighlight">\(a = 1\)</span>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-tanteo-x-2-bx-c">37.1.3. Método de tanteo (<span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-2-ax-2-bx-c-con-a-neq-1">37.1.4. Caso 2: <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span> con <span class="math notranslate nohighlight">\(a \neq 1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verificacion">37.1.5. Verificación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conexion-con-ingenieria">37.1.6. Conexión con ingeniería</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuando-usar-cada-metodo">37.1.7. Cuándo usar cada método</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">37.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">37.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">37.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">37.5. Resumen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s8c2-factorizacion-de-trinomios">
+<h1><span class="section-number">37. </span>S8·C2 Factorización de trinomios<a class="headerlink" href="#s8c2-factorizacion-de-trinomios" title="Link to this heading">#</a></h1>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Ecuación de movimiento de un pistón</p>
+<p>La posición vertical de un pistón (en cm) se modela con:</p>
+<div class="math notranslate nohighlight">
+\[s(t) = t^2 - 7t + 12\]</div>
+<p>El ingeniero necesita saber <strong>en qué instantes</strong> el pistón pasa por la posición de referencia <span class="math notranslate nohighlight">\(s = 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[t^2 - 7t + 12 = 0\]</div>
+<p>En lugar de usar la fórmula general, puede <strong>factorizar</strong> el trinomio. Busca dos números que sumen <span class="math notranslate nohighlight">\(-7\)</span> y multipliquen <span class="math notranslate nohighlight">\(12\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[(-3) + (-4) = -7, \qquad (-3)(-4) = 12\]</div>
+<p>Entonces:</p>
+<div class="math notranslate nohighlight">
+\[t^2 - 7t + 12 = (t - 3)(t - 4) = 0\]</div>
+<p>El pistón está en <span class="math notranslate nohighlight">\(s = 0\)</span> cuando <span class="math notranslate nohighlight">\(t = 3\)</span> s o <span class="math notranslate nohighlight">\(t = 4\)</span> s. La factorización convierte una ecuación cuadrática en <strong>dos ecuaciones lineales</strong> mucho más sencillas — una herramienta esencial en análisis de fuerzas y movimiento.</p>
+</div>
+<p><strong>Pregunta detonadora</strong></p>
+<blockquote>
+<div><p>En <span class="math notranslate nohighlight">\(x^2 + 5x + 6\)</span>, ¿qué dos números suman <span class="math notranslate nohighlight">\(5\)</span> y multiplican <span class="math notranslate nohighlight">\(6\)</span>? ¿Cómo escribirías el trinomio como producto de dos binomios?</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="teoria">
+<h2><span class="section-number">37.1. </span>Teoría<a class="headerlink" href="#teoria" title="Link to this heading">#</a></h2>
+<section id="que-es-un-trinomio-cuadratico">
+<h3><span class="section-number">37.1.1. </span>¿Qué es un trinomio cuadrático?<a class="headerlink" href="#que-es-un-trinomio-cuadratico" title="Link to this heading">#</a></h3>
+<p>Un <strong>trinomio cuadrático</strong> es una expresión de tres términos donde el mayor exponente es <span class="math notranslate nohighlight">\(2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ax^2 + bx + c \qquad (a \neq 0)\]</div>
+<p><strong>Factorizar</strong> un trinomio significa escribirlo como <strong>producto de dos binomios</strong>:</p>
+<div class="math notranslate nohighlight">
+\[ax^2 + bx + c = (\_x + \_)(\_x + \_)\]</div>
+<p>Si el trinomio proviene de multiplicar dos binomios, al factorizar «deshacemos» esa multiplicación — el proceso inverso del producto de binomios que viste en la semana 7.</p>
+</section>
+<hr class="docutils" />
+<section id="caso-1-x-2-bx-c-coeficiente-principal-a-1">
+<h3><span class="section-number">37.1.2. </span>Caso 1: <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span> (coeficiente principal <span class="math notranslate nohighlight">\(a = 1\)</span>)<a class="headerlink" href="#caso-1-x-2-bx-c-coeficiente-principal-a-1" title="Link to this heading">#</a></h3>
+<p>Cuando el coeficiente de <span class="math notranslate nohighlight">\(x^2\)</span> es <span class="math notranslate nohighlight">\(1\)</span>, buscamos dos números <span class="math notranslate nohighlight">\(m\)</span> y <span class="math notranslate nohighlight">\(n\)</span> tales que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} m + n = b \\ m \cdot n = c \end{cases}\end{split}\]</div>
+<p>Si los encontramos:</p>
+<div class="math notranslate nohighlight">
+\[x^2 + bx + c = (x + m)(x + n)\]</div>
+<p><strong>¿Por qué funciona?</strong> Al expandir <span class="math notranslate nohighlight">\((x+m)(x+n) = x^2 + (m+n)x + mn\)</span>, el término central es la <strong>suma</strong> y el término constante es el <strong>producto</strong>.</p>
+</section>
+<hr class="docutils" />
+<section id="metodo-de-tanteo-x-2-bx-c">
+<h3><span class="section-number">37.1.3. </span>Método de tanteo (<span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>)<a class="headerlink" href="#metodo-de-tanteo-x-2-bx-c" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Paso</p></th>
+<th class="head"><p>Acción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Listar los pares de factores de <span class="math notranslate nohighlight">\(c\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Buscar el par cuya <strong>suma</strong> sea <span class="math notranslate nohighlight">\(b\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Escribir <span class="math notranslate nohighlight">\((x + m)(x + n)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Verificar multiplicando</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Ejemplo 1:</strong></p>
+<div class="math notranslate nohighlight">
+\[x^2 + 7x + 12\]</div>
+<p>Factores de <span class="math notranslate nohighlight">\(12\)</span>: <span class="math notranslate nohighlight">\((1,12)\)</span>, <span class="math notranslate nohighlight">\((2,6)\)</span>, <span class="math notranslate nohighlight">\((3,4)\)</span>. El par que suma <span class="math notranslate nohighlight">\(7\)</span> es <span class="math notranslate nohighlight">\((3, 4)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[x^2 + 7x + 12 = (x + 3)(x + 4)\]</div>
+<p><strong>Ejemplo 2 — signos distintos:</strong></p>
+<div class="math notranslate nohighlight">
+\[x^2 - 5x + 6\]</div>
+<p>Necesitamos suma <span class="math notranslate nohighlight">\(-5\)</span> y producto <span class="math notranslate nohighlight">\(+6\)</span>. Como el producto es positivo, ambos números tienen el <strong>mismo signo</strong>. Como la suma es negativa, ambos son negativos: <span class="math notranslate nohighlight">\((-2)(-3) = 6\)</span> y <span class="math notranslate nohighlight">\((-2)+(-3) = -5\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[x^2 - 5x + 6 = (x - 2)(x - 3)\]</div>
+<p><strong>Ejemplo 3 — término constante negativo:</strong></p>
+<div class="math notranslate nohighlight">
+\[x^2 + x - 6\]</div>
+<p>Producto <span class="math notranslate nohighlight">\(-6\)</span> (signos opuestos). Suma <span class="math notranslate nohighlight">\(+1\)</span>: los números son <span class="math notranslate nohighlight">\(+3\)</span> y <span class="math notranslate nohighlight">\(-2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[x^2 + x - 6 = (x + 3)(x - 2)\]</div>
+<p><strong>Regla de signos para el tanteo:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Signo de <span class="math notranslate nohighlight">\(c\)</span></p></th>
+<th class="head text-center"><p>Signo de <span class="math notranslate nohighlight">\(b\)</span></p></th>
+<th class="head"><p>Signos de <span class="math notranslate nohighlight">\(m\)</span> y <span class="math notranslate nohighlight">\(n\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\)</span></p></td>
+<td><p>Ambos positivos</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(+\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\)</span></p></td>
+<td><p>Ambos negativos</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(-\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(+\)</span></p></td>
+<td><p>El mayor en valor absoluto es positivo</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(-\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\)</span></p></td>
+<td><p>El mayor en valor absoluto es negativo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>El método de tanteo solo funciona directamente cuando <span class="math notranslate nohighlight">\(a = 1\)</span>. Si el coeficiente de <span class="math notranslate nohighlight">\(x^2\)</span> es distinto de <span class="math notranslate nohighlight">\(1\)</span>, usa primero factor común (si existe) o el <strong>método AC</strong>.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="caso-2-ax-2-bx-c-con-a-neq-1">
+<h3><span class="section-number">37.1.4. </span>Caso 2: <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span> con <span class="math notranslate nohighlight">\(a \neq 1\)</span><a class="headerlink" href="#caso-2-ax-2-bx-c-con-a-neq-1" title="Link to this heading">#</a></h3>
+<p>Cuando el coeficiente principal no es <span class="math notranslate nohighlight">\(1\)</span>, el tanteo directo sobre <span class="math notranslate nohighlight">\(c\)</span> ya no basta. Se usa el <strong>método AC</strong> (también llamado <em>splitting the middle term</em> o <em>agrupación</em>):</p>
+<div class="math notranslate nohighlight">
+\[\text{Producto } AC = a \cdot c\]</div>
+<p><strong>Procedimiento AC:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Paso</p></th>
+<th class="head"><p>Acción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Calcular <span class="math notranslate nohighlight">\(AC = a \cdot c\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Encontrar dos números <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(n\)</span> tales que <span class="math notranslate nohighlight">\(m + n = b\)</span> y <span class="math notranslate nohighlight">\(m \cdot n = AC\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Reescribir el término <span class="math notranslate nohighlight">\(bx\)</span> como <span class="math notranslate nohighlight">\(mx + nx\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Agrupar por pares y sacar factor común en cada grupo</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Sacar el binomio común del segundo paso</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Ejemplo 4:</strong></p>
+<div class="math notranslate nohighlight">
+\[2x^2 + 7x + 3\]</div>
+<p><span class="math notranslate nohighlight">\(AC = 2 \cdot 3 = 6\)</span>. Buscar suma <span class="math notranslate nohighlight">\(7\)</span>, producto <span class="math notranslate nohighlight">\(6\)</span>: los números son <span class="math notranslate nohighlight">\(1\)</span> y <span class="math notranslate nohighlight">\(6\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[2x^2 + 7x + 3 = 2x^2 + 6x + x + 3\]</div>
+<p>Agrupar:</p>
+<div class="math notranslate nohighlight">
+\[= 2x(x + 3) + 1(x + 3) = (2x + 1)(x + 3)\]</div>
+<p><strong>Ejemplo 5:</strong></p>
+<div class="math notranslate nohighlight">
+\[3x^2 - 10x + 8\]</div>
+<p><span class="math notranslate nohighlight">\(AC = 3 \cdot 8 = 24\)</span>. Suma <span class="math notranslate nohighlight">\(-10\)</span>, producto <span class="math notranslate nohighlight">\(24\)</span>: <span class="math notranslate nohighlight">\((-4)(-6) = 24\)</span>, <span class="math notranslate nohighlight">\((-4)+(-6) = -10\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[3x^2 - 10x + 8 = 3x^2 - 4x - 6x + 8 = x(3x - 4) - 2(3x - 4) = (x - 2)(3x - 4)\]</div>
+<p><strong>Ejemplo 6 — con factor común previo:</strong></p>
+<div class="math notranslate nohighlight">
+\[4x^2 + 12x + 8 = 4(x^2 + 3x + 2) = 4(x + 1)(x + 2)\]</div>
+<p>Siempre verifica si hay <strong>factor común monomio</strong> antes de aplicar AC — simplifica el trabajo.</p>
+</section>
+<hr class="docutils" />
+<section id="verificacion">
+<h3><span class="section-number">37.1.5. </span>Verificación<a class="headerlink" href="#verificacion" title="Link to this heading">#</a></h3>
+<p>Multiplica los binomios resultantes. Debes recuperar el trinomio original:</p>
+<div class="math notranslate nohighlight">
+\[(x + 3)(x + 4) = x^2 + 4x + 3x + 12 = x^2 + 7x + 12 \checkmark\]</div>
+<div class="math notranslate nohighlight">
+\[(2x + 1)(x + 3) = 2x^2 + 6x + x + 3 = 2x^2 + 7x + 3 \checkmark\]</div>
+</section>
+<hr class="docutils" />
+<section id="conexion-con-ingenieria">
+<h3><span class="section-number">37.1.6. </span>Conexión con ingeniería<a class="headerlink" href="#conexion-con-ingenieria" title="Link to this heading">#</a></h3>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Análisis de fuerzas en equilibrio</p>
+<p>La fuerza neta sobre un componente se modela como:</p>
+<div class="math notranslate nohighlight">
+\[F(x) = x^2 - x - 6 \quad \text{(N)}\]</div>
+<p>Para hallar los puntos de <strong>equilibrio</strong> (<span class="math notranslate nohighlight">\(F = 0\)</span>), factoriza:</p>
+<div class="math notranslate nohighlight">
+\[x^2 - x - 6 = (x - 3)(x + 2) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[x = 3 \quad \text{o} \quad x = -2\]</div>
+<p>La factorización revela directamente las posiciones donde la fuerza neta es cero — sin necesidad de la fórmula cuadrática. En cinemática ocurre lo mismo: factorizar <span class="math notranslate nohighlight">\(s(t) = 0\)</span> da los instantes en que el cuerpo cruza una posición de referencia.</p>
+</div>
+<p><strong>Ejemplo 7 — movimiento:</strong></p>
+<p>Velocidad de una pieza móvil: <span class="math notranslate nohighlight">\(v(t) = 2t^2 - 9t + 4\)</span>. ¿Cuándo <span class="math notranslate nohighlight">\(v = 0\)</span>?</p>
+<p><span class="math notranslate nohighlight">\(AC = 2 \cdot 4 = 8\)</span>. Suma <span class="math notranslate nohighlight">\(-9\)</span>, producto <span class="math notranslate nohighlight">\(8\)</span>: <span class="math notranslate nohighlight">\(-1\)</span> y <span class="math notranslate nohighlight">\(-8\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[2t^2 - 9t + 4 = 2t^2 - t - 8t + 4 = t(2t - 1) - 4(2t - 1) = (t - 4)(2t - 1)\]</div>
+<div class="math notranslate nohighlight">
+\[v = 0 \Rightarrow t = 4 \text{ s} \quad \text{o} \quad t = 0.5 \text{ s}\]</div>
+</section>
+<hr class="docutils" />
+<section id="cuando-usar-cada-metodo">
+<h3><span class="section-number">37.1.7. </span>Cuándo usar cada método<a class="headerlink" href="#cuando-usar-cada-metodo" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Situación</p></th>
+<th class="head"><p>Método recomendado</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x^2 + bx + c\)</span></p></td>
+<td><p><strong>Tanteo:</strong> buscar <span class="math notranslate nohighlight">\(m+n=b\)</span>, <span class="math notranslate nohighlight">\(mn=c\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span>, <span class="math notranslate nohighlight">\(a \neq 1\)</span></p></td>
+<td><p><strong>AC:</strong> producto <span class="math notranslate nohighlight">\(a \cdot c\)</span>, luego agrupación</p></td>
+</tr>
+<tr class="row-even"><td><p>Todos los términos con factor común</p></td>
+<td><p>Sacar factor común <strong>primero</strong>, luego tanteo o AC</p></td>
+</tr>
+<tr class="row-odd"><td><p>Verificación</p></td>
+<td><p>Expandir el producto de binomios</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="video">
+<h2><span class="section-number">37.2. </span>Video<a class="headerlink" href="#video" title="Link to this heading">#</a></h2>
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/REEMPLAZA_ID_YOUTUBE_FACTORIZACION_TRINOMIOS"
+    allowfullscreen>
+  </iframe>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — video Manim sugerido (~5 min):</strong></p>
+<ol class="arabic simple">
+<li><p>Recordar que <span class="math notranslate nohighlight">\((x+m)(x+n) = x^2 + (m+n)x + mn\)</span> — la suma y el producto</p></li>
+<li><p>Ejemplo tanteo: <span class="math notranslate nohighlight">\(x^2 + 7x + 12\)</span> — listar factores de 12, elegir 3 y 4</p></li>
+<li><p>Caso con signos: <span class="math notranslate nohighlight">\(x^2 - 5x + 6\)</span> — ambos negativos</p></li>
+<li><p>Caso <span class="math notranslate nohighlight">\(x^2 + x - 6\)</span> — signos opuestos, producto negativo</p></li>
+<li><p>Transición a <span class="math notranslate nohighlight">\(2x^2 + 7x + 3\)</span>: calcular <span class="math notranslate nohighlight">\(AC = 6\)</span>, dividir <span class="math notranslate nohighlight">\(7x\)</span> en <span class="math notranslate nohighlight">\(6x + x\)</span></p></li>
+<li><p>Agrupar y sacar <span class="math notranslate nohighlight">\((x+3)\)</span> — aparece <span class="math notranslate nohighlight">\((2x+1)(x+3)\)</span></p></li>
+<li><p>Cierre ingeniería: <span class="math notranslate nohighlight">\(t^2 - 7t + 12 = 0\)</span> → tiempos <span class="math notranslate nohighlight">\(t = 3\)</span> y <span class="math notranslate nohighlight">\(t = 4\)</span> s</p></li>
+</ol>
+</div>
+</section>
+<hr class="docutils" />
+<section id="visualizacion-interactiva">
+<h2><span class="section-number">37.3. </span>Visualización interactiva<a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
+<p>Ajusta <span class="math notranslate nohighlight">\(b\)</span> y <span class="math notranslate nohighlight">\(c\)</span> en <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span> y observa la parábola junto con su factorización (cuando las raíces son enteras).</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraph.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js"></script>
+
+<div id="jxg-s8c2-trinomios" class="jsxgraph-container" style="height:500px"></div>
+
+<script>
+(function() {
+    function factorPairs(c) {
+        var pairs = [], abs = Math.abs(c);
+        for (var i = 1; i <= abs; i++) {
+            if (abs % i === 0) {
+                var j = abs / i;
+                if (c > 0) {
+                    pairs.push([i, j], [-i, -j]);
+                } else {
+                    pairs.push([i, -j], [-i, j]);
+                }
+            }
+        }
+        return pairs;
+    }
+
+    function findMN(b, c) {
+        var pairs = factorPairs(c);
+        for (var k = 0; k < pairs.length; k++) {
+            if (pairs[k][0] + pairs[k][1] === b) return pairs[k];
+        }
+        return null;
+    }
+
+    function fmtRoot(r) {
+        return r >= 0 ? '(x + ' + r + ')' : '(x - ' + (-r) + ')';
+    }
+
+    function init() {
+        if (typeof JXG === 'undefined') { setTimeout(init, 200); return; }
+        JXG.Options.text.useMathJax = false;
+        var board = JXG.JSXGraph.initBoard('jxg-s8c2-trinomios', {
+            boundingbox: [-8, 20, 8, -10],
+            axis: true, showCopyright: false, showNavigation: false,
+            pan: { enabled: false }, zoom: { enabled: false }
+        });
+
+        var slB = board.create('slider', [[-7, 18], [3, 18], [-8, -5, 8]], {
+            name: 'b', snapWidth: 1, fillColor: '#3b82f6' });
+        var slC = board.create('slider', [[-7, 16], [3, 16], [-6, 12, 18]], {
+            name: 'c', snapWidth: 1, fillColor: '#f97316' });
+
+        var dinamicos = [];
+        function limpiar() {
+            dinamicos.forEach(function(o) { try { board.removeObject(o); } catch(e) {} });
+            dinamicos = [];
+        }
+
+        function dibujar() {
+            limpiar();
+            var b = slB.Value(), c = slC.Value();
+            var mn = findMN(b, c);
+            var disc = b * b - 4 * c;
+
+            dinamicos.push(board.create('functiongraph',
+                function(x) { return x * x + b * x + c; },
+                { strokeColor: '#1d4ed8', strokeWidth: 2.5 }
+            ));
+
+            if (mn) {
+                var m = mn[0], n = mn[1];
+                var r1 = -m, r2 = -n;
+                dinamicos.push(board.create('point', [r1, 0], {
+                    name: 'x=' + r1, size: 4, fillColor: '#dc2626', strokeColor: '#dc2626',
+                    fixed: true, label: { offset: [0, 12], fontSize: 11 }
+                }));
+                dinamicos.push(board.create('point', [r2, 0], {
+                    name: 'x=' + r2, size: 4, fillColor: '#dc2626', strokeColor: '#dc2626',
+                    fixed: true, label: { offset: [0, 12], fontSize: 11 }
+                }));
+                var signM = m >= 0 ? '+' + m : '' + m;
+                var signN = n >= 0 ? '+' + n : '' + n;
+                dinamicos.push(board.create('text', [-7.5, 12,
+                    'x² ' + (b >= 0 ? '+' : '') + b + 'x ' + (c >= 0 ? '+' : '') + c +
+                    ' = ' + fmtRoot(m) + fmtRoot(n)], {
+                    fontSize: 13, color: '#1d4ed8', fontWeight: 'bold'
+                }));
+                dinamicos.push(board.create('text', [-7.5, 10.5,
+                    'Tanteo: m=' + m + ', n=' + n + '  →  m+n=' + b + ',  m·n=' + (m*n)], {
+                    fontSize: 11, color: '#374151'
+                }));
+            } else {
+                dinamicos.push(board.create('text', [-7.5, 12,
+                    'x² ' + (b >= 0 ? '+' : '') + b + 'x ' + (c >= 0 ? '+' : '') + c +
+                    ' — no factorizable con enteros'], {
+                    fontSize: 12, color: '#9a3412', fontWeight: 'bold'
+                }));
+                dinamicos.push(board.create('text', [-7.5, 10.5,
+                    'Δ = b² - 4c = ' + disc + (disc < 0 ? ' (sin raíces reales)' : ''), {
+                    fontSize: 11, color: '#6b7280'
+                }));
+            }
+        }
+
+        slB.on('drag', dibujar);
+        slC.on('drag', dibujar);
+        dibujar();
+    }
+    init();
+})();
+</script><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — visualización:</strong>
+Parábola de <span class="math notranslate nohighlight">\(y = x^2 + bx + c\)</span> con deslizadores para <span class="math notranslate nohighlight">\(b\)</span> y <span class="math notranslate nohighlight">\(c\)</span>. Cuando el trinomio es factorizable con enteros, marca las raíces en rojo y muestra la descomposición <span class="math notranslate nohighlight">\((x+m)(x+n)\)</span> junto con el par <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(n\)</span> del tanteo. Si no hay factorización entera, indica que no es factorizable con enteros y muestra el discriminante. Conecta la factorización con los ceros de la función — clave para ecuaciones de movimiento y fuerzas.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="actividad-quizizz">
+<h2><span class="section-number">37.4. </span>Actividad — Quizizz<a class="headerlink" href="#actividad-quizizz" title="Link to this heading">#</a></h2>
+<div class="quizizz-link">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbCga5BHcS-ZO9vsmevThUnVu1EQz4foMvYrY4LczHi_gDfQ/viewform" target="_blank" class="quizizz-btn">
+    📝 Practicar: Factorización de trinomios
+  </a>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — actividad Quizizz (8 preguntas, ~12 min):</strong></p>
+<p>P1 (Fill): «x² + 8x + 15 = (x + ___)(x + ___)» → 3, 5 (o 5, 3)
+P2 (Fill): «x² - 6x + 8 = (x - ___)(x - ___)» → 2, 4
+P3 (Fill): «x² + 2x - 15 = (x + ___)(x - ___)» → 5, 3
+P4 (Fill): «2x² + 7x + 3 = (2x + ___)(x + ___)» → 1, 3
+P5 (MC): «AC de 3x² - 10x + 8» → 24
+P6 (Fill): «3x² - 10x + 8 = (x - 2)(___x - 4)» → 3
+P7 (Fill ingeniería): «t² - 7t + 12 = 0 → t = ___ o t = ___» → 3, 4
+P8 (T/F): «x² + 4x + 5 se factoriza con enteros» → Falso (Δ = -4)</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="resumen">
+<h2><span class="section-number">37.5. </span>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipo</p></th>
+<th class="head"><p>Método y condición</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x^2 + bx + c\)</span></p></td>
+<td><p><strong>Tanteo:</strong> buscar <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(n\)</span> con <span class="math notranslate nohighlight">\(m+n=b\)</span> y <span class="math notranslate nohighlight">\(m \cdot n = c\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span></p></td>
+<td><p><strong>AC:</strong> calcular <span class="math notranslate nohighlight">\(a \cdot c\)</span>, dividir <span class="math notranslate nohighlight">\(bx\)</span>, agrupar y factorizar</p></td>
+</tr>
+<tr class="row-even"><td><p>Paso previo</p></td>
+<td><p>Sacar factor común monomio si todos los términos lo comparten</p></td>
+</tr>
+<tr class="row-odd"><td><p>Verificación</p></td>
+<td><p>Expandir <span class="math notranslate nohighlight">\((\_)(\_)\)</span> debe dar el trinomio original</p></td>
+</tr>
+<tr class="row-even"><td><p>Ingeniería</p></td>
+<td><p>Factorizar <span class="math notranslate nohighlight">\(= 0\)</span> da las soluciones de ecuaciones de movimiento y fuerzas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Siguiente clase</p>
+<p>Ya dominas la factorización de trinomios cuadráticos. En la siguiente clase verás un patrón especial que aparece constantemente en ingeniería: la <strong>diferencia de cuadrados</strong> — cuando dos términos son cuadrados perfectos con signos opuestos.</p>
+<p>➡️ <a class="reference internal" href="s8_c3_diferencia_cuadrados.html"><span class="std std-doc">Ir a S8·C3 Diferencia de cuadrados</span></a></p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unidad3_expresiones"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="s8_c1_factor_comun.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title"><span class="section-number">36. </span>S8·C1 Factor común</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="s8_c3_diferencia_cuadrados.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title"><span class="section-number">38. </span>S8·C3 Diferencia de cuadrados</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">37.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-trinomio-cuadratico">37.1.1. ¿Qué es un trinomio cuadrático?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-1-x-2-bx-c-coeficiente-principal-a-1">37.1.2. Caso 1: <span class="math notranslate nohighlight">\(x^2 + bx + c\)</span> (coeficiente principal <span class="math notranslate nohighlight">\(a = 1\)</span>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodo-de-tanteo-x-2-bx-c">37.1.3. Método de tanteo (<span class="math notranslate nohighlight">\(x^2 + bx + c\)</span>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caso-2-ax-2-bx-c-con-a-neq-1">37.1.4. Caso 2: <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span> con <span class="math notranslate nohighlight">\(a \neq 1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verificacion">37.1.5. Verificación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conexion-con-ingenieria">37.1.6. Conexión con ingeniería</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuando-usar-cada-metodo">37.1.7. Cuándo usar cada método</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">37.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">37.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">37.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">37.5. Resumen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Dra. Zaira Pineda Rico — Ingeniería Mecánica Administrativa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,896 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>49. S10·C4 Factorial, combinatorios y teorema del binomio &#8212; Álgebra para Ingeniería Mecánica</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=5f4a6556" />
+    <link rel="stylesheet" type="text/css" href="../_static/js/jsxgraph.css?v=fe8723f5" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unidad3_expresiones/s10_c4_factorial_combinatorios_binomio';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/js/jsxgraphcore.js?v=976eb28f"></script>
+    <link rel="canonical" href="https://z3pineda.github.io/Algebra/unidad3_expresiones/s10_c4_factorial_combinatorios_binomio.html" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="50. S10·Auto Repaso general Unidad 3" href="s10_auto_repaso_unidad3.html" />
+    <link rel="prev" title="48. S10·C3 Radicales — suma, resta, producto y división" href="s10_c3_radicales.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../landing.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Álgebra para Ingeniería Mecánica</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 1 — Conjuntos y Lógica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c1_presentacion_diagnostico.html">1. S1·C1 Presentación del curso y diagnóstico de aritmética</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c2_concepto_conjunto.html">2. S1·C2 Concepto de conjunto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c3_representacion_conjuntos.html">3. S1·C3 Representación de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c4_operaciones_basicas.html">4. S1·C4 Operaciones básicas con conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_auto_repaso_conjuntos.html">5. S1·Auto Repaso de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c1_proposicion_valor_verdad.html">6. S2·C1 Proposición y valor de verdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c2_conjunto_solucion.html">7. S2·C2 Conjunto solución de una proposición abierta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c3_conjuncion_disyuncion.html">8. S2·C3 Conjunción y disyunción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c4_implicacion_negacion.html">9. S2·C4 Implicación y negación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_auto_ejercicios_logica.html">10. S2·Auto Ejercicios de lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c1_tipos_conjuntos.html">11. S3·C1 Tipos de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c2_venn_dos_conjuntos.html">12. S3·C2 Diagramas de Venn con dos conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c3_venn_tres_conjuntos.html">13. S3·C3 Diagramas de Venn con tres conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c4_problemas_aplicados.html">14. S3·C4 Problemas aplicados con conjuntos y lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_auto_tarea_integradora.html">15. S3·Auto Tarea integradora — Unidad 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 2 — Números Reales y Funciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c1_numeros_naturales_enteros.html">16. S4·C1 Números naturales, enteros, racionales, irracionales y reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c2_recta_numerica.html">17. S4·C2 La recta numérica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c3_propiedades_reales.html">18. S4·C3 Propiedades de los números reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c4_producto_cartesiano.html">19. S4·C4 Producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_auto_clasificacion_numeros.html">20. S4·Auto Clasificación de números y producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c1_concepto_relacion.html">21. S5·C1 Concepto de relación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c2_concepto_funcion.html">22. S5·C2 Concepto de función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c3_relacion_vs_funcion.html">23. S5·C3 Diferencia entre relación y función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c4_dominio_rango.html">24. S5·C4 Dominio y rango de una función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_auto_identificacion_funciones.html">25. S5·Auto Identificación de funciones, dominio y rango</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 3 — Expresiones Algebraicas</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="s6_c1_propiedades_igualdad.html">26. S6·C1 Propiedades de la igualdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c2_expresion_algebraica_terminos.html">27. S6·C2 Expresión algebraica y términos semejantes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c3_suma_resta_expresiones.html">28. S6·C3 Suma y resta de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c4_multiplicacion_expresiones.html">29. S6·C4 Multiplicación de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_auto_simplificacion_algebraica.html">30. S6·Auto Ejercicios de simplificación algebraica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c1_binomio_cuadrado.html">31. S7·C1 Binomio al cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c2_binomios_conjugados.html">32. S7·C2 Producto de binomios conjugados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c3_binomio_cubo.html">33. S7·C3 Binomio al cubo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c4_binomio_por_trinomio.html">34. S7·C4 Producto de un binomio por un trinomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_auto_productos_notables.html">35. S7·Auto Práctica de productos notables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c1_factor_comun.html">36. S8·C1 Factor común</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c2_factorizacion_trinomios.html">37. S8·C2 Factorización de trinomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c3_diferencia_cuadrados.html">38. S8·C3 Diferencia de cuadrados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c4_cubos_agrupacion.html">39. S8·C4 Cubos y agrupación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_auto_factorizacion.html">40. S8·Auto Ejercicios de factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c1_division_monomios.html">41. S9·C1 División de monomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c2_division_polinomio_monomio.html">42. S9·C2 División de polinomio entre monomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c3_division_polinomios.html">43. S9·C3 División de polinomios — algoritmo de la división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c4_fracciones_algebraicas.html">44. S9·C4 Simplificación, multiplicación y división de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_auto_fracciones_algebraicas.html">45. S9·Auto Ejercicios de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c1_exponentes_enteros.html">46. S10·C1 Exponentes enteros y exponente cero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c2_exponentes_negativos_fraccionarios.html">47. S10·C2 Exponentes negativos y fraccionarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c3_radicales.html">48. S10·C3 Radicales — suma, resta, producto y división</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">49. S10·C4 Factorial, combinatorios y teorema del binomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_auto_repaso_unidad3.html">50. S10·Auto Repaso general Unidad 3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 4 — Ecuaciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c1_concepto_ecuacion_identidad.html">51. S11·C1 Concepto de ecuación e identidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c2_ecuaciones_lineales.html">52. S11·C2 Ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c3_ecuaciones_con_literales.html">53. S11·C3 Ecuaciones con literales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c4_ecuaciones_con_fracciones.html">54. S11·C4 Ecuaciones con fracciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_auto_modelacion_ecuaciones.html">55. S11·Auto Problemas de modelación con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c1_modelacion_ecuaciones_lineales.html">56. S12·C1 Modelación de situaciones con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c2_sistemas_dos_ecuaciones.html">57. S12·C2 Sistemas de dos ecuaciones con dos incógnitas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c3_metodo_sustitucion.html">58. S12·C3 Método de sustitución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c4_metodo_suma_resta_grafico.html">59. S12·C4 Método de suma o resta y solución gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_auto_comparacion_metodos.html">60. S12·Auto Ejercicios comparativos de métodos de solución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c1_concepto_ecuacion_cuadratica.html">61. S13·C1 Concepto de ecuación cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c2_solucion_factorizacion.html">62. S13·C2 Solución por factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c3_forma_x_mas_a_cuadrado.html">63. S13·C3 Ecuaciones de la forma (x+a)²=b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c4_completando_cuadrados.html">64. S13·C4 Completando el cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_auto_ecuaciones_cuadraticas.html">65. S13·Auto Práctica de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c1_formula_general.html">66. S14·C1 Fórmula general</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c2_ecuaciones_con_radicales.html">67. S14·C2 Ecuaciones con radicales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c3_ecuaciones_forma_cuadratica.html">68. S14·C3 Ecuaciones de forma cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c4_sistemas_lineal_cuadratica.html">69. S14·C4 Sistemas con una ecuación lineal y una cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_auto_aplicacion_verificacion.html">70. S14·Auto Ejercicios de aplicación y verificación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c1_sistemas_cuadraticos.html">71. S15·C1 Sistemas de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c2_funcion_polinomial_grado_n.html">72. S15·C2 Función polinomial de grado n</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c3_division_sintetica_residuo.html">73. S15·C3 División sintética y teorema del residuo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c4_teorema_factor_raices.html">74. S15·C4 Teorema del factor, raíces y teorema fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_auto_repaso_unidad4.html">75. S15·Auto Repaso general Unidad 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 5 — Desigualdades</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c1_valor_absoluto_grafico.html">76. S16·C1 Valor absoluto e interpretación gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c2_ecuaciones_valor_absoluto.html">77. S16·C2 Ecuaciones con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c3_desigualdades_valor_absoluto.html">78. S16·C3 Desigualdades con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c4_repaso_general.html">79. S16·C4 Repaso general del curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_auto_cierre_curso.html">80. S16·Auto Entrega de evidencias y preparación para examen final</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S10·C4 Factorial, combinatorios y teorema del binomio</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">49.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factorial">49.1.1. Factorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numero-combinatorio-coeficiente-binomial">49.1.2. Número combinatorio (coeficiente binomial)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triangulo-de-pascal">49.1.3. Triángulo de Pascal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-del-binomio">49.1.4. Teorema del binomio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos">49.1.5. Ejemplos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conexion-con-ingenieria">49.1.6. Conexión con ingeniería</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">49.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">49.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">49.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">49.5. Resumen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s10c4-factorial-combinatorios-y-teorema-del-binomio">
+<h1><span class="section-number">49. </span>S10·C4 Factorial, combinatorios y teorema del binomio<a class="headerlink" href="#s10c4-factorial-combinatorios-y-teorema-del-binomio" title="Link to this heading">#</a></h1>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Combinaciones de materiales y probabilidad de fallas</p>
+<p>En control de calidad, un lote tiene 10 piezas y se inspeccionan 3 al azar. El número de <strong>combinaciones</strong> posibles es:</p>
+<div class="math notranslate nohighlight">
+\[C(10,3) = \binom{10}{3} = \frac{10!}{3!(10-3)!} = \frac{10 \cdot 9 \cdot 8}{3 \cdot 2 \cdot 1} = 120\]</div>
+<p>Si cada combinación representa un escenario de prueba de materiales, el ingeniero necesita contar sin repetir configuraciones. El <strong>teorema del binomio</strong> conecta estos conteos con la expansión de <span class="math notranslate nohighlight">\((a+b)^n\)</span> — los coeficientes del triángulo de Pascal cuentan cuántas veces aparece cada término. En análisis de probabilidad de fallas, <span class="math notranslate nohighlight">\(\binom{n}{k} p^k (1-p)^{n-k}\)</span> modela exactamente <span class="math notranslate nohighlight">\(k\)</span> defectos en <span class="math notranslate nohighlight">\(n\)</span> piezas.</p>
+</div>
+<p><strong>Pregunta detonadora</strong></p>
+<blockquote>
+<div><p>¿Cuántos términos tiene <span class="math notranslate nohighlight">\((a+b)^4\)</span> al expandirlo? ¿Puedes predecir los coeficientes 1, 4, 6, 4, 1?</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="teoria">
+<h2><span class="section-number">49.1. </span>Teoría<a class="headerlink" href="#teoria" title="Link to this heading">#</a></h2>
+<section id="factorial">
+<h3><span class="section-number">49.1.1. </span>Factorial<a class="headerlink" href="#factorial" title="Link to this heading">#</a></h3>
+<p>El <strong>factorial</strong> de un entero no negativo <span class="math notranslate nohighlight">\(n\)</span> es el producto de todos los enteros desde 1 hasta <span class="math notranslate nohighlight">\(n\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[n! = n \cdot (n-1) \cdot (n-2) \cdots 2 \cdot 1\]</div>
+<p><strong>Convenciones:</strong></p>
+<div class="math notranslate nohighlight">
+\[0! = 1, \qquad 1! = 1\]</div>
+<p><strong>Ejemplos:</strong></p>
+<div class="math notranslate nohighlight">
+\[5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120\]</div>
+<div class="math notranslate nohighlight">
+\[7! = 5040\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{8!}{6!} = \frac{8 \cdot 7 \cdot 6!}{6!} = 8 \cdot 7 = 56\]</div>
+</section>
+<hr class="docutils" />
+<section id="numero-combinatorio-coeficiente-binomial">
+<h3><span class="section-number">49.1.2. </span>Número combinatorio (coeficiente binomial)<a class="headerlink" href="#numero-combinatorio-coeficiente-binomial" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\binom{n}{k} = \frac{n!}{k!(n-k)!} \qquad (0 \leq k \leq n)\]</div>
+<p>Se lee «<span class="math notranslate nohighlight">\(n\)</span> sobre <span class="math notranslate nohighlight">\(k\)</span>» y cuenta las <strong>combinaciones</strong> de <span class="math notranslate nohighlight">\(n\)</span> elementos tomados de <span class="math notranslate nohighlight">\(k\)</span> en <span class="math notranslate nohighlight">\(k\)</span> (sin importar el orden).</p>
+<p><strong>Ejemplos:</strong></p>
+<div class="math notranslate nohighlight">
+\[\binom{5}{2} = \frac{5!}{2! \cdot 3!} = \frac{120}{2 \cdot 6} = 10\]</div>
+<div class="math notranslate nohighlight">
+\[\binom{7}{0} = 1, \qquad \binom{7}{7} = 1\]</div>
+<div class="math notranslate nohighlight">
+\[\binom{n}{1} = n, \qquad \binom{n}{n-1} = n\]</div>
+<p><strong>Propiedades:</strong></p>
+<div class="math notranslate nohighlight">
+\[\binom{n}{k} = \binom{n}{n-k}\]</div>
+<div class="math notranslate nohighlight">
+\[\binom{n}{0} + \binom{n}{1} + \cdots + \binom{n}{n} = 2^n\]</div>
+</section>
+<hr class="docutils" />
+<section id="triangulo-de-pascal">
+<h3><span class="section-number">49.1.3. </span>Triángulo de Pascal<a class="headerlink" href="#triangulo-de-pascal" title="Link to this heading">#</a></h3>
+<p>Cada número es la suma de los dos que están encima:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">:</span>        <span class="mi">1</span>
+<span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span>       <span class="mi">1</span>  <span class="mi">1</span>
+<span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">:</span>      <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">1</span>
+<span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">:</span>     <span class="mi">1</span>  <span class="mi">3</span>  <span class="mi">3</span>  <span class="mi">1</span>
+<span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">:</span>    <span class="mi">1</span>  <span class="mi">4</span>  <span class="mi">6</span>  <span class="mi">4</span>  <span class="mi">1</span>
+<span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">:</span>   <span class="mi">1</span>  <span class="mi">5</span>  <span class="mi">10</span> <span class="mi">10</span>  <span class="mi">5</span>  <span class="mi">1</span>
+</pre></div>
+</div>
+<p>La fila <span class="math notranslate nohighlight">\(n\)</span> contiene <span class="math notranslate nohighlight">\(\binom{n}{0}, \binom{n}{1}, \ldots, \binom{n}{n}\)</span>.</p>
+<p>Estos coeficientes son los mismos que en <span class="math notranslate nohighlight">\((a+b)^n\)</span> — ya los viste en S7·C3 con la fila 1, 3, 3, 1 para <span class="math notranslate nohighlight">\(n=3\)</span>.</p>
+</section>
+<hr class="docutils" />
+<section id="teorema-del-binomio">
+<h3><span class="section-number">49.1.4. </span>Teorema del binomio<a class="headerlink" href="#teorema-del-binomio" title="Link to this heading">#</a></h3>
+<p>Para cualquier entero <span class="math notranslate nohighlight">\(n \geq 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k\]</div>
+<p><strong>Expansión explícita:</strong></p>
+<div class="math notranslate nohighlight">
+\[(a+b)^n = \binom{n}{0}a^n + \binom{n}{1}a^{n-1}b + \binom{n}{2}a^{n-2}b^2 + \cdots + \binom{n}{n}b^n\]</div>
+<p><strong>Término general</strong> (término <span class="math notranslate nohighlight">\(k+1\)</span>, contando desde <span class="math notranslate nohighlight">\(k=0\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[T_{k+1} = \binom{n}{k} a^{n-k} b^k\]</div>
+</section>
+<hr class="docutils" />
+<section id="ejemplos">
+<h3><span class="section-number">49.1.5. </span>Ejemplos<a class="headerlink" href="#ejemplos" title="Link to this heading">#</a></h3>
+<p><strong>Ejemplo 1 — <span class="math notranslate nohighlight">\((x + 2)^4\)</span>:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(k\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\binom{4}{k}\)</span></p></th>
+<th class="head"><p>Término</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>0</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(x^4\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>4</p></td>
+<td><p><span class="math notranslate nohighlight">\(4x^3(2) = 8x^3\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>2</p></td>
+<td class="text-center"><p>6</p></td>
+<td><p><span class="math notranslate nohighlight">\(6x^2(4) = 24x^2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>3</p></td>
+<td class="text-center"><p>4</p></td>
+<td><p><span class="math notranslate nohighlight">\(4x(8) = 32x\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>4</p></td>
+<td class="text-center"><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(16\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="math notranslate nohighlight">
+\[(x+2)^4 = x^4 + 8x^3 + 24x^2 + 32x + 16\]</div>
+<p><strong>Ejemplo 2 — término específico:</strong></p>
+<p>¿Cuál es el término que contiene <span class="math notranslate nohighlight">\(x^3\)</span> en <span class="math notranslate nohighlight">\((x + 3)^5\)</span>?</p>
+<p><span class="math notranslate nohighlight">\(k = 2\)</span>: <span class="math notranslate nohighlight">\(T_3 = \binom{5}{2} x^{3} \cdot 3^2 = 10 \cdot x^3 \cdot 9 = 90x^3\)</span></p>
+<p><strong>Ejemplo 3 — <span class="math notranslate nohighlight">\((a - b)^n\)</span>:</strong></p>
+<div class="math notranslate nohighlight">
+\[(a - b)^4 = a^4 - 4a^3b + 6a^2b^2 - 4ab^3 + b^4\]</div>
+<p>Los signos alternan: <span class="math notranslate nohighlight">\(+,-,+,-,+\)</span></p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>No confundas:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n!\)</span> es factorial: <span class="math notranslate nohighlight">\(5! = 120\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((-b)^k\)</span>: si <span class="math notranslate nohighlight">\(k\)</span> es impar el término es negativo en <span class="math notranslate nohighlight">\((a-b)^n\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\binom{n}{k}\)</span> solo está definido para <span class="math notranslate nohighlight">\(0 \leq k \leq n\)</span></p></li>
+</ul>
+</div>
+</section>
+<hr class="docutils" />
+<section id="conexion-con-ingenieria">
+<h3><span class="section-number">49.1.6. </span>Conexión con ingeniería<a class="headerlink" href="#conexion-con-ingenieria" title="Link to this heading">#</a></h3>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Manufactura y probabilidad de fallas</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Problema</p></th>
+<th class="head"><p>Modelo combinatorio</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Elegir 3 materiales de 8 disponibles</p></td>
+<td><p><span class="math notranslate nohighlight">\(\binom{8}{3} = 56\)</span> combinaciones</p></td>
+</tr>
+<tr class="row-odd"><td><p>2 defectos en 10 piezas (probabilidad <span class="math notranslate nohighlight">\(p\)</span>)</p></td>
+<td><p><span class="math notranslate nohighlight">\(\binom{10}{2} p^2 (1-p)^8\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Configuraciones de ensamble</p></td>
+<td><p>Coeficientes de <span class="math notranslate nohighlight">\((a+b)^n\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>El teorema del binomio generaliza los productos notables de S7: <span class="math notranslate nohighlight">\((a+b)^2\)</span>, <span class="math notranslate nohighlight">\((a+b)^3\)</span> son casos particulares con <span class="math notranslate nohighlight">\(n=2\)</span> y <span class="math notranslate nohighlight">\(n=3\)</span>.</p>
+</div>
+<p><strong>Ejemplo 4 — inspección de calidad:</strong></p>
+<p>De 12 piezas, se seleccionan 4 para prueba destructiva:</p>
+<div class="math notranslate nohighlight">
+\[\binom{12}{4} = \frac{12 \cdot 11 \cdot 10 \cdot 9}{4 \cdot 3 \cdot 2 \cdot 1} = 495 \text{ combinaciones}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="video">
+<h2><span class="section-number">49.2. </span>Video<a class="headerlink" href="#video" title="Link to this heading">#</a></h2>
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/REEMPLAZA_ID_YOUTUBE_BINOMIO_COMBINATORIOS"
+    allowfullscreen>
+  </iframe>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — video Manim sugerido (~5 min):</strong></p>
+<ol class="arabic simple">
+<li><p>Definir <span class="math notranslate nohighlight">\(5! = 120\)</span> con producto animado</p></li>
+<li><p>Calcular <span class="math notranslate nohighlight">\(\binom{5}{2} = 10\)</span> con barras de cancelación</p></li>
+<li><p>Construir triángulo de Pascal hasta <span class="math notranslate nohighlight">\(n=5\)</span></p></li>
+<li><p>Expandir <span class="math notranslate nohighlight">\((a+b)^4\)</span> con coeficientes 1,4,6,4,1</p></li>
+<li><p>Término general: <span class="math notranslate nohighlight">\(\binom{n}{k}a^{n-k}b^k\)</span></p></li>
+<li><p>Cierre: <span class="math notranslate nohighlight">\(\binom{10}{3}=120\)</span> combinaciones de inspección</p></li>
+</ol>
+</div>
+</section>
+<hr class="docutils" />
+<section id="visualizacion-interactiva">
+<h2><span class="section-number">49.3. </span>Visualización interactiva<a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
+<p>Explora el triángulo de Pascal y la expansión de <span class="math notranslate nohighlight">\((a+b)^n\)</span>.</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraph.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js"></script>
+
+<div id="jxg-s10c4-binomio" class="jsxgraph-container" style="height:500px"></div>
+
+<script>
+(function() {
+    function comb(n, k) {
+        if (k < 0 || k > n) return 0;
+        if (k === 0 || k === n) return 1;
+        var r = 1;
+        for (var i = 0; i < k; i++) r = r * (n - i) / (i + 1);
+        return Math.round(r);
+    }
+
+    function init() {
+        if (typeof JXG === 'undefined') { setTimeout(init, 200); return; }
+        JXG.Options.text.useMathJax = false;
+        var board = JXG.JSXGraph.initBoard('jxg-s10c4-binomio', {
+            boundingbox: [-1, 13, 14, -2],
+            axis: false, showCopyright: false, showNavigation: false,
+            pan: { enabled: false }, zoom: { enabled: false }
+        });
+
+        var slN = board.create('slider', [[8, 11], [13, 11], [0, 4, 6]], {
+            name: 'n', snapWidth: 1, fillColor: '#3b82f6' });
+
+        var dinamicos = [];
+        function limpiar() {
+            dinamicos.forEach(function(o) { try { board.removeObject(o); } catch(e) {} });
+            dinamicos = [];
+        }
+
+        function dibujar() {
+            limpiar();
+            var n = slN.Value();
+            var cx = 4, cy = 10;
+
+            for (var row = 0; row <= n; row++) {
+                var offset = (n - row) * 0.6;
+                for (var k = 0; k <= row; k++) {
+                    var c = comb(row, k);
+                    dinamicos.push(board.create('text',
+                        [cx - row * 0.3 + k * 0.6, cy - row * 0.9, '' + c], {
+                        fontSize: row === n ? 12 : 10,
+                        color: row === n ? '#1d4ed8' : '#6b7280',
+                        fontWeight: row === n ? 'bold' : 'normal',
+                        anchorX: 'middle'
+                    }));
+                }
+            }
+
+            var terms = [];
+            for (var j = 0; j <= n; j++) {
+                var coef = comb(n, j);
+                var part = coef + '·a^' + (n - j) + '·b^' + j;
+                terms.push(part);
+            }
+            dinamicos.push(board.create('text', [8, 3,
+                '(a+b)^' + n + ' → coef: ' + terms.join(', ')], {
+                fontSize: 11, color: '#1d4ed8', fontWeight: 'bold'
+            }));
+            dinamicos.push(board.create('text', [8, 1.5,
+                'C(' + n + ',k) = n!/(k!(n-k)!)'], {
+                fontSize: 11, color: '#374151'
+            }));
+            dinamicos.push(board.create('text', [4, 11.5,
+                'Triángulo de Pascal'], {
+                fontSize: 12, color: '#6b7280', anchorX: 'middle'
+            }));
+        }
+
+        slN.on('drag', dibujar);
+        dibujar();
+    }
+    init();
+})();
+</script><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — visualización:</strong>
+Deslizador <span class="math notranslate nohighlight">\(n\)</span> construye el triángulo de Pascal hasta la fila <span class="math notranslate nohighlight">\(n\)</span> (resaltada en azul). Muestra los coeficientes <span class="math notranslate nohighlight">\(\binom{n}{k}\)</span> y la forma del término general. Conecta conteo combinatorio con expansión binomial.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="actividad-quizizz">
+<h2><span class="section-number">49.4. </span>Actividad — Quizizz<a class="headerlink" href="#actividad-quizizz" title="Link to this heading">#</a></h2>
+<div class="quizizz-link">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOxgj3nJpkGHwbMvsbrLSCm4pCgTGE_r9iHWejJgVoY7ljhw/viewform" target="_blank" class="quizizz-btn">
+    📝 Practicar: Factorial y binomio
+  </a>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — actividad Quizizz (8 preguntas, ~12 min):</strong></p>
+<p>P1 (Fill): «5! = ___» → 120
+P2 (Fill): «C(7,3) = 7!/(3!·4!) = ___» → 35
+P3 (Fill): «0! = <em><strong>« → 1
+P4 (Fill): «(x+1)^4 coef de x³: C(4,1)=</strong></em>» → 4
+P5 (MC): «Fila n=5 de Pascal, centro:» → 10
+P6 (Fill): «(a-b)³ tercer término: ___a·b²» → 3 (con signo -)
+P7 (Fill ingeniería): «C(10,3) = ___» → 120
+P8 (T/F): «C(n,k) = C(n,n-k)» → Verdadero</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="resumen">
+<h2><span class="section-number">49.5. </span>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Concepto</p></th>
+<th class="head"><p>Fórmula</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Factorial</p></td>
+<td><p><span class="math notranslate nohighlight">\(n! = n \cdot (n-1) \cdots 1\)</span>, con <span class="math notranslate nohighlight">\(0! = 1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Combinatorio</p></td>
+<td><p><span class="math notranslate nohighlight">\(\binom{n}{k} = \frac{n!}{k!(n-k)!}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Pascal</p></td>
+<td><p>Fila <span class="math notranslate nohighlight">\(n\)</span>: coeficientes de <span class="math notranslate nohighlight">\((a+b)^n\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Teorema del binomio</p></td>
+<td><p><span class="math notranslate nohighlight">\((a+b)^n = \sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Término general</p></td>
+<td><p><span class="math notranslate nohighlight">\(T_{k+1} = \binom{n}{k}a^{n-k}b^k\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Siguiente clase</p>
+<p>Completaste la Semana 10 y con ella la <strong>Unidad 3</strong>. La siguiente sesión es de <strong>autogestión</strong>: repaso integrador de las cinco semanas (S6–S10) antes de pasar a ecuaciones.</p>
+<p>➡️ <a class="reference internal" href="s10_auto_repaso_unidad3.html"><span class="std std-doc">Ir a S10·Auto Repaso general Unidad 3</span></a></p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unidad3_expresiones"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="s10_c3_radicales.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title"><span class="section-number">48. </span>S10·C3 Radicales — suma, resta, producto y división</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="s10_auto_repaso_unidad3.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title"><span class="section-number">50. </span>S10·Auto Repaso general Unidad 3</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">49.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factorial">49.1.1. Factorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numero-combinatorio-coeficiente-binomial">49.1.2. Número combinatorio (coeficiente binomial)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#triangulo-de-pascal">49.1.3. Triángulo de Pascal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-del-binomio">49.1.4. Teorema del binomio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos">49.1.5. Ejemplos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conexion-con-ingenieria">49.1.6. Conexión con ingeniería</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">49.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">49.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">49.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">49.5. Resumen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Dra. Zaira Pineda Rico — Ingeniería Mecánica Administrativa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

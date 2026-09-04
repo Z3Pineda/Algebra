@@ -375,6 +375,20 @@ Selecciona una expresión y observa su tabla de verdad completa con interpretaci
 
 ---
 
+## Descargar apuntes en PDF
+
+Descarga el **apunte completo de esta sesión** (PDF preparado por la docente). No uses el menú del navegador «Imprimir»; ese genera otra versión de la página web.
+
+```{raw} html
+<div class="quizizz-link">
+  <a href="../_static/s2_auto_ejercicios_logica.pdf" class="pdf-btn" download="s2_auto_ejercicios_logica.pdf">
+    📄 Descargar apunte en PDF
+  </a>
+</div>
+```
+
+---
+
 ## Quiz de cierre — Semana 2
 
 ```{raw} html

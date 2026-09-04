@@ -160,6 +160,20 @@ $$S = \{0, 1, 6, 7\}$$
 
 ---
 
+## Descargar clase en PDF
+
+Descarga el **apunte completo de esta clase** (PDF preparado por la docente). No uses el menú del navegador «Imprimir»; ese genera otra versión de la página web.
+
+```{raw} html
+<div class="quizizz-link">
+  <a href="../_static/s2_c2_conjunto_solucion.pdf" class="pdf-btn" download="s2_c2_conjunto_solucion.pdf">
+    📄 Descargar apunte en PDF
+  </a>
+</div>
+```
+
+---
+
 ## Actividad — Quizizz
 
 ```{raw} html

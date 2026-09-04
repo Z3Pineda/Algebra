@@ -175,6 +175,20 @@ $$S_{\vee} = A \cup B = \{2, 4, 6, 7, 8, 9, 10\} \quad \leftarrow \text{pares O 
 
 ---
 
+## Descargar clase en PDF
+
+Descarga el **apunte completo de esta clase** (PDF preparado por la docente). No uses el menú del navegador «Imprimir»; ese genera otra versión de la página web.
+
+```{raw} html
+<div class="quizizz-link">
+  <a href="../_static/s2_c3_conjuncion_disyuncion.pdf" class="pdf-btn" download="s2_c3_conjuncion_disyuncion.pdf">
+    📄 Descargar apunte en PDF
+  </a>
+</div>
+```
+
+---
+
 ## Actividad — Quizizz
 
 ```{raw} html

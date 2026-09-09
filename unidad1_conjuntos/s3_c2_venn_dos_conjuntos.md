@@ -100,6 +100,7 @@ Verificación: $|\text{solo H}| + |H \cap E| + |\text{solo E}| = 2 + 2 + 2 = 6$ 
 
 ---
 
+<!--
 ## Video
 
 ```{raw} html
@@ -112,6 +113,7 @@ Verificación: $|\text{solo H}| + |H \cap E| + |\text{solo E}| = 2 + 2 + 2 = 6$ 
 ```
 
 ---
+-->
 
 ## Actividad — Quizizz
 

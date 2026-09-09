@@ -156,6 +156,7 @@ $$S = \{\text{pieza\_3, pieza\_4, pieza\_6, pieza\_8}\} \quad |S| = 4 \text{ de 
 
 ---
 
+<!--
 ## Video
 
 ```{raw} html
@@ -168,6 +169,7 @@ $$S = \{\text{pieza\_3, pieza\_4, pieza\_6, pieza\_8}\} \quad |S| = 4 \text{ de 
 ```
 
 ---
+-->
 
 ## Actividad — Quizizz
 

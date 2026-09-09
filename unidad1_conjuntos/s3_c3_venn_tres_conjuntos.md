@@ -103,6 +103,7 @@ $$|H \cup E \cup N| = 4 + 4 + 4 - 2 - 1 - 0 + 0 = 9 \text{ equipos con al menos 
 
 ---
 
+<!--
 ## Video
 
 ```{raw} html
@@ -115,6 +116,7 @@ $$|H \cup E \cup N| = 4 + 4 + 4 - 2 - 1 - 0 + 0 = 9 \text{ equipos con al menos 
 ```
 
 ---
+-->
 
 ## Actividad — Quizizz
 

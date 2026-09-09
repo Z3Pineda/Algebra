@@ -61,8 +61,8 @@ Un diagrama de Venn con dos conjuntos tiene **4 regiones distintas**:
 
 ### Aplicación al problema de mantenimiento
 
-$$H = \{\text{bomba\_1, bomba\_2, cilindro\_A, válvula\_3}\}$$
-$$E = \{\text{motor\_1, bomba\_2, sensor\_T, válvula\_3}\}$$
+$$H = \{\text{bomba}_1, \text{bomba}_2, \text{cilindro}_A, \text{válvula}_3\}$$
+$$E = \{\text{motor}_1, \text{bomba}_2, \text{sensor}_T, \text{válvula}_3\}$$
 
 Clasificando cada equipo:
 
@@ -75,7 +75,7 @@ Clasificando cada equipo:
 | motor_1 | ❌ | ✅ | Solo E |
 | sensor_T | ❌ | ✅ | Solo E |
 
-$$H \cap E = \{\text{bomba\_2, válvula\_3}\} \quad \leftarrow \text{equipos críticos: fallaron en ambos sistemas}$$
+$$H \cap E = \{\text{bomba}_2, \text{válvula}_3\} \quad \leftarrow \text{equipos críticos: fallaron en ambos sistemas}$$
 
 ---
 

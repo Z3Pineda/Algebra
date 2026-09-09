@@ -38,13 +38,13 @@ Preguntas que el jefe de planta necesita responder:
 | Dato | Valor |
 |------|------:|
 | Total de técnicos | 60 |
-| $|S|$ | 32 |
-| $|C|$ | 25 |
-| $|M|$ | 20 |
-| $|S \cap C|$ | 10 |
-| $|S \cap M|$ | 8 |
-| $|C \cap M|$ | 7 |
-| $|S \cap C \cap M|$ | 3 |
+| $\lvert S \rvert$ | 32 |
+| $\lvert C \rvert$ | 25 |
+| $\lvert M \rvert$ | 20 |
+| $\lvert S \cap C \rvert$ | 10 |
+| $\lvert S \cap M \rvert$ | 8 |
+| $\lvert C \cap M \rvert$ | 7 |
+| $\lvert S \cap C \cap M \rvert$ | 3 |
 
 **Solución paso a paso:**
 
@@ -152,7 +152,7 @@ De 8 piezas fabricadas:
 | 7 | 25.1 | 99 | V | F | F |
 | 8 | 25.3 | 107 | V | V | **V** ✅ |
 
-$$S = \{\text{pieza\_3, pieza\_4, pieza\_6, pieza\_8}\} \quad |S| = 4 \text{ de 8 aprobadas}$$
+$$S = \{\text{pieza}_3, \text{pieza}_4, \text{pieza}_6, \text{pieza}_8\} \quad |S| = 4 \text{ de 8 aprobadas}$$
 
 ---
 

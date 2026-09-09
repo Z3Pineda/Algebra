@@ -73,9 +73,9 @@ Al restar las tres intersecciones dobles, restamos la intersección triple **tre
 
 ### Aplicación al problema de tres sistemas
 
-$$H = \{\text{bomba\_1, bomba\_2, cilindro\_A, válvula\_3}\}$$
-$$E = \{\text{motor\_1, bomba\_2, sensor\_T, válvula\_3}\}$$
-$$N = \{\text{compresor, cilindro\_A, cilindro\_C, regulador}\}$$
+$$H = \{\text{bomba}_1, \text{bomba}_2, \text{cilindro}_A, \text{válvula}_3\}$$
+$$E = \{\text{motor}_1, \text{bomba}_2, \text{sensor}_T, \text{válvula}_3\}$$
+$$N = \{\text{compresor}, \text{cilindro}_A, \text{cilindro}_C, \text{regulador}\}$$
 
 Clasificando cada equipo en las 8 regiones:
 

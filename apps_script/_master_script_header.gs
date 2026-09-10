@@ -35,6 +35,24 @@ var CONFIG = {
   NOMBRE_JSON: "algebra_quiz_urls.json",
 };
 
+function configurarIdentificacionForm_(form) {
+  form.setCollectEmail(true);
+  form.setLimitOneResponsePerUser(true);
+
+  var nom = form.addTextItem();
+  nom.setTitle("Nombre completo");
+  nom.setHelpText("Escribe tu nombre como aparece en la lista de clase.");
+  nom.setRequired(true);
+
+  var mat = form.addTextItem();
+  mat.setTitle("Matrícula / No. de control");
+  mat.setHelpText("Tu número de matrícula o control escolar.");
+  mat.setRequired(true);
+
+  form.moveItem(nom, 0);
+  form.moveItem(mat, 1);
+}
+
 function poblarFormulario_(form, preguntas) {
   for (var i = 0; i < preguntas.length; i++) {
     var p = preguntas[i];
@@ -56,6 +74,7 @@ function crearQuizDesdeDef_(def) {
   form.setTitle(def.title);
   form.setDescription(def.description);
   form.setShuffleQuestions(true);
+  configurarIdentificacionForm_(form);
   poblarFormulario_(form, def.preguntas);
   return {
     slug: def.slug,

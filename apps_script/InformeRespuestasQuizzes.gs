@@ -13,8 +13,11 @@
  * - Por alumno: matriz alumno × quiz (requiere correo o pregunta de identificación).
  * - Una pestaña por quiz CON respuestas (nombre, fecha, calificación).
  *
- * Si hay timeout (~6 min) con muchos formularios:
- *   informeRespuestasQuizzesLote(0, 25) → luego (25, 25) …
+ * Si hay timeout (~6 min), el progreso YA quedó guardado en la hoja.
+ * Copia el ID del log y continúa, por ejemplo desde el 47:
+ *   informeRespuestasQuizzesContinuar(47, "ID_DE_LA_HOJA")
+ * Al terminar todos los formularios se genera solo "Por alumno".
+ * Hojas por quiz (lento): finalizarInformeQuizzes("ID", true)
  *
  * Para un solo formulario (prueba rápida):
  *   informeRespuestasUnQuiz("ID_DEL_FORMULARIO")
@@ -27,8 +30,8 @@
 var CONFIG_INFORME = {
   /** Solo formularios cuyo nombre en Drive contenga esta cadena. */
   FILTRO_NOMBRE: "Quiz",
-  /** Crear pestaña individual por quiz (solo si tiene ≥1 respuesta). */
-  HOJA_POR_QUIZ: true,
+  /** Crear pestaña por quiz durante el barrido (lento; mejor usar finalizarInformeQuizzes). */
+  HOJA_POR_QUIZ: false,
   /** Crear hoja matriz Por alumno. */
   HOJA_POR_ALUMNO: true,
   /** Máximo de pestañas por quiz (evita hojas vacías). 0 = sin límite. */
@@ -46,20 +49,49 @@ var CONFIG_INFORME = {
  * @returns {string} URL de la hoja de cálculo creada.
  */
 function informeRespuestasQuizzes() {
-  CONFIG_INFORME.BATCH_START = 0;
-  CONFIG_INFORME.BATCH_SIZE = 0;
-  return ejecutarInforme_();
+  return ejecutarInforme_(null, 0, 0);
 }
 
 /**
- * Procesa un lote de formularios (útil si hay timeout).
+ * Procesa un lote de formularios.
  * @param {number} inicio Índice 0-based en la lista filtrada.
  * @param {number} cantidad Cuántos procesar; 0 = resto.
  */
 function informeRespuestasQuizzesLote(inicio, cantidad) {
-  CONFIG_INFORME.BATCH_START = inicio;
-  CONFIG_INFORME.BATCH_SIZE = cantidad;
-  return ejecutarInforme_();
+  return ejecutarInforme_(null, inicio, cantidad);
+}
+
+/**
+ * Continúa un informe interrumpido por timeout.
+ * @param {number} inicio Índice donde se quedó (ej. 47 si falló en 47/81).
+ * @param {string} spreadsheetId ID de la hoja del intento anterior (de la URL o del log).
+ */
+function informeRespuestasQuizzesContinuar(inicio, spreadsheetId) {
+  return ejecutarInforme_(spreadsheetId, inicio, 0);
+}
+
+/**
+ * Continúa procesando N formularios más en la misma hoja.
+ */
+function informeRespuestasQuizzesContinuarLote(inicio, cantidad, spreadsheetId) {
+  return ejecutarInforme_(spreadsheetId, inicio, cantidad);
+}
+
+/**
+ * Genera "Por alumno" y, opcionalmente, pestañas por quiz (lento).
+ * @param {string} spreadsheetId ID de la hoja del informe.
+ * @param {boolean} conHojasQuiz Si true, crea una pestaña por quiz con respuestas.
+ */
+function finalizarInformeQuizzes(spreadsheetId, conHojasQuiz) {
+  var ss = SpreadsheetApp.openById(spreadsheetId);
+  if (CONFIG_INFORME.HOJA_POR_ALUMNO) {
+    reconstruirPorAlumnoDesdeDetalle_(ss);
+  }
+  if (conHojasQuiz) {
+    crearHojasQuizDesdeResumen_(ss);
+  }
+  Logger.log("✅ Informe finalizado: " + ss.getUrl());
+  return ss.getUrl();
 }
 
 /**
@@ -87,65 +119,253 @@ function informeRespuestasUnQuiz(formId) {
 
 // ——— Núcleo ———
 
-function ejecutarInforme_() {
+function ejecutarInforme_(spreadsheetId, inicio, cantidad) {
   var formsData = listarFormulariosCurso_();
-  var start = CONFIG_INFORME.BATCH_START || 0;
-  var size = CONFIG_INFORME.BATCH_SIZE || 0;
+  var start = inicio || 0;
+  var size = cantidad || 0;
   var lote = size > 0 ? formsData.slice(start, start + size) : formsData.slice(start);
+  var total = formsData.length;
 
-  Logger.log("▶ Procesando " + lote.length + " formularios (total encontrados: " + formsData.length + ")");
+  Logger.log("▶ Procesando índices " + start + "–" + (start + lote.length - 1) + " de " + (total - 1) + " (" + lote.length + " forms)");
 
-  var procesados = [];
+  var ss = asegurarInforme_(spreadsheetId);
+  var hojaResumen = ss.getSheetByName("Resumen");
+  var hojaDetalle = ss.getSheetByName("Detalle");
   var errores = [];
+  var procesados = 0;
 
   for (var i = 0; i < lote.length; i++) {
     var meta = lote[i];
+    var globalIdx = start + i + 1;
     try {
       var form = FormApp.openById(meta.fileId);
       var datos = procesarFormulario_(form, meta.formTitle, meta.fileId);
-      procesados.push(datos);
-      Logger.log((i + 1) + "/" + lote.length + " ✅ " + datos.titulo + " — " + datos.respuestas.length + " respuesta(s)");
+      appendResumenFila_(hojaResumen, datos);
+      appendDetalleFilas_(hojaDetalle, datos);
+      if (CONFIG_INFORME.HOJA_POR_QUIZ && datos.respuestas.length > 0) {
+        escribirHojaQuiz_(ss, datos);
+      }
+      procesados++;
+      Logger.log(globalIdx + "/" + total + " ✅ " + datos.titulo + " — " + datos.respuestas.length + " respuesta(s)");
     } catch (err) {
       errores.push({ titulo: meta.formTitle, error: String(err) });
-      Logger.log((i + 1) + "/" + lote.length + " ❌ " + meta.formTitle + ": " + err);
+      Logger.log(globalIdx + "/" + total + " ❌ " + meta.formTitle + ": " + err);
     }
+  }
+
+  registrarErroresInforme_(ss, errores);
+
+  var siguiente = start + lote.length;
+  var completo = siguiente >= total;
+
+  Logger.log("——— RESUMEN ———");
+  Logger.log("Procesados en este lote: " + procesados + " | Errores: " + errores.length);
+  Logger.log("📊 Informe: " + ss.getUrl());
+  Logger.log("🆔 ID hoja: " + ss.getId());
+  PropertiesService.getScriptProperties().setProperty("ULTIMO_INFORME_ID", ss.getId());
+
+  if (completo) {
+    Logger.log("✅ Todos los formularios procesados. Generando Por alumno…");
+    finalizarInformeQuizzes(ss.getId(), false);
+  } else {
+    Logger.log("⏸ Timeout probable si aún faltan forms. Continúa con:");
+    Logger.log('informeRespuestasQuizzesContinuar(' + siguiente + ', "' + ss.getId() + '")');
+  }
+
+  return ss.getUrl();
+}
+
+function asegurarInforme_(spreadsheetId) {
+  if (spreadsheetId) {
+    return SpreadsheetApp.openById(spreadsheetId);
   }
 
   var ss = SpreadsheetApp.create(CONFIG_INFORME.NOMBRE_INFORME + " " + fechaAhora_());
-  escribirResumen_(ss, procesados);
-  escribirDetalle_(ss, procesados);
+  var resumen = ss.getActiveSheet();
+  resumen.setName("Resumen");
+  resumen.appendRow(["slug", "titulo", "respuestas", "promedio %", "preguntas", "editUrl", "responsesUrl", "fileId"]);
+  resumen.setFrozenRows(1);
 
-  if (CONFIG_INFORME.HOJA_POR_ALUMNO) {
-    escribirPorAlumno_(ss, procesados);
+  var detalle = ss.insertSheet("Detalle");
+  detalle.appendRow([
+    "quiz", "slug", "#", "fecha", "nombre", "matricula", "correo",
+    "identificador", "fuente_id", "puntos", "max", "porcentaje", "respuestas",
+  ]);
+  detalle.setFrozenRows(1);
+
+  Logger.log("📊 Informe nuevo: " + ss.getUrl());
+  return ss;
+}
+
+function appendResumenFila_(sh, d) {
+  sh.appendRow([
+    d.slug,
+    d.titulo,
+    d.numRespuestas,
+    d.promedio !== null ? d.promedio + "%" : "—",
+    d.totalPreguntas,
+    d.editUrl,
+    d.responsesUrl,
+    d.fileId,
+  ]);
+}
+
+function appendDetalleFilas_(sh, d) {
+  for (var j = 0; j < d.respuestas.length; j++) {
+    var r = d.respuestas[j];
+    sh.appendRow([
+      d.titulo,
+      d.slug,
+      r.numero,
+      r.timestamp,
+      r.nombre,
+      r.matricula,
+      r.correo,
+      r.identificador,
+      r.identificadorFuente,
+      r.puntos,
+      r.maxPuntos,
+      r.porcentaje !== null ? r.porcentaje + "%" : "",
+      r.respuestasTexto,
+    ]);
   }
+}
 
-  if (CONFIG_INFORME.HOJA_POR_QUIZ) {
-    var hojasCreadas = 0;
-    for (var q = 0; q < procesados.length; q++) {
-      if (procesados[q].respuestas.length === 0) {
-        continue;
-      }
-      if (CONFIG_INFORME.MAX_HOJAS_QUIZ > 0 && hojasCreadas >= CONFIG_INFORME.MAX_HOJAS_QUIZ) {
-        break;
-      }
-      escribirHojaQuiz_(ss, procesados[q]);
-      hojasCreadas++;
-    }
-    Logger.log("📋 Pestañas por quiz creadas: " + hojasCreadas);
+function registrarErroresInforme_(ss, errores) {
+  if (errores.length === 0) {
+    return;
   }
-
-  if (errores.length > 0) {
-    var errSh = ss.insertSheet("Errores");
+  var errSh = ss.getSheetByName("Errores");
+  if (!errSh) {
+    errSh = ss.insertSheet("Errores");
     errSh.appendRow(["formulario", "error"]);
-    for (var e = 0; e < errores.length; e++) {
-      errSh.appendRow([errores[e].titulo, errores[e].error]);
+  }
+  for (var e = 0; e < errores.length; e++) {
+    errSh.appendRow([errores[e].titulo, errores[e].error]);
+  }
+}
+
+function reconstruirPorAlumnoDesdeDetalle_(ss) {
+  var detalle = ss.getSheetByName("Detalle");
+  if (!detalle || detalle.getLastRow() < 2) {
+    Logger.log("⚠ Detalle vacío; no se generó Por alumno.");
+    return;
+  }
+
+  var existente = ss.getSheetByName("Por alumno");
+  if (existente) {
+    ss.deleteSheet(existente);
+  }
+
+  var rows = detalle.getDataRange().getValues();
+  var procesadosMap = {};
+  var porAlumno = {};
+
+  for (var i = 1; i < rows.length; i++) {
+    var row = rows[i];
+    var tituloQuiz = row[0];
+    var nombre = row[4];
+    var matricula = row[5];
+    var correo = row[6];
+    var identificador = row[7];
+    var fuente = row[8];
+    var pctStr = String(row[11] || "").replace("%", "");
+    var pct = pctStr !== "" ? parseFloat(pctStr) : null;
+
+    procesadosMap[tituloQuiz] = true;
+
+    var key = (matricula || correo || nombre || identificador || "anon-" + i).toLowerCase();
+    if (!porAlumno[key]) {
+      porAlumno[key] = {
+        identificador: identificador,
+        nombre: nombre,
+        matricula: matricula,
+        correo: correo,
+        fuente: fuente,
+        scores: {},
+        porcentajes: [],
+      };
+    }
+    porAlumno[key].scores[tituloQuiz] = pct !== null && !isNaN(pct) ? pct + "%" : "—";
+    if (pct !== null && !isNaN(pct)) {
+      porAlumno[key].porcentajes.push(pct);
     }
   }
 
-  Logger.log("——— RESUMEN ———");
-  Logger.log("Quizzes procesados: " + procesados.length + " | Errores: " + errores.length);
-  Logger.log("📊 Informe: " + ss.getUrl());
-  return ss.getUrl();
+  var quizzes = Object.keys(procesadosMap).sort();
+  var sh = ss.insertSheet("Por alumno");
+  var header = ["identificador", "nombre", "matricula", "correo", "fuente_id", "quizzes_contestados", "promedio_general %"];
+  for (var q = 0; q < quizzes.length; q++) {
+    header.push(acortarTexto_(quizzes[q], 28));
+  }
+  sh.appendRow(header);
+
+  var keys = Object.keys(porAlumno).sort();
+  for (var k = 0; k < keys.length; k++) {
+    var alumno = porAlumno[keys[k]];
+    var prom =
+      alumno.porcentajes.length
+        ? Math.round(
+            (alumno.porcentajes.reduce(function (a, b) {
+              return a + b;
+            }, 0) /
+              alumno.porcentajes.length) *
+              10
+          ) / 10
+        : "";
+    var fila = [
+      alumno.identificador,
+      alumno.nombre,
+      alumno.matricula,
+      alumno.correo,
+      alumno.fuente,
+      alumno.porcentajes.length,
+      prom !== "" ? prom + "%" : "",
+    ];
+    for (var q2 = 0; q2 < quizzes.length; q2++) {
+      fila.push(alumno.scores[quizzes[q2]] || "");
+    }
+    sh.appendRow(fila);
+  }
+
+  sh.setFrozenRows(1);
+  sh.setFrozenColumns(1);
+  Logger.log("📋 Hoja Por alumno generada (" + keys.length + " personas).");
+}
+
+function crearHojasQuizDesdeResumen_(ss) {
+  var resumen = ss.getSheetByName("Resumen");
+  if (!resumen || resumen.getLastRow() < 2) {
+    return;
+  }
+  var rows = resumen.getDataRange().getValues();
+  var creadas = 0;
+
+  for (var i = 1; i < rows.length; i++) {
+    var numResp = rows[i][2];
+    var fileId = rows[i][7];
+    if (!fileId || numResp === 0 || numResp === "0") {
+      continue;
+    }
+    if (CONFIG_INFORME.MAX_HOJAS_QUIZ > 0 && creadas >= CONFIG_INFORME.MAX_HOJAS_QUIZ) {
+      break;
+    }
+    var nombreHoja = nombreHojaValido_(rows[i][0] || rows[i][1]);
+    if (ss.getSheetByName(nombreHoja)) {
+      continue;
+    }
+    try {
+      var form = FormApp.openById(fileId);
+      var datos = procesarFormulario_(form, rows[i][1], fileId);
+      if (datos.respuestas.length > 0) {
+        escribirHojaQuiz_(ss, datos);
+        creadas++;
+      }
+    } catch (err) {
+      Logger.log("⚠ No se pudo crear hoja para " + rows[i][1] + ": " + err);
+    }
+  }
+  Logger.log("📋 Pestañas por quiz creadas: " + creadas);
 }
 
 function listarFormulariosCurso_() {

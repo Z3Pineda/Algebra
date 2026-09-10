@@ -101,12 +101,12 @@ function configurarIdentificacionForm_(form) {
     limiteUnaRespuesta: false,
   };
 
-  if (!form.getCollectEmail()) {
+  if (!form.collectsEmail()) {
     form.setCollectEmail(true);
     cambios.correoActivado = true;
   }
 
-  if (!form.getLimitOneResponsePerUser()) {
+  if (!form.hasLimitOneResponsePerUser()) {
     form.setLimitOneResponsePerUser(true);
     cambios.limiteUnaRespuesta = true;
   }

@@ -1,0 +1,907 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>57. S12·C2 Sistemas de dos ecuaciones con dos incógnitas &#8212; Álgebra para Ingeniería Mecánica</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=5f4a6556" />
+    <link rel="stylesheet" type="text/css" href="../_static/js/jsxgraph.css?v=fe8723f5" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unidad4_ecuaciones/s12_c2_sistemas_dos_ecuaciones';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/js/jsxgraphcore.js?v=976eb28f"></script>
+    <link rel="canonical" href="https://z3pineda.github.io/Algebra/unidad4_ecuaciones/s12_c2_sistemas_dos_ecuaciones.html" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="58. S12·C3 Método de sustitución" href="s12_c3_metodo_sustitucion.html" />
+    <link rel="prev" title="56. S12·C1 Modelación de situaciones con ecuaciones lineales" href="s12_c1_modelacion_ecuaciones_lineales.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../landing.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Álgebra para Ingeniería Mecánica</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 1 — Conjuntos y Lógica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c1_presentacion_diagnostico.html">1. S1·C1 Presentación del curso y diagnóstico de aritmética</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c2_concepto_conjunto.html">2. S1·C2 Concepto de conjunto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c3_representacion_conjuntos.html">3. S1·C3 Representación de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c4_operaciones_basicas.html">4. S1·C4 Operaciones básicas con conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_auto_repaso_conjuntos.html">5. S1·Auto Repaso de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c1_proposicion_valor_verdad.html">6. S2·C1 Proposición y valor de verdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c2_conjunto_solucion.html">7. S2·C2 Conjunto solución de una proposición abierta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c3_conjuncion_disyuncion.html">8. S2·C3 Conjunción y disyunción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c4_implicacion_negacion.html">9. S2·C4 Implicación y negación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_auto_ejercicios_logica.html">10. S2·Auto Ejercicios de lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c1_tipos_conjuntos.html">11. S3·C1 Tipos de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c2_venn_dos_conjuntos.html">12. S3·C2 Diagramas de Venn con dos conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c3_venn_tres_conjuntos.html">13. S3·C3 Diagramas de Venn con tres conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c4_problemas_aplicados.html">14. S3·C4 Problemas aplicados con conjuntos y lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_auto_tarea_integradora.html">15. S3·Auto Tarea integradora — Unidad 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 2 — Números Reales y Funciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c1_numeros_naturales_enteros.html">16. S4·C1 Números naturales, enteros, racionales, irracionales y reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c2_recta_numerica.html">17. S4·C2 La recta numérica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c3_propiedades_reales.html">18. S4·C3 Propiedades de los números reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c4_producto_cartesiano.html">19. S4·C4 Producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_auto_clasificacion_numeros.html">20. S4·Auto Clasificación de números y producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c1_concepto_relacion.html">21. S5·C1 Concepto de relación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c2_concepto_funcion.html">22. S5·C2 Concepto de función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c3_relacion_vs_funcion.html">23. S5·C3 Diferencia entre relación y función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c4_dominio_rango.html">24. S5·C4 Dominio y rango de una función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_auto_identificacion_funciones.html">25. S5·Auto Identificación de funciones, dominio y rango</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 3 — Expresiones Algebraicas</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_c1_propiedades_igualdad.html">26. S6·C1 Propiedades de la igualdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_c2_expresion_algebraica_terminos.html">27. S6·C2 Expresión algebraica y términos semejantes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_c3_suma_resta_expresiones.html">28. S6·C3 Suma y resta de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_c4_multiplicacion_expresiones.html">29. S6·C4 Multiplicación de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_auto_simplificacion_algebraica.html">30. S6·Auto Ejercicios de simplificación algebraica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_c1_binomio_cuadrado.html">31. S7·C1 Binomio al cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_c2_binomios_conjugados.html">32. S7·C2 Producto de binomios conjugados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_c3_binomio_cubo.html">33. S7·C3 Binomio al cubo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_c4_binomio_por_trinomio.html">34. S7·C4 Producto de un binomio por un trinomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_auto_productos_notables.html">35. S7·Auto Práctica de productos notables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_c1_factor_comun.html">36. S8·C1 Factor común</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_c2_factorizacion_trinomios.html">37. S8·C2 Factorización de trinomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_c3_diferencia_cuadrados.html">38. S8·C3 Diferencia de cuadrados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_c4_cubos_agrupacion.html">39. S8·C4 Cubos y agrupación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_auto_factorizacion.html">40. S8·Auto Ejercicios de factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_c1_division_monomios.html">41. S9·C1 División de monomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_c2_division_polinomio_monomio.html">42. S9·C2 División de polinomio entre monomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_c3_division_polinomios.html">43. S9·C3 División de polinomios — algoritmo de la división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_c4_fracciones_algebraicas.html">44. S9·C4 Simplificación, multiplicación y división de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_auto_fracciones_algebraicas.html">45. S9·Auto Ejercicios de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_c1_exponentes_enteros.html">46. S10·C1 Exponentes enteros y exponente cero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_c2_exponentes_negativos_fraccionarios.html">47. S10·C2 Exponentes negativos y fraccionarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_c3_radicales.html">48. S10·C3 Radicales — suma, resta, producto y división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_c4_factorial_combinatorios_binomio.html">49. S10·C4 Factorial, combinatorios y teorema del binomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_auto_repaso_unidad3.html">50. S10·Auto Repaso general Unidad 3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 4 — Ecuaciones</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="s11_c1_concepto_ecuacion_identidad.html">51. S11·C1 Concepto de ecuación e identidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s11_c2_ecuaciones_lineales.html">52. S11·C2 Ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s11_c3_ecuaciones_con_literales.html">53. S11·C3 Ecuaciones con literales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s11_c4_ecuaciones_con_fracciones.html">54. S11·C4 Ecuaciones con fracciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s11_auto_modelacion_ecuaciones.html">55. S11·Auto Problemas de modelación con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s12_c1_modelacion_ecuaciones_lineales.html">56. S12·C1 Modelación de situaciones con ecuaciones lineales</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">57. S12·C2 Sistemas de dos ecuaciones con dos incógnitas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s12_c3_metodo_sustitucion.html">58. S12·C3 Método de sustitución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s12_c4_metodo_suma_resta_grafico.html">59. S12·C4 Método de suma o resta y solución gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s12_auto_comparacion_metodos.html">60. S12·Auto Ejercicios comparativos de métodos de solución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s13_c1_concepto_ecuacion_cuadratica.html">61. S13·C1 Concepto de ecuación cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s13_c2_solucion_factorizacion.html">62. S13·C2 Solución por factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s13_c3_forma_x_mas_a_cuadrado.html">63. S13·C3 Ecuaciones de la forma (x+a)²=b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s13_c4_completando_cuadrados.html">64. S13·C4 Completando el cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s13_auto_ecuaciones_cuadraticas.html">65. S13·Auto Práctica de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s14_c1_formula_general.html">66. S14·C1 Fórmula general</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s14_c2_ecuaciones_con_radicales.html">67. S14·C2 Ecuaciones con radicales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s14_c3_ecuaciones_forma_cuadratica.html">68. S14·C3 Ecuaciones de forma cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s14_c4_sistemas_lineal_cuadratica.html">69. S14·C4 Sistemas con una ecuación lineal y una cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s14_auto_aplicacion_verificacion.html">70. S14·Auto Ejercicios de aplicación y verificación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s15_c1_sistemas_cuadraticos.html">71. S15·C1 Sistemas de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s15_c2_funcion_polinomial_grado_n.html">72. S15·C2 Función polinomial de grado n</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s15_c3_division_sintetica_residuo.html">73. S15·C3 División sintética y teorema del residuo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s15_c4_teorema_factor_raices.html">74. S15·C4 Teorema del factor, raíces y teorema fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s15_auto_repaso_unidad4.html">75. S15·Auto Repaso general Unidad 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 5 — Desigualdades</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c1_valor_absoluto_grafico.html">76. S16·C1 Valor absoluto e interpretación gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c2_ecuaciones_valor_absoluto.html">77. S16·C2 Ecuaciones con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c3_desigualdades_valor_absoluto.html">78. S16·C3 Desigualdades con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c4_repaso_general.html">79. S16·C4 Repaso general del curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_auto_cierre_curso.html">80. S16·Auto Entrega de evidencias y preparación para examen final</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S12·C2 Sistemas de dos ecuaciones con dos incógnitas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">57.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-sistema-de-ecuaciones">57.1.1. ¿Qué es un sistema de ecuaciones?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-grafica">57.1.2. Interpretación gráfica</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-sistemas">57.1.3. Tipos de sistemas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-compatible-determinado-scd">57.1.4. Ejemplo 1 — Compatible determinado (SCD)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2-compatible-indeterminado-sci">57.1.5. Ejemplo 2 — Compatible indeterminado (SCI)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3-incompatible-si">57.1.6. Ejemplo 3 — Incompatible (SI)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#balance-de-materiales-en-dos-procesos">57.1.7. Balance de materiales en dos procesos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">57.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">57.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">57.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">57.5. Resumen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s12c2-sistemas-de-dos-ecuaciones-con-dos-incognitas">
+<h1><span class="section-number">57. </span>S12·C2 Sistemas de dos ecuaciones con dos incógnitas<a class="headerlink" href="#s12c2-sistemas-de-dos-ecuaciones-con-dos-incognitas" title="Link to this heading">#</a></h1>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Equilibrio de dos fuerzas en un soporte</p>
+<p>Un soporte recibe dos fuerzas desconocidas <span class="math notranslate nohighlight">\(F_x\)</span> (horizontal) y <span class="math notranslate nohighlight">\(F_y\)</span> (vertical). Las condiciones de equilibrio estático exigen:</p>
+<div class="math notranslate nohighlight">
+\[\sum F_x = 0: \quad F_x - 120 = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\sum F_y = 0: \quad F_y + 80 - 200 = 0\]</div>
+<p>Dos ecuaciones, dos incógnitas. La solución <span class="math notranslate nohighlight">\((F_x, F_y) = (120, 120)\)</span> N es el único par que satisface <strong>ambas</strong> condiciones simultáneamente. En ingeniería, casi nunca basta una sola ecuación cuando hay dos magnitudes desconocidas.</p>
+</div>
+<p><strong>Pregunta detonadora</strong></p>
+<blockquote>
+<div><p>Las rectas <span class="math notranslate nohighlight">\(y = 2x + 1\)</span> e <span class="math notranslate nohighlight">\(y = -x + 7\)</span> se cortan en un punto. ¿Qué significa ese punto como solución del sistema formado por ambas ecuaciones?</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="teoria">
+<h2><span class="section-number">57.1. </span>Teoría<a class="headerlink" href="#teoria" title="Link to this heading">#</a></h2>
+<section id="que-es-un-sistema-de-ecuaciones">
+<h3><span class="section-number">57.1.1. </span>¿Qué es un sistema de ecuaciones?<a class="headerlink" href="#que-es-un-sistema-de-ecuaciones" title="Link to this heading">#</a></h3>
+<p>Un <strong>sistema de ecuaciones lineales</strong> es un conjunto de dos o más ecuaciones que deben cumplirse <strong>al mismo tiempo</strong>, con las mismas incógnitas.</p>
+<p><strong>Sistema <span class="math notranslate nohighlight">\(2 \times 2\)</span></strong> (dos ecuaciones, dos incógnitas):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} a_1 x + b_1 y = c_1 \\ a_2 x + b_2 y = c_2 \end{cases}\end{split}\]</div>
+<p>La <strong>solución</strong> es el par ordenado <span class="math notranslate nohighlight">\((x, y)\)</span> que satisface <strong>ambas</strong> ecuaciones.</p>
+</section>
+<hr class="docutils" />
+<section id="interpretacion-grafica">
+<h3><span class="section-number">57.1.2. </span>Interpretación gráfica<a class="headerlink" href="#interpretacion-grafica" title="Link to this heading">#</a></h3>
+<p>Cada ecuación lineal con dos incógnitas representa una <strong>recta</strong> en el plano cartesiano.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Concepto</p></th>
+<th class="head"><p>Significado gráfico</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Solución del sistema</p></td>
+<td><p><strong>Punto de intersección</strong> de las dos rectas</p></td>
+</tr>
+<tr class="row-odd"><td><p>Una solución</p></td>
+<td><p>Las rectas se cortan en un solo punto</p></td>
+</tr>
+<tr class="row-even"><td><p>Infinitas soluciones</p></td>
+<td><p>Las rectas son la misma (coincidentes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sin solución</p></td>
+<td><p>Las rectas son paralelas (nunca se cortan)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Ejemplo:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} y = 2x + 1 \\ y = -x + 7 \end{cases}\end{split}\]</div>
+<p>En el punto de intersección ambas expresiones de <span class="math notranslate nohighlight">\(y\)</span> son iguales:</p>
+<div class="math notranslate nohighlight">
+\[2x + 1 = -x + 7 \quad \Rightarrow \quad 3x = 6 \quad \Rightarrow \quad x = 2, \quad y = 5\]</div>
+<p>El punto <span class="math notranslate nohighlight">\((2, 5)\)</span> pertenece a <strong>ambas</strong> rectas.</p>
+</section>
+<hr class="docutils" />
+<section id="tipos-de-sistemas">
+<h3><span class="section-number">57.1.3. </span>Tipos de sistemas<a class="headerlink" href="#tipos-de-sistemas" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipo</p></th>
+<th class="head"><p>Rectas</p></th>
+<th class="head text-center"><p>Soluciones</p></th>
+<th class="head"><p>Nombre</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Compatible determinado</strong></p></td>
+<td><p>Secantes (se cortan)</p></td>
+<td class="text-center"><p><strong>Una</strong></p></td>
+<td><p>SCD</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Compatible indeterminado</strong></p></td>
+<td><p>Coincidentes</p></td>
+<td class="text-center"><p><strong>Infinitas</strong></p></td>
+<td><p>SCI</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Incompatible</strong></p></td>
+<td><p>Paralelas</p></td>
+<td class="text-center"><p><strong>Ninguna</strong></p></td>
+<td><p>SI</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Criterio algebraico:</strong> compara las razones de los coeficientes:</p>
+<div class="math notranslate nohighlight">
+\[\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2} \quad \Rightarrow \quad \text{incompatible (paralelas)}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2} \quad \Rightarrow \quad \text{indeterminado (coincidentes)}\]</div>
+</section>
+<hr class="docutils" />
+<section id="ejemplo-1-compatible-determinado-scd">
+<h3><span class="section-number">57.1.4. </span>Ejemplo 1 — Compatible determinado (SCD)<a class="headerlink" href="#ejemplo-1-compatible-determinado-scd" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} 2x + y = 7 \\ x - y = 2 \end{cases}\end{split}\]</div>
+<p>Sumando ambas ecuaciones: <span class="math notranslate nohighlight">\(3x = 9 \Rightarrow x = 3\)</span>. Sustituyendo: <span class="math notranslate nohighlight">\(y = 7 - 2(3) = 1\)</span>.</p>
+<p><strong>Solución:</strong> <span class="math notranslate nohighlight">\((3, 1)\)</span> — única.</p>
+<p><strong>Verificación:</strong> <span class="math notranslate nohighlight">\(2(3)+1=7\)</span> ✓ y <span class="math notranslate nohighlight">\(3-1=2\)</span> ✓</p>
+</section>
+<hr class="docutils" />
+<section id="ejemplo-2-compatible-indeterminado-sci">
+<h3><span class="section-number">57.1.5. </span>Ejemplo 2 — Compatible indeterminado (SCI)<a class="headerlink" href="#ejemplo-2-compatible-indeterminado-sci" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} x + y = 5 \\ 2x + 2y = 10 \end{cases}\end{split}\]</div>
+<p>La segunda ecuación es el doble de la primera → <strong>misma recta</strong>.</p>
+<p>Infinitas soluciones: <span class="math notranslate nohighlight">\((0,5), (1,4), (2,3), (3,2), \ldots\)</span></p>
+<p>Forma general: <span class="math notranslate nohighlight">\(y = 5 - x\)</span>.</p>
+</section>
+<hr class="docutils" />
+<section id="ejemplo-3-incompatible-si">
+<h3><span class="section-number">57.1.6. </span>Ejemplo 3 — Incompatible (SI)<a class="headerlink" href="#ejemplo-3-incompatible-si" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} x + y = 5 \\ x + y = 8 \end{cases}\end{split}\]</div>
+<p>Rectas paralelas (misma pendiente, distinto intercepto). <strong>No hay solución.</strong></p>
+<p>En ingeniería, un sistema incompatible indica <strong>condiciones contradictorias</strong> — por ejemplo, dos sensores que reportan valores incompatibles para la misma variable.</p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Un sistema incompatible no significa «error de cálculo» — significa que el problema <strong>no tiene solución</strong> bajo las condiciones dadas. Revisa los datos o las hipótesis del modelo.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="balance-de-materiales-en-dos-procesos">
+<h3><span class="section-number">57.1.7. </span>Balance de materiales en dos procesos<a class="headerlink" href="#balance-de-materiales-en-dos-procesos" title="Link to this heading">#</a></h3>
+<p>En una planta, el proceso A consume <span class="math notranslate nohighlight">\(2x + y\)</span> kg de materia prima y el proceso B consume <span class="math notranslate nohighlight">\(x + 3y\)</span> kg. Si hay 20 kg disponibles para A y 25 kg para B:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} 2x + y = 20 \\ x + 3y = 25 \end{cases}\end{split}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> representan los kg asignados a cada insumo. La solución indica la distribución óptima.</p>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Ingeniería — dos condiciones de operación</p>
+<p>Un motor debe cumplir simultáneamente:</p>
+<ul class="simple">
+<li><p>Potencia mínima: <span class="math notranslate nohighlight">\(P = Fv \geq 6000\)</span> W → simplificado como <span class="math notranslate nohighlight">\(3F + 2v = 6000\)</span></p></li>
+<li><p>Consumo máximo de combustible: <span class="math notranslate nohighlight">\(2F + v = 3500\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases} 3F + 2v = 6000 \\ 2F + v = 3500 \end{cases}\end{split}\]</div>
+<p>La solución <span class="math notranslate nohighlight">\((F, v)\)</span> es el <strong>único</strong> par que cumple ambas restricciones. Los sistemas <span class="math notranslate nohighlight">\(2 \times 2\)</span> modelan la intersección de condiciones de diseño.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="video">
+<h2><span class="section-number">57.2. </span>Video<a class="headerlink" href="#video" title="Link to this heading">#</a></h2>
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/REEMPLAZA_ID_YOUTUBE_SISTEMAS_2X2"
+    allowfullscreen>
+  </iframe>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — video Manim sugerido (~5 min):</strong></p>
+<ol class="arabic simple">
+<li><p>Dos rectas que se cortan → una solución (SCD)</p></li>
+<li><p>Rectas paralelas → sin solución (SI)</p></li>
+<li><p>Rectas coincidentes → infinitas soluciones (SCI)</p></li>
+<li><p>Sistema 2x+y=7, x-y=2 → punto (3,1)</p></li>
+<li><p>Balance de fuerzas: sum Fx=0 y sum Fy=0</p></li>
+<li><p>Criterio de razones a1/a2, b1/b2, c1/c2</p></li>
+</ol>
+</div>
+</section>
+<hr class="docutils" />
+<section id="visualizacion-interactiva">
+<h2><span class="section-number">57.3. </span>Visualización interactiva<a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
+<p>Selecciona el tipo de sistema y observa la relación entre las dos rectas y su solución.</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraph.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js"></script>
+
+<div id="jxg-s12c2-sistemas" class="jsxgraph-container" style="height:500px"></div>
+
+<script>
+(function() {
+    var sistemas = [
+        {
+            nombre: 'SCD',
+            tipo: 'Compatible determinado',
+            eq1: { m: 2, b: 1, color: '#1d4ed8' },
+            eq2: { m: -1, b: 7, color: '#c2410c' },
+            sol: { x: 2, y: 5 },
+            desc: 'Una solucion: (2, 5)'
+        },
+        {
+            nombre: 'SCI',
+            tipo: 'Compatible indeterminado',
+            eq1: { m: -1, b: 5, color: '#1d4ed8' },
+            eq2: { m: -1, b: 5, color: '#c2410c' },
+            sol: null,
+            desc: 'Infinitas soluciones (rectas coincidentes)'
+        },
+        {
+            nombre: 'SI',
+            tipo: 'Incompatible',
+            eq1: { m: -1, b: 5, color: '#1d4ed8' },
+            eq2: { m: -1, b: 8, color: '#c2410c' },
+            sol: null,
+            desc: 'Sin solucion (rectas paralelas)'
+        }
+    ];
+
+    function init() {
+        if (typeof JXG === 'undefined') { setTimeout(init, 200); return; }
+        JXG.Options.text.useMathJax = false;
+        var board = JXG.JSXGraph.initBoard('jxg-s12c2-sistemas', {
+            boundingbox: [-2, 10, 10, -2],
+            axis: true, showCopyright: false, showNavigation: false,
+            pan: { enabled: false }, zoom: { enabled: false }
+        });
+
+        var activo = 0;
+        var dinamicos = [], btnTipos = [];
+
+        function limpiar() {
+            dinamicos.forEach(function(o) { try { board.removeObject(o); } catch(e) {} });
+            dinamicos = [];
+        }
+
+        function dibujar(idx) {
+            limpiar();
+            activo = idx;
+            var s = sistemas[idx];
+
+            btnTipos.forEach(function(b, i) {
+                b.setAttribute({
+                    fillColor: i === idx ? '#7c3aed' : '#e5e7eb',
+                    strokeColor: i === idx ? '#7c3aed' : '#9ca3af'
+                });
+            });
+
+            var f1 = function(x) { return s.eq1.m * x + s.eq1.b; };
+            var f2 = function(x) { return s.eq2.m * x + s.eq2.b; };
+
+            dinamicos.push(board.create('functiongraph', [f1, -2, 10], {
+                strokeColor: s.eq1.color, strokeWidth: 2
+            }));
+            dinamicos.push(board.create('functiongraph', [f2, -2, 10], {
+                strokeColor: s.eq2.color, strokeWidth: 2
+            }));
+
+            dinamicos.push(board.create('text', [6, 9, s.tipo], {
+                fontSize: 13, color: '#7c3aed', fontWeight: 'bold'
+            }));
+            dinamicos.push(board.create('text', [6, 8.2, s.desc], {
+                fontSize: 11, color: '#374151'
+            }));
+
+            if (s.sol) {
+                dinamicos.push(board.create('point', [s.sol.x, s.sol.y], {
+                    name: '(' + s.sol.x + ', ' + s.sol.y + ')',
+                    size: 4, fillColor: '#16a34a', strokeColor: '#16a34a',
+                    label: { fontSize: 12, color: '#16a34a', offset: [10, 10] }
+                }));
+            }
+        }
+
+        sistemas.forEach(function(s, i) {
+            var btn = board.create('button', [6 + i * 2.5, -1.5, s.nombre], {
+                fixed: true, highlight: false, size: 2,
+                fillColor: '#e5e7eb', strokeColor: '#9ca3af'
+            });
+            (function(idx) { btn.on('down', function() { dibujar(idx); }); })(i);
+            btnTipos.push(btn);
+        });
+
+        dibujar(0);
+    }
+    init();
+})();
+</script><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — visualización:</strong>
+Tres botones (SCD, SCI, SI) muestran pares de rectas con distinta relación geométrica. En SCD se marca el punto de intersección. Refuerza la conexión entre solución algebraica y cruce gráfico.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="actividad-quizizz">
+<h2><span class="section-number">57.4. </span>Actividad — Quizizz<a class="headerlink" href="#actividad-quizizz" title="Link to this heading">#</a></h2>
+<div class="quizizz-link">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAp7aQzv7Bpa9WwP4l0l6bv9cNKTXHEgXRA8AmsKNuOq3YSg/viewform" target="_blank" class="quizizz-btn">
+    📝 Practicar: Sistemas 2×2
+  </a>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — actividad Quizizz (8 preguntas, ~10 min):</strong></p>
+<p>P1 (MC): «Solucion de un sistema 2x2 es:» → Par (x,y) que satisface ambas ecuaciones
+P2 (MC): «Rectas secantes → sistema:» → Compatible determinado
+P3 (MC): «Rectas paralelas → sistema:» → Incompatible
+P4 (T/F): «x+y=5 y 2x+2y=10 tienen infinitas soluciones.» → Verdadero
+P5 (Fill): «y=2x+1 e y=-x+7 → x=<em><strong>, y=</strong></em>» → 2, 5
+P6 (MC ingeniería): «Dos ecuaciones de equilibrio (Fx, Fy) forman:» → Sistema 2x2
+P7 (T/F): «Sistema incompatible tiene al menos una solucion.» → Falso
+P8 (MC): «Graficamente, la solucion es:» → Punto de interseccion</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="resumen">
+<h2><span class="section-number">57.5. </span>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Concepto</p></th>
+<th class="head"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Sistema <span class="math notranslate nohighlight">\(2 \times 2\)</span></p></td>
+<td><p>Dos ecuaciones lineales con dos incógnitas; solución simultánea</p></td>
+</tr>
+<tr class="row-odd"><td><p>SCD</p></td>
+<td><p>Rectas secantes → <strong>una</strong> solución</p></td>
+</tr>
+<tr class="row-even"><td><p>SCI</p></td>
+<td><p>Rectas coincidentes → <strong>infinitas</strong> soluciones</p></td>
+</tr>
+<tr class="row-odd"><td><p>SI</p></td>
+<td><p>Rectas paralelas → <strong>ninguna</strong> solución</p></td>
+</tr>
+<tr class="row-even"><td><p>Interpretación gráfica</p></td>
+<td><p>Solución = punto de intersección de las rectas</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ingeniería</p></td>
+<td><p>Equilibrio de fuerzas, balance de materiales en dos procesos</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Siguiente clase</p>
+<p>Ya conoces qué es un sistema y sus tipos. En la siguiente clase aprenderás el <strong>método de sustitución</strong> para resolver sistemas <span class="math notranslate nohighlight">\(2 \times 2\)</span> algebraicamente.</p>
+<p>➡️ <a class="reference internal" href="s12_c3_metodo_sustitucion.html"><span class="std std-doc">Ir a S12·C3 Método de sustitución</span></a></p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unidad4_ecuaciones"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="s12_c1_modelacion_ecuaciones_lineales.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title"><span class="section-number">56. </span>S12·C1 Modelación de situaciones con ecuaciones lineales</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="s12_c3_metodo_sustitucion.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title"><span class="section-number">58. </span>S12·C3 Método de sustitución</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">57.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-sistema-de-ecuaciones">57.1.1. ¿Qué es un sistema de ecuaciones?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion-grafica">57.1.2. Interpretación gráfica</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-sistemas">57.1.3. Tipos de sistemas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-1-compatible-determinado-scd">57.1.4. Ejemplo 1 — Compatible determinado (SCD)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-2-compatible-indeterminado-sci">57.1.5. Ejemplo 2 — Compatible indeterminado (SCI)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplo-3-incompatible-si">57.1.6. Ejemplo 3 — Incompatible (SI)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#balance-de-materiales-en-dos-procesos">57.1.7. Balance de materiales en dos procesos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">57.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">57.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">57.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">57.5. Resumen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Dra. Zaira Pineda Rico — Ingeniería Mecánica Administrativa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

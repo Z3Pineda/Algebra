@@ -1,0 +1,1012 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>39. S8·C4 Cubos y agrupación &#8212; Álgebra para Ingeniería Mecánica</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=5f4a6556" />
+    <link rel="stylesheet" type="text/css" href="../_static/js/jsxgraph.css?v=fe8723f5" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unidad3_expresiones/s8_c4_cubos_agrupacion';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/js/jsxgraphcore.js?v=976eb28f"></script>
+    <link rel="canonical" href="https://z3pineda.github.io/Algebra/unidad3_expresiones/s8_c4_cubos_agrupacion.html" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="40. S8·Auto Ejercicios de factorización" href="s8_auto_factorizacion.html" />
+    <link rel="prev" title="38. S8·C3 Diferencia de cuadrados" href="s8_c3_diferencia_cuadrados.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../landing.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Álgebra para Ingeniería Mecánica</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 1 — Conjuntos y Lógica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c1_presentacion_diagnostico.html">1. S1·C1 Presentación del curso y diagnóstico de aritmética</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c2_concepto_conjunto.html">2. S1·C2 Concepto de conjunto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c3_representacion_conjuntos.html">3. S1·C3 Representación de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c4_operaciones_basicas.html">4. S1·C4 Operaciones básicas con conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_auto_repaso_conjuntos.html">5. S1·Auto Repaso de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c1_proposicion_valor_verdad.html">6. S2·C1 Proposición y valor de verdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c2_conjunto_solucion.html">7. S2·C2 Conjunto solución de una proposición abierta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c3_conjuncion_disyuncion.html">8. S2·C3 Conjunción y disyunción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c4_implicacion_negacion.html">9. S2·C4 Implicación y negación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_auto_ejercicios_logica.html">10. S2·Auto Ejercicios de lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c1_tipos_conjuntos.html">11. S3·C1 Tipos de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c2_venn_dos_conjuntos.html">12. S3·C2 Diagramas de Venn con dos conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c3_venn_tres_conjuntos.html">13. S3·C3 Diagramas de Venn con tres conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c4_problemas_aplicados.html">14. S3·C4 Problemas aplicados con conjuntos y lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_auto_tarea_integradora.html">15. S3·Auto Tarea integradora — Unidad 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 2 — Números Reales y Funciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c1_numeros_naturales_enteros.html">16. S4·C1 Números naturales, enteros, racionales, irracionales y reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c2_recta_numerica.html">17. S4·C2 La recta numérica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c3_propiedades_reales.html">18. S4·C3 Propiedades de los números reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_c4_producto_cartesiano.html">19. S4·C4 Producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s4_auto_clasificacion_numeros.html">20. S4·Auto Clasificación de números y producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c1_concepto_relacion.html">21. S5·C1 Concepto de relación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c2_concepto_funcion.html">22. S5·C2 Concepto de función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c3_relacion_vs_funcion.html">23. S5·C3 Diferencia entre relación y función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_c4_dominio_rango.html">24. S5·C4 Dominio y rango de una función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad2_funciones/s5_auto_identificacion_funciones.html">25. S5·Auto Identificación de funciones, dominio y rango</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 3 — Expresiones Algebraicas</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="s6_c1_propiedades_igualdad.html">26. S6·C1 Propiedades de la igualdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c2_expresion_algebraica_terminos.html">27. S6·C2 Expresión algebraica y términos semejantes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c3_suma_resta_expresiones.html">28. S6·C3 Suma y resta de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_c4_multiplicacion_expresiones.html">29. S6·C4 Multiplicación de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s6_auto_simplificacion_algebraica.html">30. S6·Auto Ejercicios de simplificación algebraica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c1_binomio_cuadrado.html">31. S7·C1 Binomio al cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c2_binomios_conjugados.html">32. S7·C2 Producto de binomios conjugados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c3_binomio_cubo.html">33. S7·C3 Binomio al cubo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_c4_binomio_por_trinomio.html">34. S7·C4 Producto de un binomio por un trinomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s7_auto_productos_notables.html">35. S7·Auto Práctica de productos notables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c1_factor_comun.html">36. S8·C1 Factor común</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c2_factorizacion_trinomios.html">37. S8·C2 Factorización de trinomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_c3_diferencia_cuadrados.html">38. S8·C3 Diferencia de cuadrados</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">39. S8·C4 Cubos y agrupación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s8_auto_factorizacion.html">40. S8·Auto Ejercicios de factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c1_division_monomios.html">41. S9·C1 División de monomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c2_division_polinomio_monomio.html">42. S9·C2 División de polinomio entre monomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c3_division_polinomios.html">43. S9·C3 División de polinomios — algoritmo de la división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_c4_fracciones_algebraicas.html">44. S9·C4 Simplificación, multiplicación y división de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s9_auto_fracciones_algebraicas.html">45. S9·Auto Ejercicios de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c1_exponentes_enteros.html">46. S10·C1 Exponentes enteros y exponente cero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c2_exponentes_negativos_fraccionarios.html">47. S10·C2 Exponentes negativos y fraccionarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c3_radicales.html">48. S10·C3 Radicales — suma, resta, producto y división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_c4_factorial_combinatorios_binomio.html">49. S10·C4 Factorial, combinatorios y teorema del binomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s10_auto_repaso_unidad3.html">50. S10·Auto Repaso general Unidad 3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 4 — Ecuaciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c1_concepto_ecuacion_identidad.html">51. S11·C1 Concepto de ecuación e identidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c2_ecuaciones_lineales.html">52. S11·C2 Ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c3_ecuaciones_con_literales.html">53. S11·C3 Ecuaciones con literales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c4_ecuaciones_con_fracciones.html">54. S11·C4 Ecuaciones con fracciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_auto_modelacion_ecuaciones.html">55. S11·Auto Problemas de modelación con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c1_modelacion_ecuaciones_lineales.html">56. S12·C1 Modelación de situaciones con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c2_sistemas_dos_ecuaciones.html">57. S12·C2 Sistemas de dos ecuaciones con dos incógnitas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c3_metodo_sustitucion.html">58. S12·C3 Método de sustitución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c4_metodo_suma_resta_grafico.html">59. S12·C4 Método de suma o resta y solución gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_auto_comparacion_metodos.html">60. S12·Auto Ejercicios comparativos de métodos de solución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c1_concepto_ecuacion_cuadratica.html">61. S13·C1 Concepto de ecuación cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c2_solucion_factorizacion.html">62. S13·C2 Solución por factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c3_forma_x_mas_a_cuadrado.html">63. S13·C3 Ecuaciones de la forma (x+a)²=b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c4_completando_cuadrados.html">64. S13·C4 Completando el cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_auto_ecuaciones_cuadraticas.html">65. S13·Auto Práctica de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c1_formula_general.html">66. S14·C1 Fórmula general</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c2_ecuaciones_con_radicales.html">67. S14·C2 Ecuaciones con radicales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c3_ecuaciones_forma_cuadratica.html">68. S14·C3 Ecuaciones de forma cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c4_sistemas_lineal_cuadratica.html">69. S14·C4 Sistemas con una ecuación lineal y una cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_auto_aplicacion_verificacion.html">70. S14·Auto Ejercicios de aplicación y verificación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c1_sistemas_cuadraticos.html">71. S15·C1 Sistemas de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c2_funcion_polinomial_grado_n.html">72. S15·C2 Función polinomial de grado n</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c3_division_sintetica_residuo.html">73. S15·C3 División sintética y teorema del residuo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c4_teorema_factor_raices.html">74. S15·C4 Teorema del factor, raíces y teorema fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_auto_repaso_unidad4.html">75. S15·Auto Repaso general Unidad 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 5 — Desigualdades</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c1_valor_absoluto_grafico.html">76. S16·C1 Valor absoluto e interpretación gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c2_ecuaciones_valor_absoluto.html">77. S16·C2 Ecuaciones con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c3_desigualdades_valor_absoluto.html">78. S16·C3 Desigualdades con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c4_repaso_general.html">79. S16·C4 Repaso general del curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_auto_cierre_curso.html">80. S16·Auto Entrega de evidencias y preparación para examen final</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S8·C4 Cubos y agrupación</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">39.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suma-y-diferencia-de-cubos">39.1.1. Suma y diferencia de cubos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-reconocer-suma-o-diferencia-de-cubos">39.1.2. ¿Cómo reconocer suma o diferencia de cubos?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-diferencia-de-cubos">39.1.3. Ejemplos — diferencia de cubos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-suma-de-cubos">39.1.4. Ejemplos — suma de cubos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factor-comun-antes-de-cubos">39.1.5. Factor común antes de cubos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factorizacion-por-agrupacion">39.1.6. Factorización por agrupación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuando-usar-cada-metodo">39.1.7. Cuándo usar cada método</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">39.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">39.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">39.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">39.5. Resumen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s8c4-cubos-y-agrupacion">
+<h1><span class="section-number">39. </span>S8·C4 Cubos y agrupación<a class="headerlink" href="#s8c4-cubos-y-agrupacion" title="Link to this heading">#</a></h1>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Volumen de material en un contenedor cúbico hueco</p>
+<p>Un contenedor cúbico de acero tiene lado exterior <span class="math notranslate nohighlight">\(L = 10\)</span> cm y cavidad interior de lado <span class="math notranslate nohighlight">\(l = 7\)</span> cm. El volumen de metal es la diferencia de dos cubos:</p>
+<div class="math notranslate nohighlight">
+\[V = L^3 - l^3 = 10^3 - 7^3 = 1000 - 343 = 657 \text{ cm}^3\]</div>
+<p>Para estimar el consumo de material con tolerancias, el ingeniero factoriza:</p>
+<div class="math notranslate nohighlight">
+\[L^3 - l^3 = (L - l)(L^2 + Ll + l^2)\]</div>
+<div class="math notranslate nohighlight">
+\[V = (10 - 7)(100 + 70 + 49) = (3)(219) = 657 \text{ cm}^3\]</div>
+<p>La forma factorizada separa el <strong>espesor de pared</strong> <span class="math notranslate nohighlight">\((L - l)\)</span> del <strong>área de referencia</strong> <span class="math notranslate nohighlight">\((L^2 + Ll + l^2)\)</span> — útil cuando <span class="math notranslate nohighlight">\(L\)</span> y <span class="math notranslate nohighlight">\(l\)</span> varían con la tolerancia de fabricación. Si la densidad del acero es <span class="math notranslate nohighlight">\(\rho = 7.85\)</span> g/cm³:</p>
+<div class="math notranslate nohighlight">
+\[m = \rho \cdot V = 7.85 \times 657 \approx 5157 \text{ g} \approx 5.16 \text{ kg}\]</div>
+<p>La factorización convierte un cálculo con potencias cúbicas en una expresión más manejable para el análisis de materiales.</p>
+</div>
+<p><strong>Pregunta detonadora</strong></p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(x^3 - 8\)</span> tiene solo dos términos, como <span class="math notranslate nohighlight">\(x^2 - 9\)</span>. ¿Se factoriza igual que una diferencia de cuadrados? ¿Qué fórmula necesitas?</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="teoria">
+<h2><span class="section-number">39.1. </span>Teoría<a class="headerlink" href="#teoria" title="Link to this heading">#</a></h2>
+<section id="suma-y-diferencia-de-cubos">
+<h3><span class="section-number">39.1.1. </span>Suma y diferencia de cubos<a class="headerlink" href="#suma-y-diferencia-de-cubos" title="Link to this heading">#</a></h3>
+<p>Así como <span class="math notranslate nohighlight">\(a^2 - b^2 = (a+b)(a-b)\)</span>, existen fórmulas para <strong>sumar o restar</strong> dos cubos perfectos:</p>
+<div class="math notranslate nohighlight">
+\[\boxed{a^3 + b^3 = (a + b)(a^2 - ab + b^2)}\]</div>
+<div class="math notranslate nohighlight">
+\[\boxed{a^3 - b^3 = (a - b)(a^2 + ab + b^2)}\]</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipo</p></th>
+<th class="head"><p>Binomio (<a class="reference external" href="http://1.er">1.er</a> factor)</p></th>
+<th class="head"><p>Trinomio (2.º factor)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Suma</strong> <span class="math notranslate nohighlight">\(a^3 + b^3\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((a + b)\)</span> — signo <strong>igual</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(a^2 - ab + b^2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Diferencia</strong> <span class="math notranslate nohighlight">\(a^3 - b^3\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\((a - b)\)</span> — signo <strong>igual</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(a^2 + ab + b^2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Regla mnemotécnica SOP</strong> (Same, Opposite, Positive):</p>
+<ul class="simple">
+<li><p>El <strong>binomio</strong> lleva el <strong>mismo</strong> signo que la expresión original (<span class="math notranslate nohighlight">\(+\)</span> o <span class="math notranslate nohighlight">\(-\)</span>).</p></li>
+<li><p>El término central del <strong>trinomio</strong> lleva el signo <strong>opuesto</strong>.</p></li>
+<li><p>Los extremos del trinomio (<span class="math notranslate nohighlight">\(a^2\)</span> y <span class="math notranslate nohighlight">\(b^2\)</span>) son siempre <strong>positivos</strong>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="como-reconocer-suma-o-diferencia-de-cubos">
+<h3><span class="section-number">39.1.2. </span>¿Cómo reconocer suma o diferencia de cubos?<a class="headerlink" href="#como-reconocer-suma-o-diferencia-de-cubos" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Son <strong>exactamente dos términos</strong>.</p></li>
+<li><p>Los términos se <strong>suman o restan</strong>.</p></li>
+<li><p><strong>Ambos son cubos perfectos</strong> (número, variable o expresión elevada a potencia múltiplo de 3).</p></li>
+</ol>
+<p><strong>Ejemplos reconocidos:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Expresión</p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(a\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(b\)</span></p></th>
+<th class="head"><p>Tipo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x^3 - 27\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(x\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+<td><p>Diferencia</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(x^3 + 64\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(x\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p>Suma</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(8x^3 - 125\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2x\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td><p>Diferencia</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(27a^3 + 8b^3\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(3a\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2b\)</span></p></td>
+<td><p>Suma</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\((x+1)^3 - (x-1)^3\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(x+1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(x-1\)</span></p></td>
+<td><p>Diferencia</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>No confundas diferencia de <strong>cuadrados</strong> con diferencia de <strong>cubos</strong>.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x^2 - 9 = (x+3)(x-3)\)</span> — trinomio <strong>no</strong> aparece</p></li>
+<li><p><span class="math notranslate nohighlight">\(x^3 - 9\)</span> — <strong>no</strong> es diferencia de cubos (<span class="math notranslate nohighlight">\(9\)</span> no es cubo perfecto)</p></li>
+<li><p><span class="math notranslate nohighlight">\(x^3 - 27 = (x-3)(x^2 + 3x + 9)\)</span> — trinomio <strong>sí</strong> aparece</p></li>
+</ul>
+<p>Tampoco confundas con <span class="math notranslate nohighlight">\((a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3\)</span>, que tiene <strong>cuatro</strong> términos.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="ejemplos-diferencia-de-cubos">
+<h3><span class="section-number">39.1.3. </span>Ejemplos — diferencia de cubos<a class="headerlink" href="#ejemplos-diferencia-de-cubos" title="Link to this heading">#</a></h3>
+<p><strong>Ejemplo 1:</strong></p>
+<div class="math notranslate nohighlight">
+\[x^3 - 8 = (x)^3 - (2)^3 = (x - 2)(x^2 + 2x + 4)\]</div>
+<p><strong>Ejemplo 2:</strong></p>
+<div class="math notranslate nohighlight">
+\[27x^3 - 64 = (3x)^3 - (4)^3 = (3x - 4)(9x^2 + 12x + 16)\]</div>
+<p><strong>Ejemplo 3 — ingeniería (volumen):</strong></p>
+<div class="math notranslate nohighlight">
+\[L^3 - l^3 = (L - l)(L^2 + Ll + l^2)\]</div>
+<p>Con <span class="math notranslate nohighlight">\(L = 10\)</span>, <span class="math notranslate nohighlight">\(l = 7\)</span>: <span class="math notranslate nohighlight">\((3)(100 + 70 + 49) = 657\)</span> cm³ ✓</p>
+</section>
+<hr class="docutils" />
+<section id="ejemplos-suma-de-cubos">
+<h3><span class="section-number">39.1.4. </span>Ejemplos — suma de cubos<a class="headerlink" href="#ejemplos-suma-de-cubos" title="Link to this heading">#</a></h3>
+<p><strong>Ejemplo 4:</strong></p>
+<div class="math notranslate nohighlight">
+\[x^3 + 27 = (x + 3)(x^2 - 3x + 9)\]</div>
+<p><strong>Ejemplo 5:</strong></p>
+<div class="math notranslate nohighlight">
+\[8a^3 + 125b^3 = (2a)^3 + (5b)^3 = (2a + 5b)(4a^2 - 10ab + 25b^2)\]</div>
+<p><strong>Ejemplo 6 — ingeniería (dos bloques de material):</strong></p>
+<p>Dos piezas cúbicas de distinto tamaño se funden en un lote. Si los lados son <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[V_{total} = a^3 + b^3 = (a + b)(a^2 - ab + b^2)\]</div>
+<p>El primer factor <span class="math notranslate nohighlight">\((a + b)\)</span> representa la <strong>suma de lados</strong> — dato útil para estimar el empaque conjunto.</p>
+</section>
+<hr class="docutils" />
+<section id="factor-comun-antes-de-cubos">
+<h3><span class="section-number">39.1.5. </span>Factor común antes de cubos<a class="headerlink" href="#factor-comun-antes-de-cubos" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[54x^3 - 16 = 2(27x^3 - 8) = 2(3x - 2)(9x^2 + 6x + 4)\]</div>
+<div class="math notranslate nohighlight">
+\[x^6 - 1 = (x^2)^3 - 1^3 = (x^2 - 1)(x^4 + x^2 + 1) = (x-1)(x+1)(x^4 + x^2 + 1)\]</div>
+<p>En el segundo caso, <span class="math notranslate nohighlight">\(x^2 - 1\)</span> sigue siendo diferencia de cuadrados.</p>
+</section>
+<hr class="docutils" />
+<section id="factorizacion-por-agrupacion">
+<h3><span class="section-number">39.1.6. </span>Factorización por agrupación<a class="headerlink" href="#factorizacion-por-agrupacion" title="Link to this heading">#</a></h3>
+<p>Cuando un polinomio tiene <strong>cuatro o más términos</strong> y no encaja en las fórmulas anteriores, se usa el método de <strong>agrupación</strong>:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Paso</p></th>
+<th class="head"><p>Acción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Agrupar términos en pares (o tríos) convenientes</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Sacar factor común en <strong>cada grupo</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Identificar el <strong>binomio común</strong> que queda</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Factorizar ese binomio común</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Verificar multiplicando</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Condición de éxito:</strong> ambos grupos deben producir el <strong>mismo binomio</strong> como factor.</p>
+<p><strong>Ejemplo 7 — cuatro términos:</strong></p>
+<div class="math notranslate nohighlight">
+\[ax + ay + bx + by\]</div>
+<p>Agrupar <span class="math notranslate nohighlight">\((ax + ay)\)</span> y <span class="math notranslate nohighlight">\((bx + by)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[= a(x + y) + b(x + y) = (x + y)(a + b)\]</div>
+<p><strong>Ejemplo 8 — con potencias:</strong></p>
+<div class="math notranslate nohighlight">
+\[2x^3 + 3x^2 + 2x + 3\]</div>
+<div class="math notranslate nohighlight">
+\[= x^2(2x + 3) + 1(2x + 3) = (2x + 3)(x^2 + 1)\]</div>
+<p><strong>Ejemplo 9 — agrupación + diferencia de cuadrados:</strong></p>
+<div class="math notranslate nohighlight">
+\[x^3 + 2x^2 - 4x - 8\]</div>
+<div class="math notranslate nohighlight">
+\[= x^2(x + 2) - 4(x + 2) = (x + 2)(x^2 - 4) = (x + 2)(x + 2)(x - 2) = (x + 2)^2(x - 2)\]</div>
+<p><strong>Ejemplo 10 — ingeniería (costo de materiales):</strong></p>
+<p>El costo de dos componentes es <span class="math notranslate nohighlight">\(C = 3p_A x + 3p_A y + 2p_B x + 2p_B y\)</span>, donde <span class="math notranslate nohighlight">\(p_A\)</span> y <span class="math notranslate nohighlight">\(p_B\)</span> son precios unitarios:</p>
+<div class="math notranslate nohighlight">
+\[C = 3p_A(x + y) + 2p_B(x + y) = (x + y)(3p_A + 2p_B)\]</div>
+<p>La agrupación revela que el costo depende de una sola variable combinada <span class="math notranslate nohighlight">\((x + y)\)</span>.</p>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Análisis de materiales compuestos</p>
+<p>En un ensamble con dos aleaciones, la masa total es:</p>
+<div class="math notranslate nohighlight">
+\[m = \rho_1 V_1 + \rho_2 V_2\]</div>
+<p>Si <span class="math notranslate nohighlight">\(V_1 = a^3\)</span> y <span class="math notranslate nohighlight">\(V_2 = b^3\)</span> (bloques cúbicos):</p>
+<div class="math notranslate nohighlight">
+\[m = \rho_1 a^3 + \rho_2 b^3\]</div>
+<p>Cuando <span class="math notranslate nohighlight">\(\rho_1 = \rho_2 = \rho\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[m = \rho(a^3 + b^3) = \rho(a + b)(a^2 - ab + b^2)\]</div>
+<p>La factorización permite separar la contribución geométrica <span class="math notranslate nohighlight">\((a+b)(a^2-ab+b^2)\)</span> de la propiedad del material <span class="math notranslate nohighlight">\(\rho\)</span> — esencial en análisis de costos y peso en diseño mecánico.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="cuando-usar-cada-metodo">
+<h3><span class="section-number">39.1.7. </span>Cuándo usar cada método<a class="headerlink" href="#cuando-usar-cada-metodo" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Patrón de la expresión</p></th>
+<th class="head"><p>Método</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Todos los términos comparten un factor</p></td>
+<td><p>Factor común (S8·C1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dos términos, resta, cuadrados perfectos</p></td>
+<td><p>Diferencia de cuadrados (S8·C3)</p></td>
+</tr>
+<tr class="row-even"><td><p>Tres términos, grado 2</p></td>
+<td><p>Tanteo o AC (S8·C2)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dos términos, suma o resta, cubos perfectos</p></td>
+<td><p>Suma o diferencia de cubos</p></td>
+</tr>
+<tr class="row-even"><td><p>Cuatro o más términos</p></td>
+<td><p>Agrupación</p></td>
+</tr>
+<tr class="row-odd"><td><p>Combinación</p></td>
+<td><p>Factor común primero, luego el método que corresponda</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="video">
+<h2><span class="section-number">39.2. </span>Video<a class="headerlink" href="#video" title="Link to this heading">#</a></h2>
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/REEMPLAZA_ID_YOUTUBE_CUBOS_AGRUPACION"
+    allowfullscreen>
+  </iframe>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — video Manim sugerido (~5 min):</strong></p>
+<ol class="arabic simple">
+<li><p>Contraste: <span class="math notranslate nohighlight">\(x^2 - 8\)</span> (no factorizable con enteros) vs <span class="math notranslate nohighlight">\(x^3 - 8\)</span> (sí: cubos)</p></li>
+<li><p>Diferencia de cubos: <span class="math notranslate nohighlight">\(x^3 - 27\)</span> → identificar <span class="math notranslate nohighlight">\(a=x\)</span>, <span class="math notranslate nohighlight">\(b=3\)</span> → <span class="math notranslate nohighlight">\((x-3)(x^2+3x+9)\)</span></p></li>
+<li><p>Regla SOP: mismo signo en binomio, opuesto en el medio, positivos en extremos</p></li>
+<li><p>Suma de cubos: <span class="math notranslate nohighlight">\(x^3 + 64 = (x+4)(x^2-4x+16)\)</span></p></li>
+<li><p>Contenedor hueco: <span class="math notranslate nohighlight">\(L^3 - l^3 = (L-l)(L^2+Ll+l^2)\)</span> con <span class="math notranslate nohighlight">\(L=10\)</span>, <span class="math notranslate nohighlight">\(l=7\)</span></p></li>
+<li><p>Agrupación: <span class="math notranslate nohighlight">\(2x^3+3x^2+2x+3\)</span> → sacar <span class="math notranslate nohighlight">\((2x+3)\)</span> de ambos grupos</p></li>
+<li><p>Cierre: árbol de decisión — ¿cuántos términos? ¿qué potencias?</p></li>
+</ol>
+</div>
+</section>
+<hr class="docutils" />
+<section id="visualizacion-interactiva">
+<h2><span class="section-number">39.3. </span>Visualización interactiva<a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
+<p>Ajusta los lados exterior <span class="math notranslate nohighlight">\(L\)</span> e interior <span class="math notranslate nohighlight">\(l\)</span> de un cubo hueco y observa la factorización <span class="math notranslate nohighlight">\(L^3 - l^3 = (L-l)(L^2+Ll+l^2)\)</span>.</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraph.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js"></script>
+
+<div id="jxg-s8c4-cubos" class="jsxgraph-container" style="height:500px"></div>
+
+<script>
+(function() {
+    function init() {
+        if (typeof JXG === 'undefined') { setTimeout(init, 200); return; }
+        JXG.Options.text.useMathJax = false;
+        var board = JXG.JSXGraph.initBoard('jxg-s8c4-cubos', {
+            boundingbox: [-2, 14, 16, -4],
+            axis: false, showCopyright: false, showNavigation: false,
+            pan: { enabled: false }, zoom: { enabled: false }
+        });
+
+        var slL = board.create('slider', [[9, 12], [14, 12], [8, 10, 12]], {
+            name: 'L', snapWidth: 0.5, fillColor: '#3b82f6' });
+        var sll = board.create('slider', [[9, 10.5], [14, 10.5], [4, 7, 9]], {
+            name: 'l', snapWidth: 0.5, fillColor: '#f97316' });
+
+        var dinamicos = [];
+        function limpiar() {
+            dinamicos.forEach(function(o) { try { board.removeObject(o); } catch(e) {} });
+            dinamicos = [];
+        }
+
+        function dibujar() {
+            limpiar();
+            var L = slL.Value(), l = sll.Value();
+            if (l >= L) l = L - 1;
+
+            var esc = 0.45, ox = 0.5, oy = 0.5;
+
+            // Cubo exterior (vista frontal esquemática)
+            dinamicos.push(board.create('polygon', [
+                [ox, oy], [ox + L * esc, oy],
+                [ox + L * esc, oy + L * esc], [ox, oy + L * esc]
+            ], {
+                fillColor: '#dbeafe', fillOpacity: 0.6,
+                strokeColor: '#1d4ed8', strokeWidth: 2,
+                vertices: { visible: false }
+            }));
+
+            // Cavidad interior
+            var gap = (L - l) * esc / 2;
+            dinamicos.push(board.create('polygon', [
+                [ox + gap, oy + gap], [ox + gap + l * esc, oy + gap],
+                [ox + gap + l * esc, oy + gap + l * esc], [ox + gap, oy + gap + l * esc]
+            ], {
+                fillColor: '#ffffff', fillOpacity: 1,
+                strokeColor: '#c2410c', strokeWidth: 2,
+                vertices: { visible: false }
+            }));
+
+            var L3 = Math.round(L * L * L);
+            var l3 = Math.round(l * l * l);
+            var diff = L3 - l3;
+            var esp = L - l;
+            var tri = Math.round((L * L + L * l + l * l) * 10) / 10;
+            var prod = Math.round(esp * tri * 10) / 10;
+            var masa = Math.round(7.85 * diff / 100) / 10;
+
+            dinamicos.push(board.create('text', [9, 8.5,
+                'L³ - l³ = ' + L3 + ' - ' + l3 + ' = ' + diff + ' cm³'], {
+                fontSize: 13, color: '#1d4ed8', fontWeight: 'bold'
+            }));
+            dinamicos.push(board.create('text', [9, 7,
+                '(L-l)(L²+Ll+l²) = (' + esp + ')(' + tri + ') = ' + prod], {
+                fontSize: 13, color: '#c2410c', fontWeight: 'bold'
+            }));
+            dinamicos.push(board.create('text', [9, 5.5,
+                'Espesor pared = L-l = ' + esp + ' cm'], {
+                fontSize: 12, color: '#374151'
+            }));
+            dinamicos.push(board.create('text', [9, 4,
+                'Masa ≈ ρ·V = 7.85 × ' + diff + ' ≈ ' + masa + ' kg'], {
+                fontSize: 11, color: '#6b7280'
+            }));
+            dinamicos.push(board.create('text', [9, 2.5,
+                'SOP: binomio (L-l), trinomio L²+Ll+l²'], {
+                fontSize: 11, color: '#6b7280'
+            }));
+
+            // Etiquetas en el dibujo
+            dinamicos.push(board.create('text',
+                [ox + L * esc / 2, oy - 0.6, 'L=' + L], {
+                fontSize: 10, anchorX: 'middle', color: '#1d4ed8'
+            }));
+            dinamicos.push(board.create('text',
+                [ox + gap + l * esc / 2, oy + gap + l * esc / 2, 'l=' + l], {
+                fontSize: 10, anchorX: 'middle', color: '#c2410c'
+            }));
+        }
+
+        slL.on('drag', dibujar);
+        sll.on('drag', dibujar);
+        dibujar();
+    }
+    init();
+})();
+</script><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — visualización:</strong>
+Cubo hueco esquemático con lados <span class="math notranslate nohighlight">\(L\)</span> (exterior, azul) y <span class="math notranslate nohighlight">\(l\)</span> (interior, naranja). Los deslizadores actualizan <span class="math notranslate nohighlight">\(L^3 - l^3\)</span> y su forma factorizada <span class="math notranslate nohighlight">\((L-l)(L^2+Ll+l^2)\)</span>, el espesor de pared y una estimación de masa con <span class="math notranslate nohighlight">\(\rho = 7.85\)</span> g/cm³. Conecta la diferencia de cubos con el análisis de volúmenes y materiales en ingeniería mecánica.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="actividad-quizizz">
+<h2><span class="section-number">39.4. </span>Actividad — Quizizz<a class="headerlink" href="#actividad-quizizz" title="Link to this heading">#</a></h2>
+<div class="quizizz-link">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7l9sxFuDTYq3CS5-4o74zT4ZyXIm40oN8_jju-huichs-fg/viewform" target="_blank" class="quizizz-btn">
+    📝 Practicar: Cubos y agrupación
+  </a>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — actividad Quizizz (8 preguntas, ~12 min):</strong></p>
+<p>P1 (Fill): «x³ - 27 = (x - ___)(x² + ___x + 9)» → 3, 3
+P2 (Fill): «x³ + 64 = (x + ___)(x² - ___x + 16)» → 4, 4
+P3 (Fill): «8x³ - 125 = (___x - 5)(4x² + <em><strong>x + 25)» → 2, 10
+P4 (Fill): «L³ - l³ = (L - l)(L² + ___ + l²)» → Ll
+P5 (T/F): «x³ - 9 es diferencia de cubos» → Falso (9 no es cubo perfecto)
+P6 (MC): «¿Factorización de 2x³+3x²+2x+3?» → (2x+3)(x²+1)
+P7 (Fill agrupación): «ax+ay+bx+by = (x+y)(</strong></em>)» → a+b
+P8 (Fill ingeniería): «L=10, l=7 → L³-l³ = ___ cm³» → 657</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="resumen">
+<h2><span class="section-number">39.5. </span>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Fórmula</p></th>
+<th class="head"><p>Factorización</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Suma de cubos</p></td>
+<td><p><span class="math notranslate nohighlight">\(a^3 + b^3 = (a+b)(a^2 - ab + b^2)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Diferencia de cubos</p></td>
+<td><p><span class="math notranslate nohighlight">\(a^3 - b^3 = (a-b)(a^2 + ab + b^2)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Regla SOP</p></td>
+<td><p>Binomio: mismo signo · Trinomio: opuesto en el medio, positivos en extremos</p></td>
+</tr>
+<tr class="row-odd"><td><p>Agrupación</p></td>
+<td><p>Agrupar → factor común por grupo → sacar binomio común</p></td>
+</tr>
+<tr class="row-even"><td><p>Ingeniería</p></td>
+<td><p><span class="math notranslate nohighlight">\(L^3 - l^3\)</span> para volúmenes huecos; agrupación para costos y masas combinadas</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Siguiente clase</p>
+<p>Completaste los cuatro métodos de factorización de la Semana 8. La siguiente sesión es de <strong>autogestión</strong>: ejercicios integradores que combinan factor común, trinomios, diferencia de cuadrados, cubos y agrupación.</p>
+<p>➡️ <a class="reference internal" href="s8_auto_factorizacion.html"><span class="std std-doc">Ir a S8·Auto Factorización</span></a></p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unidad3_expresiones"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="s8_c3_diferencia_cuadrados.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title"><span class="section-number">38. </span>S8·C3 Diferencia de cuadrados</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="s8_auto_factorizacion.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title"><span class="section-number">40. </span>S8·Auto Ejercicios de factorización</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">39.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suma-y-diferencia-de-cubos">39.1.1. Suma y diferencia de cubos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-reconocer-suma-o-diferencia-de-cubos">39.1.2. ¿Cómo reconocer suma o diferencia de cubos?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-diferencia-de-cubos">39.1.3. Ejemplos — diferencia de cubos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos-suma-de-cubos">39.1.4. Ejemplos — suma de cubos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factor-comun-antes-de-cubos">39.1.5. Factor común antes de cubos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factorizacion-por-agrupacion">39.1.6. Factorización por agrupación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cuando-usar-cada-metodo">39.1.7. Cuándo usar cada método</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">39.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">39.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">39.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">39.5. Resumen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Dra. Zaira Pineda Rico — Ingeniería Mecánica Administrativa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -116,7 +116,7 @@ function configurarIdentificacionForm_(form) {
     nom.setTitle("Nombre completo");
     nom.setHelpText("Escribe tu nombre como aparece en la lista de clase.");
     nom.setRequired(true);
-    form.moveItem(nom, 0);
+    form.moveItem(form.getItems().length - 1, 0);
     cambios.preguntasAgregadas = true;
   }
 
@@ -126,7 +126,7 @@ function configurarIdentificacionForm_(form) {
     mat.setHelpText("Tu número de matrícula o control escolar.");
     mat.setRequired(true);
     var idxMat = formTienePreguntaIdentificacion_(form, "nombre") ? 1 : 0;
-    form.moveItem(mat, idxMat);
+    form.moveItem(form.getItems().length - 1, idxMat);
     cambios.preguntasAgregadas = true;
   }
 

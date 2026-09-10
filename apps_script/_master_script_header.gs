@@ -49,8 +49,8 @@ function configurarIdentificacionForm_(form) {
   mat.setHelpText("Tu número de matrícula o control escolar.");
   mat.setRequired(true);
 
-  form.moveItem(nom, 0);
-  form.moveItem(mat, 1);
+  form.moveItem(form.getItems().length - 1, 0);
+  form.moveItem(form.getItems().length - 1, 1);
 }
 
 function poblarFormulario_(form, preguntas) {

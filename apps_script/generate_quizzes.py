@@ -557,8 +557,8 @@ def render_gs(title: str, description: str, exercises: list[dict]) -> str:
     lines.append('  mat.setTitle("Matrícula / No. de control");')
     lines.append('  mat.setHelpText("Tu número de matrícula o control escolar.");')
     lines.append("  mat.setRequired(true);")
-    lines.append("  form.moveItem(nom, 0);")
-    lines.append("  form.moveItem(mat, 1);")
+    lines.append("  form.moveItem(form.getItems().length - 1, 0);")
+    lines.append("  form.moveItem(form.getItems().length - 1, 1);")
     lines.append("")
     lines.append("  var preguntas = [")
     for ex in exercises:

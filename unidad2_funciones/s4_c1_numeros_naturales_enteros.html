@@ -1,0 +1,1003 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>16. S4·C1 Números naturales, enteros, racionales, irracionales y reales &#8212; Álgebra para Ingeniería Mecánica</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=5f4a6556" />
+    <link rel="stylesheet" type="text/css" href="../_static/js/jsxgraph.css?v=fe8723f5" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script src="../_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'unidad2_funciones/s4_c1_numeros_naturales_enteros';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/js/jsxgraphcore.js?v=976eb28f"></script>
+    <link rel="canonical" href="https://z3pineda.github.io/Algebra/unidad2_funciones/s4_c1_numeros_naturales_enteros.html" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="17. S4·C2 La recta numérica" href="s4_c2_recta_numerica.html" />
+    <link rel="prev" title="15. S3·Auto Tarea integradora — Unidad 1" href="../unidad1_conjuntos/s3_auto_tarea_integradora.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../landing.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Álgebra para Ingeniería Mecánica</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 1 — Conjuntos y Lógica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c1_presentacion_diagnostico.html">1. S1·C1 Presentación del curso y diagnóstico de aritmética</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c2_concepto_conjunto.html">2. S1·C2 Concepto de conjunto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c3_representacion_conjuntos.html">3. S1·C3 Representación de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_c4_operaciones_basicas.html">4. S1·C4 Operaciones básicas con conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s1_auto_repaso_conjuntos.html">5. S1·Auto Repaso de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c1_proposicion_valor_verdad.html">6. S2·C1 Proposición y valor de verdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c2_conjunto_solucion.html">7. S2·C2 Conjunto solución de una proposición abierta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c3_conjuncion_disyuncion.html">8. S2·C3 Conjunción y disyunción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_c4_implicacion_negacion.html">9. S2·C4 Implicación y negación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s2_auto_ejercicios_logica.html">10. S2·Auto Ejercicios de lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c1_tipos_conjuntos.html">11. S3·C1 Tipos de conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c2_venn_dos_conjuntos.html">12. S3·C2 Diagramas de Venn con dos conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c3_venn_tres_conjuntos.html">13. S3·C3 Diagramas de Venn con tres conjuntos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_c4_problemas_aplicados.html">14. S3·C4 Problemas aplicados con conjuntos y lógica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad1_conjuntos/s3_auto_tarea_integradora.html">15. S3·Auto Tarea integradora — Unidad 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 2 — Números Reales y Funciones</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">16. S4·C1 Números naturales, enteros, racionales, irracionales y reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s4_c2_recta_numerica.html">17. S4·C2 La recta numérica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s4_c3_propiedades_reales.html">18. S4·C3 Propiedades de los números reales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s4_c4_producto_cartesiano.html">19. S4·C4 Producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s4_auto_clasificacion_numeros.html">20. S4·Auto Clasificación de números y producto cartesiano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s5_c1_concepto_relacion.html">21. S5·C1 Concepto de relación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s5_c2_concepto_funcion.html">22. S5·C2 Concepto de función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s5_c3_relacion_vs_funcion.html">23. S5·C3 Diferencia entre relación y función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s5_c4_dominio_rango.html">24. S5·C4 Dominio y rango de una función</a></li>
+<li class="toctree-l1"><a class="reference internal" href="s5_auto_identificacion_funciones.html">25. S5·Auto Identificación de funciones, dominio y rango</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 3 — Expresiones Algebraicas</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_c1_propiedades_igualdad.html">26. S6·C1 Propiedades de la igualdad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_c2_expresion_algebraica_terminos.html">27. S6·C2 Expresión algebraica y términos semejantes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_c3_suma_resta_expresiones.html">28. S6·C3 Suma y resta de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_c4_multiplicacion_expresiones.html">29. S6·C4 Multiplicación de expresiones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s6_auto_simplificacion_algebraica.html">30. S6·Auto Ejercicios de simplificación algebraica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_c1_binomio_cuadrado.html">31. S7·C1 Binomio al cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_c2_binomios_conjugados.html">32. S7·C2 Producto de binomios conjugados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_c3_binomio_cubo.html">33. S7·C3 Binomio al cubo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_c4_binomio_por_trinomio.html">34. S7·C4 Producto de un binomio por un trinomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s7_auto_productos_notables.html">35. S7·Auto Práctica de productos notables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_c1_factor_comun.html">36. S8·C1 Factor común</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_c2_factorizacion_trinomios.html">37. S8·C2 Factorización de trinomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_c3_diferencia_cuadrados.html">38. S8·C3 Diferencia de cuadrados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_c4_cubos_agrupacion.html">39. S8·C4 Cubos y agrupación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s8_auto_factorizacion.html">40. S8·Auto Ejercicios de factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_c1_division_monomios.html">41. S9·C1 División de monomios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_c2_division_polinomio_monomio.html">42. S9·C2 División de polinomio entre monomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_c3_division_polinomios.html">43. S9·C3 División de polinomios — algoritmo de la división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_c4_fracciones_algebraicas.html">44. S9·C4 Simplificación, multiplicación y división de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s9_auto_fracciones_algebraicas.html">45. S9·Auto Ejercicios de fracciones algebraicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_c1_exponentes_enteros.html">46. S10·C1 Exponentes enteros y exponente cero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_c2_exponentes_negativos_fraccionarios.html">47. S10·C2 Exponentes negativos y fraccionarios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_c3_radicales.html">48. S10·C3 Radicales — suma, resta, producto y división</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_c4_factorial_combinatorios_binomio.html">49. S10·C4 Factorial, combinatorios y teorema del binomio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad3_expresiones/s10_auto_repaso_unidad3.html">50. S10·Auto Repaso general Unidad 3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 4 — Ecuaciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c1_concepto_ecuacion_identidad.html">51. S11·C1 Concepto de ecuación e identidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c2_ecuaciones_lineales.html">52. S11·C2 Ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c3_ecuaciones_con_literales.html">53. S11·C3 Ecuaciones con literales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_c4_ecuaciones_con_fracciones.html">54. S11·C4 Ecuaciones con fracciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s11_auto_modelacion_ecuaciones.html">55. S11·Auto Problemas de modelación con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c1_modelacion_ecuaciones_lineales.html">56. S12·C1 Modelación de situaciones con ecuaciones lineales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c2_sistemas_dos_ecuaciones.html">57. S12·C2 Sistemas de dos ecuaciones con dos incógnitas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c3_metodo_sustitucion.html">58. S12·C3 Método de sustitución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_c4_metodo_suma_resta_grafico.html">59. S12·C4 Método de suma o resta y solución gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s12_auto_comparacion_metodos.html">60. S12·Auto Ejercicios comparativos de métodos de solución</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c1_concepto_ecuacion_cuadratica.html">61. S13·C1 Concepto de ecuación cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c2_solucion_factorizacion.html">62. S13·C2 Solución por factorización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c3_forma_x_mas_a_cuadrado.html">63. S13·C3 Ecuaciones de la forma (x+a)²=b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_c4_completando_cuadrados.html">64. S13·C4 Completando el cuadrado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s13_auto_ecuaciones_cuadraticas.html">65. S13·Auto Práctica de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c1_formula_general.html">66. S14·C1 Fórmula general</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c2_ecuaciones_con_radicales.html">67. S14·C2 Ecuaciones con radicales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c3_ecuaciones_forma_cuadratica.html">68. S14·C3 Ecuaciones de forma cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_c4_sistemas_lineal_cuadratica.html">69. S14·C4 Sistemas con una ecuación lineal y una cuadrática</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s14_auto_aplicacion_verificacion.html">70. S14·Auto Ejercicios de aplicación y verificación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c1_sistemas_cuadraticos.html">71. S15·C1 Sistemas de ecuaciones cuadráticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c2_funcion_polinomial_grado_n.html">72. S15·C2 Función polinomial de grado n</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c3_division_sintetica_residuo.html">73. S15·C3 División sintética y teorema del residuo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_c4_teorema_factor_raices.html">74. S15·C4 Teorema del factor, raíces y teorema fundamental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad4_ecuaciones/s15_auto_repaso_unidad4.html">75. S15·Auto Repaso general Unidad 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Unidad 5 — Desigualdades</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c1_valor_absoluto_grafico.html">76. S16·C1 Valor absoluto e interpretación gráfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c2_ecuaciones_valor_absoluto.html">77. S16·C2 Ecuaciones con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c3_desigualdades_valor_absoluto.html">78. S16·C3 Desigualdades con valor absoluto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_c4_repaso_general.html">79. S16·C4 Repaso general del curso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unidad5_desigualdades/s16_auto_cierre_curso.html">80. S16·Auto Entrega de evidencias y preparación para examen final</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>S4·C1 Números naturales, enteros, racionales, irracionales y reales</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">16.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-conjuntos-numericos">16.1.1. Los conjuntos numéricos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-naturales-mathbb-n">16.1.2. Números naturales <span class="math notranslate nohighlight">\(\mathbb{N}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-enteros-mathbb-z">16.1.3. Números enteros <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-racionales-mathbb-q">16.1.4. Números racionales <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-irracionales-mathbb-i">16.1.5. Números irracionales <span class="math notranslate nohighlight">\(\mathbb{I}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-reales-mathbb-r">16.1.6. Números reales <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-clasificadora">16.1.7. Tabla clasificadora</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">16.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">16.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">16.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">16.5. Resumen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="s4c1-numeros-naturales-enteros-racionales-irracionales-y-reales">
+<h1><span class="section-number">16. </span>S4·C1 Números naturales, enteros, racionales, irracionales y reales<a class="headerlink" href="#s4c1-numeros-naturales-enteros-racionales-irracionales-y-reales" title="Link to this heading">#</a></h1>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Las medidas en el taller de manufactura</p>
+<p>En un taller de manufactura conviven distintos tipos de números todo el tiempo:</p>
+<ul class="simple">
+<li><p>El operador fabrica <strong>3 piezas</strong> por turno → número natural</p></li>
+<li><p>La temperatura del horno bajó <strong>−15°C</strong> respecto al setpoint → número entero negativo</p></li>
+<li><p>La relación de transmisión del engranaje es <strong>3/4</strong> → fracción, número racional</p></li>
+<li><p>El diámetro de un eje es <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> pulgadas ≈ 1.41421… → número irracional</p></li>
+<li><p>La tolerancia dimensional es <strong>±0.05 mm</strong> → número real</p></li>
+</ul>
+<p>Cada tipo de número responde a una necesidad diferente. Conocerlos te permite elegir el correcto para cada cálculo.</p>
+</div>
+<p><strong>Pregunta detonadora</strong></p>
+<blockquote>
+<div><p>Si mides un eje y obtienes 25.13847… mm con decimales que no terminan ni se repiten, ¿a qué conjunto de números pertenece esa medida? ¿Puedes representarla exactamente como fracción?</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="teoria">
+<h2><span class="section-number">16.1. </span>Teoría<a class="headerlink" href="#teoria" title="Link to this heading">#</a></h2>
+<section id="los-conjuntos-numericos">
+<h3><span class="section-number">16.1.1. </span>Los conjuntos numéricos<a class="headerlink" href="#los-conjuntos-numericos" title="Link to this heading">#</a></h3>
+<p>Los números se organizan en conjuntos que se contienen unos a otros como capas de una cebolla:</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\]</div>
+</section>
+<hr class="docutils" />
+<section id="numeros-naturales-mathbb-n">
+<h3><span class="section-number">16.1.2. </span>Números naturales <span class="math notranslate nohighlight">\(\mathbb{N}\)</span><a class="headerlink" href="#numeros-naturales-mathbb-n" title="Link to this heading">#</a></h3>
+<p><strong>Definición:</strong> Los números que usamos para contar. Incluyen el cero.</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{N} = \{0, 1, 2, 3, 4, 5, \ldots\}\]</div>
+<p><strong>Características:</strong></p>
+<ul class="simple">
+<li><p>No tienen signo negativo</p></li>
+<li><p>No tienen decimales</p></li>
+<li><p>Son infinitos</p></li>
+</ul>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Ingeniería</p>
+<p>Número de piezas en un lote, número de tornillos en una brida, número de ciclos de una máquina. Siempre que cuentes objetos físicos enteros usas <span class="math notranslate nohighlight">\(\mathbb{N}\)</span>.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="numeros-enteros-mathbb-z">
+<h3><span class="section-number">16.1.3. </span>Números enteros <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span><a class="headerlink" href="#numeros-enteros-mathbb-z" title="Link to this heading">#</a></h3>
+<p><strong>Definición:</strong> Todos los naturales más sus opuestos negativos.</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{Z} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}\]</div>
+<p><strong>Características:</strong></p>
+<ul class="simple">
+<li><p>Incluyen negativos</p></li>
+<li><p>No tienen decimales</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{N} \subset \mathbb{Z}\)</span></p></li>
+</ul>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Ingeniería</p>
+<p>Temperatura bajo cero, posición relativa a un punto de referencia, nivel de voltaje (positivo o negativo), dirección de giro (+1 = horario, -1 = antihorario).</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="numeros-racionales-mathbb-q">
+<h3><span class="section-number">16.1.4. </span>Números racionales <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span><a class="headerlink" href="#numeros-racionales-mathbb-q" title="Link to this heading">#</a></h3>
+<p><strong>Definición:</strong> Todos los números que se pueden expresar como fracción <span class="math notranslate nohighlight">\(\frac{p}{q}\)</span> donde <span class="math notranslate nohighlight">\(p, q \in \mathbb{Z}\)</span> y <span class="math notranslate nohighlight">\(q \neq 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{Q} = \left\{\frac{p}{q} \mid p, q \in \mathbb{Z},\ q \neq 0\right\}\]</div>
+<p><strong>Incluye:</strong></p>
+<ul class="simple">
+<li><p>Fracciones: <span class="math notranslate nohighlight">\(\frac{3}{4}\)</span>, <span class="math notranslate nohighlight">\(\frac{-2}{5}\)</span>, <span class="math notranslate nohighlight">\(\frac{7}{1}\)</span></p></li>
+<li><p>Decimales exactos: <span class="math notranslate nohighlight">\(0.25 = \frac{1}{4}\)</span></p></li>
+<li><p>Decimales periódicos: <span class="math notranslate nohighlight">\(0.\overline{3} = \frac{1}{3}\)</span>, <span class="math notranslate nohighlight">\(1.\overline{6} = \frac{5}{3}\)</span></p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Un decimal es racional si <strong>termina</strong> o si tiene un <strong>bloque que se repite infinitamente</strong>.<br />
+<span class="math notranslate nohighlight">\(0.25\)</span> → racional (termina)<br />
+<span class="math notranslate nohighlight">\(0.333...\)</span> → racional (<span class="math notranslate nohighlight">\(= 1/3\)</span>, se repite)<br />
+<span class="math notranslate nohighlight">\(0.12112111211112...\)</span> → <strong>irracional</strong> (no termina, no se repite)</p>
+</div>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Ingeniería</p>
+<p>Relación de transmisión de engranajes (<span class="math notranslate nohighlight">\(3/2\)</span>), eficiencia de un motor (<span class="math notranslate nohighlight">\(\eta = 85/100 = 0.85\)</span>), tolerancias expresadas como fracciones de pulgada (<span class="math notranslate nohighlight">\(1/32&quot;\)</span>).</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="numeros-irracionales-mathbb-i">
+<h3><span class="section-number">16.1.5. </span>Números irracionales <span class="math notranslate nohighlight">\(\mathbb{I}\)</span><a class="headerlink" href="#numeros-irracionales-mathbb-i" title="Link to this heading">#</a></h3>
+<p><strong>Definición:</strong> Números reales que <strong>no</strong> se pueden expresar como fracción. Sus decimales son infinitos y no periódicos.</p>
+<p><strong>Ejemplos famosos:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Número</p></th>
+<th class="head text-center"><p>Valor aproximado</p></th>
+<th class="head"><p>Dónde aparece</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\sqrt{2}\)</span></p></td>
+<td class="text-center"><p>1.41421356…</p></td>
+<td><p>Diagonal de un cuadrado de lado 1</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\sqrt{3}\)</span></p></td>
+<td class="text-center"><p>1.73205080…</p></td>
+<td><p>Altura de un triángulo equilátero</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-center"><p>3.14159265…</p></td>
+<td><p>Circunferencia / diámetro</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(e\)</span></p></td>
+<td class="text-center"><p>2.71828182…</p></td>
+<td><p>Crecimiento exponencial</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="ingenieria admonition">
+<p class="admonition-title">🔧 Ingeniería</p>
+<p><span class="math notranslate nohighlight">\(\pi\)</span> aparece en el cálculo de áreas y volúmenes de cilindros, conos y esferas — piezas muy comunes en mecánica.<br />
+<span class="math notranslate nohighlight">\(\sqrt{2}\)</span> aparece al calcular diagonales y fuerzas en sistemas inclinados 45°.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="numeros-reales-mathbb-r">
+<h3><span class="section-number">16.1.6. </span>Números reales <span class="math notranslate nohighlight">\(\mathbb{R}\)</span><a class="headerlink" href="#numeros-reales-mathbb-r" title="Link to this heading">#</a></h3>
+<p><strong>Definición:</strong> La unión de todos los racionales e irracionales. Representan <strong>cualquier punto</strong> en la recta numérica.</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{R} = \mathbb{Q} \cup \mathbb{I}\]</div>
+<p><strong>La jerarquía completa:</strong></p>
+<div class="math notranslate nohighlight">
+\[\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\]</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Todo <span class="math notranslate nohighlight">\(\mathbb{N}\)</span> es…</p></th>
+<th class="head text-center"><p>Todo <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span> es…</p></th>
+<th class="head text-center"><p>Todo <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> es…</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>también <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span></p></td>
+<td class="text-center"><p>también <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></td>
+<td class="text-center"><p>también <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Los irracionales <strong>no</strong> son subconjunto de <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> — están fuera de él pero dentro de <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>.<br />
+<span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> y <span class="math notranslate nohighlight">\(\mathbb{I}\)</span> son <strong>disjuntos</strong>: <span class="math notranslate nohighlight">\(\mathbb{Q} \cap \mathbb{I} = \emptyset\)</span></p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="tabla-clasificadora">
+<h3><span class="section-number">16.1.7. </span>Tabla clasificadora<a class="headerlink" href="#tabla-clasificadora" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Número</p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\mathbb{N}\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\mathbb{Z}\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td class="text-center"><p>✅</p></td>
+<td class="text-center"><p>✅</p></td>
+<td class="text-center"><p>✅</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(-3\)</span></p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>✅</p></td>
+<td class="text-center"><p>✅</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\frac{2}{7}\)</span></p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>✅</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(0.\overline{6}\)</span></p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>✅</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\sqrt{5}\)</span></p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>✅</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="video">
+<h2><span class="section-number">16.2. </span>Video<a class="headerlink" href="#video" title="Link to this heading">#</a></h2>
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/REEMPLAZA_ID_YOUTUBE_NUMEROS_REALES"
+    allowfullscreen>
+  </iframe>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — video Manim sugerido (~5 min):</strong></p>
+<ol class="arabic simple">
+<li><p>Mostrar la recta numérica vacía</p></li>
+<li><p>Colocar los naturales uno a uno: 0,1,2,3…</p></li>
+<li><p>Agregar los enteros negativos: …-3,-2,-1</p></li>
+<li><p>Intercalar fracciones entre enteros: 1/2, 3/4, -2/3</p></li>
+<li><p>Mostrar que entre dos racionales siempre hay otro racional (densidad)</p></li>
+<li><p>Revelar los irracionales: π, √2 — puntos que «llenan los huecos»</p></li>
+<li><p>Cierre: los reales llenan toda la recta sin huecos</p></li>
+<li><p>Diagrama de círculos concéntricos: N ⊂ Z ⊂ Q ⊂ R</p></li>
+</ol>
+</div>
+</section>
+<hr class="docutils" />
+<section id="visualizacion-interactiva">
+<h2><span class="section-number">16.3. </span>Visualización interactiva<a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
+<p>Mueve el deslizador y observa en qué conjuntos numéricos cae cada número.</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraph.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js"></script>
+
+<div id="jxg-s4c1-numeros" class="jsxgraph-container" style="height:480px"></div>
+
+<script>
+(function() {
+    function init() {
+        if (typeof JXG === 'undefined') { setTimeout(init, 200); return; }
+        JXG.Options.text.useMathJax = false;
+        var board = JXG.JSXGraph.initBoard('jxg-s4c1-numeros', {
+            boundingbox: [-1, 12, 13, -3],
+            axis: false, showCopyright: false, showNavigation: false,
+            pan: { enabled: false }, zoom: { enabled: false }
+        });
+
+        // Botones de números predefinidos
+        var numeros = [
+            { label: '5',      val: 5,             tipo: 'natural'    },
+            { label: '-3',     val: -3,            tipo: 'entero'     },
+            { label: '2/3',    val: 2/3,           tipo: 'racional'   },
+            { label: '0.333',  val: 1/3,           tipo: 'racional'   },
+            { label: 'sqrt(2)',val: Math.sqrt(2),  tipo: 'irracional' },
+            { label: 'pi',     val: Math.PI,       tipo: 'irracional' },
+        ];
+
+        var actual = 0;
+        var dinamicos = [];
+
+        var colores = {
+            natural:    '#3b82f6',
+            entero:     '#7c3aed',
+            racional:   '#f97316',
+            irracional: '#dc2626'
+        };
+
+        function limpiar() {
+            dinamicos.forEach(function(o) { try { board.removeObject(o); } catch(e){} });
+            dinamicos = [];
+        }
+
+        function esNatural(v)    { return Number.isInteger(v) && v >= 0; }
+        function esEntero(v)     { return Number.isInteger(v); }
+        function esRacional(v)   { return ['natural','entero','racional'].indexOf(numeros[actual].tipo) >= 0; }
+        function esIrracional(v) { return numeros[actual].tipo === 'irracional'; }
+
+        function mostrar(idx) {
+            limpiar();
+            var n = numeros[idx];
+            var col = colores[n.tipo];
+
+            // Título
+            dinamicos.push(board.create('text', [6, 10.5, 'Numero: ' + n.label + '  (' + n.val.toFixed(5) + '...)'], {
+                fontSize: 16, color: col, fontWeight: 'bold', anchorX: 'middle' }));
+
+            // Conjuntos concéntricos visuales
+            var conjuntos = [
+                { nombre: 'R (Reales)',      r: 4.5, color: '#dcfce7', borde: '#15803d' },
+                { nombre: 'Q (Racionales)',  r: 3.2, color: '#fff7ed', borde: '#c2410c' },
+                { nombre: 'Z (Enteros)',     r: 2.0, color: '#ede9fe', borde: '#7c3aed' },
+                { nombre: 'N (Naturales)',   r: 1.0, color: '#dbeafe', borde: '#1d4ed8' },
+            ];
+
+            conjuntos.forEach(function(c) {
+                dinamicos.push(board.create('circle', [[6, 5], c.r], {
+                    fillColor: c.color, fillOpacity: 0.5,
+                    strokeColor: c.borde, strokeWidth: 2 }));
+                dinamicos.push(board.create('text', [6, 5 + c.r - 0.3, c.nombre], {
+                    fontSize: 10, color: c.borde, anchorX: 'middle', fontStyle: 'italic' }));
+            });
+
+            // Punto en su capa correcta
+            var posiciones = {
+                natural:    [6, 5],
+                entero:     [6, 6.2],
+                racional:   [6, 7.4],
+                irracional: [6, 8.8]
+            };
+
+            var pos = posiciones[n.tipo];
+            dinamicos.push(board.create('point', pos, {
+                size: 10, color: col, fixed: true, name: n.label,
+                label: { offset: [15, 0], fontSize: 13, color: col, fontWeight: 'bold' }
+            }));
+
+            // Pertenencia
+            var pertenece = [];
+            if (n.tipo === 'natural')    pertenece = ['N', 'Z', 'Q', 'R'];
+            if (n.tipo === 'entero')     pertenece = ['Z', 'Q', 'R'];
+            if (n.tipo === 'racional')   pertenece = ['Q', 'R'];
+            if (n.tipo === 'irracional') pertenece = ['R'];
+
+            dinamicos.push(board.create('text', [0.5, 2,
+                'Pertenece a: ' + pertenece.join(', ')], {
+                fontSize: 13, color: col, fontWeight: 'bold' }));
+
+            var noPertenece = ['N','Z','Q','R'].filter(function(c) { return pertenece.indexOf(c) < 0; });
+            if (noPertenece.length > 0) {
+                dinamicos.push(board.create('text', [0.5, 1,
+                    'No pertenece a: ' + noPertenece.join(', ')], {
+                    fontSize: 12, color: '#6b7280' }));
+            }
+        }
+
+        // Botones
+        numeros.forEach(function(n, i) {
+            var btn = board.create('text', [1 + i * 2, -1.5, n.label], {
+                fontSize: 12, color: colores[n.tipo], fontWeight: 'bold', anchorX: 'middle',
+                cssStyle: 'cursor:pointer; padding:5px 10px; background:#f1f5f9; border-radius:6px;'
+            });
+            btn.on('down', function() { actual = i; mostrar(i); });
+        });
+
+        board.create('text', [6, -2.5,
+            'Selecciona un numero para ver a que conjuntos pertenece'], {
+            fontSize: 11, color: '#6b7280', fontStyle: 'italic', anchorX: 'middle'
+        });
+
+        mostrar(0);
+    }
+    init();
+})();
+</script><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — visualización:</strong>
+6 botones con números representativos de cada tipo. Al seleccionar uno, aparece un punto en el diagrama de círculos concéntricos (N⊂Z⊂Q⊂R) en la capa correcta, y se listan los conjuntos a los que pertenece y a los que no.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="actividad-quizizz">
+<h2><span class="section-number">16.4. </span>Actividad — Quizizz<a class="headerlink" href="#actividad-quizizz" title="Link to this heading">#</a></h2>
+<div class="quizizz-link">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfC0ghB8lfdpfUG-YFPcOUkTdteP4eH6ZubA_sCbz5VrnvccA/viewform" target="_blank" class="quizizz-btn">
+    📝 Practicar: Clasificación de números
+  </a>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Para el docente — actividad Quizizz (10 preguntas, ~12 min):</strong></p>
+<p>P1 (MC): «¿A cuál conjunto pertenece -7 pero NO pertenece 3/4?» → ℤ
+P2 (MC): «¿Cuál de estos es irracional?» → √7
+P3 (T/F): «Todo número natural es también racional.» → Verdadero
+P4 (MC): «0.666… (periódico) es:» → Racional (= 2/3)
+P5 (MC): «¿Cuál es la jerarquía correcta?» → N⊂Z⊂Q⊂R
+P6 (Fill): «ℚ ∩ ℐ = ___» → ∅ (vacío)
+P7 (MC): «π pertenece a:» → ℝ pero no a ℚ
+P8 (MC ingeniería): «La relación de transmisión 3/2 de un engranaje es:» → Racional
+P9 (T/F): «√4 = 2 es irracional.» → Falso (√4=2, que es natural)
+P10 (MC): «¿Cuántos conjuntos numéricos contienen al número -5/3?» → 2 (ℚ y ℝ)</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="resumen">
+<h2><span class="section-number">16.5. </span>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 25.0%" />
+<col style="width: 35.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Conjunto</p></th>
+<th class="head"><p>Símbolo</p></th>
+<th class="head"><p>Contiene</p></th>
+<th class="head"><p>Ejemplo en ingeniería</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Naturales</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbb{N}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0, 1, 2, 3, \ldots\)</span></p></td>
+<td><p>Número de piezas</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enteros</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbb{Z}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\ldots, -2, -1, 0, 1, 2, \ldots\)</span></p></td>
+<td><p>Temperatura bajo cero</p></td>
+</tr>
+<tr class="row-even"><td><p>Racionales</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></td>
+<td><p>Fracciones y decimales exactos/periódicos</p></td>
+<td><p>Relación de engranajes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Irracionales</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbb{I}\)</span></p></td>
+<td><p>Decimales infinitos no periódicos</p></td>
+<td><p><span class="math notranslate nohighlight">\(\pi\)</span>, <span class="math notranslate nohighlight">\(\sqrt{2}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Reales</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathbb{Q} \cup \mathbb{I}\)</span></p></td>
+<td><p>Cualquier medida dimensional</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Siguiente clase</p>
+<p>Ya conoces los tipos de números reales. En la siguiente clase aprenderás a ubicarlos en la <strong>recta numérica</strong> — la representación visual que conecta los números con las medidas de ingeniería.</p>
+<p>➡️ <a class="reference internal" href="s4_c2_recta_numerica.html"><span class="std std-doc">Ir a S4·C2 La recta numérica</span></a></p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./unidad2_funciones"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../unidad1_conjuntos/s3_auto_tarea_integradora.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>S3·Auto Tarea integradora — Unidad 1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="s4_c2_recta_numerica.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title"><span class="section-number">17. </span>S4·C2 La recta numérica</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria">16.1. Teoría</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#los-conjuntos-numericos">16.1.1. Los conjuntos numéricos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-naturales-mathbb-n">16.1.2. Números naturales <span class="math notranslate nohighlight">\(\mathbb{N}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-enteros-mathbb-z">16.1.3. Números enteros <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-racionales-mathbb-q">16.1.4. Números racionales <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-irracionales-mathbb-i">16.1.5. Números irracionales <span class="math notranslate nohighlight">\(\mathbb{I}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numeros-reales-mathbb-r">16.1.6. Números reales <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabla-clasificadora">16.1.7. Tabla clasificadora</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video">16.2. Video</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva">16.3. Visualización interactiva</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actividad-quizizz">16.4. Actividad — Quizizz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">16.5. Resumen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Dra. Zaira Pineda Rico — Ingeniería Mecánica Administrativa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

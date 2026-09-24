@@ -42,7 +42,24 @@ var CONFIG_INFORME = {
   BATCH_SIZE: 0,
   /** Prefijo del archivo de salida en Drive. */
   NOMBRE_INFORME: "Informe Quizzes Álgebra",
+  /** Si se define, usa esta lista en lugar de escanear todo Drive. */
+  FORMS_OVERRIDE: null,
 };
+
+/** S1·C2 – S3·C4 (Unidad 1 conjuntos). IDs desde algebra_quiz_urls_recuperado.json */
+var UNIDAD1_CONJUNTOS_QUIZZES = [
+  { slug: "s1·c2", formTitle: "S1·C2 Concepto de conjunto — Quiz", fileId: "1-ssVwZXwrJH4Ne5qs4oY4UtNefENNfIGjTS3lL-m6q0" },
+  { slug: "s1·c3", formTitle: "S1·C3 Representación de conjuntos — Quiz", fileId: "1M_bU4qO3SSjFQSEvWyXf2N5uR27oG7zSll3Nd-Iwj00" },
+  { slug: "s1·c4", formTitle: "S1·C4 Operaciones básicas con conjuntos — Quiz", fileId: "1T9TAQlXxiqLCJ9qjV3rlRcRbTRfKsXH8s8V49iF1MkU" },
+  { slug: "s2·c1", formTitle: "S2·C1 Proposición y valor de verdad — Quiz", fileId: "1mezoTk1KPn1jjyIf8Jzy1GqdsMjoSXQ8VoVSq5cSwHs" },
+  { slug: "s2·c2", formTitle: "S2·C2 Conjunto solución de una proposición abierta — Quiz", fileId: "1P7ewu2KmAV6XhUHMQLtXojZMKOwzD1sapPf5m2kTdYk" },
+  { slug: "s2·c3", formTitle: "S2·C3 Conjunción y disyunción — Quiz", fileId: "1CiBspvYT3Xx45u2dj3gi0kz55lZ0XrA1imkzlIEAm9A" },
+  { slug: "s2·c4", formTitle: "S2·C4 Implicación y negación — Quiz", fileId: "1jrVQ097Axmvgwo5BFnKP8nRH6R0UckUd1qieZdTDNL0" },
+  { slug: "s3·c1", formTitle: "S3·C1 Tipos de conjuntos — Quiz", fileId: "1D1FVhQpktdIAzOB4aWBOWa7elEFJ7WuM3S7sX3BnMjo" },
+  { slug: "s3·c2", formTitle: "S3·C2 Diagramas de Venn con dos conjuntos — Quiz", fileId: "1800z7oxahGf7NWwf_Tu-0Bc17BLnW-xftMD1I7aIpw0" },
+  { slug: "s3·c3", formTitle: "S3·C3 Diagramas de Venn con tres conjuntos — Quiz", fileId: "14GftFq94cnGhVpf0B3ORnloi0TtZEdWomEOdwD8uEDU" },
+  { slug: "s3·c4", formTitle: "S3·C4 Problemas aplicados con conjuntos y lógica — Quiz", fileId: "1GB2cUtfS5rdOmQ0VJmuWtRD5L8qWR4Mep9RH_nVL218" },
+];
 
 /**
  * Genera el informe completo de todos los quizzes del curso.
@@ -50,6 +67,23 @@ var CONFIG_INFORME = {
  */
 function informeRespuestasQuizzes() {
   return ejecutarInforme_(null, 0, 0);
+}
+
+/**
+ * Informe solo de Unidad 1: S1·C2–C4, S2·C1–C4, S3·C1–C4 (11 quizzes).
+ * Rápido (~1 min); no debería dar timeout.
+ */
+function informeUnidad1Conjuntos() {
+  var prevOverride = CONFIG_INFORME.FORMS_OVERRIDE;
+  var prevNombre = CONFIG_INFORME.NOMBRE_INFORME;
+  CONFIG_INFORME.FORMS_OVERRIDE = UNIDAD1_CONJUNTOS_QUIZZES;
+  CONFIG_INFORME.NOMBRE_INFORME = "Informe Unidad 1 (S1-S3)";
+  try {
+    return ejecutarInforme_(null, 0, 0);
+  } finally {
+    CONFIG_INFORME.FORMS_OVERRIDE = prevOverride;
+    CONFIG_INFORME.NOMBRE_INFORME = prevNombre;
+  }
 }
 
 /**
@@ -120,7 +154,7 @@ function informeRespuestasUnQuiz(formId) {
 // ——— Núcleo ———
 
 function ejecutarInforme_(spreadsheetId, inicio, cantidad) {
-  var formsData = listarFormulariosCurso_();
+  var formsData = CONFIG_INFORME.FORMS_OVERRIDE || listarFormulariosCurso_();
   var start = inicio || 0;
   var size = cantidad || 0;
   var lote = size > 0 ? formsData.slice(start, start + size) : formsData.slice(start);
@@ -139,7 +173,7 @@ function ejecutarInforme_(spreadsheetId, inicio, cantidad) {
     var globalIdx = start + i + 1;
     try {
       var form = FormApp.openById(meta.fileId);
-      var datos = procesarFormulario_(form, meta.formTitle, meta.fileId);
+      var datos = procesarFormulario_(form, meta.formTitle, meta.fileId, meta.slug);
       appendResumenFila_(hojaResumen, datos);
       appendDetalleFilas_(hojaDetalle, datos);
       if (CONFIG_INFORME.HOJA_POR_QUIZ && datos.respuestas.length > 0) {
@@ -399,7 +433,7 @@ function listarFormulariosCurso_() {
   return lista;
 }
 
-function procesarFormulario_(form, formTitle, fileId) {
+function procesarFormulario_(form, formTitle, fileId, slugOverride) {
   var responses = form.getResponses();
   var filas = [];
 
@@ -420,7 +454,7 @@ function procesarFormulario_(form, formTitle, fileId) {
     : null;
 
   return {
-    slug: extraerSlug_(formTitle),
+    slug: slugOverride || extraerSlug_(formTitle),
     titulo: form.getTitle(),
     formTitle: formTitle,
     fileId: fileId,

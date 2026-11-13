@@ -359,7 +359,7 @@ Cubo hueco esquemático con lados $L$ (exterior, azul) y $l$ (interior, naranja)
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7l9sxFuDTYq3CS5-4o74zT4ZyXIm40oN8_jju-huichs-fg/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s8_c4_cubos_agrupacion" target="_blank" class="quizizz-btn">
     📝 Practicar: Cubos y agrupación
   </a>
 </div>

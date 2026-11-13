@@ -331,7 +331,7 @@ Prueba la línea vertical sobre distintas curvas. Observa si cada curva es funci
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeov4WUggVTijvj-UKJCcVQK16PUVJY3EwwAa5XAtNTvWzlug/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s5_c3_relacion_vs_funcion" target="_blank" class="quizizz-btn">
     📝 Practicar: Relación vs. Función
   </a>
 </div>

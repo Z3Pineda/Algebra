@@ -272,7 +272,7 @@ Deslizadores $m$ y $n$ controlan $\frac{x^m}{x^n}$. Barras azules (numerador) y 
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6rsQ8PHvJ9Mw-rDndHJ-2skkt3rm0GUgPXugbvjZ7Xqyepg/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s9_c1_division_monomios" target="_blank" class="quizizz-btn">
     📝 Practicar: División de monomios
   </a>
 </div>

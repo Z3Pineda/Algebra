@@ -261,7 +261,7 @@ Cuadrado de lado (a+b) dividido en 4 regiones coloreadas: a² (azul), dos ab (am
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScY9OMn687osaYdFK1SDXd_67aSkpBz3bXbkfMaMKnufcD-aw/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s7_c1_binomio_cuadrado" target="_blank" class="quizizz-btn">
     📝 Practicar: Binomio al cuadrado
   </a>
 </div>

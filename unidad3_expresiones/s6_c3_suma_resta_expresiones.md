@@ -253,7 +253,7 @@ Suma o resta dos polinomios usando los deslizadores para ajustar los coeficiente
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3uElGMvEAaqgtS8qZks9QgK6B55y0kNnfSr1BwExPkWPSUw/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s6_c3_suma_resta_expresiones" target="_blank" class="quizizz-btn">
     📝 Practicar: Suma y resta de expresiones
   </a>
 </div>

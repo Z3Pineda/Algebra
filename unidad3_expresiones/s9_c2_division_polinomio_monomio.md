@@ -210,7 +210,7 @@ Muestra el ejemplo de esfuerzo unitario $\sigma = (6x^2+9x+3)/(3x)$ descompuesto
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScCYlLhX7Q5PzPSDTe256W9ilxmyB-LNyTyH2e9T_oi08jNBg/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s9_c2_division_polinomio_monomio" target="_blank" class="quizizz-btn">
     📝 Practicar: Polinomio entre monomio
   </a>
 </div>

@@ -236,7 +236,7 @@ Lista paso a paso la división de $(x^2+5x+6)/(x+2)$ con colores por etapa. Incl
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6hcb19Gu0AW-vGkTdjZ11YOjrdkHRmyOaN90epkmjCdB_9w/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s9_c3_division_polinomios" target="_blank" class="quizizz-btn">
     📝 Practicar: División de polinomios
   </a>
 </div>

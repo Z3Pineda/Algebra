@@ -319,7 +319,7 @@ Anillo con radios $R$ (azul) y $r$ (naranja) controlados por deslizadores. Muest
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVyXjuUlz5_CtPcvyGYg--qOEXXbjiGhRMMiFq9e3jdFBEwg/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s8_c3_diferencia_cuadrados" target="_blank" class="quizizz-btn">
     📝 Practicar: Diferencia de cuadrados
   </a>
 </div>

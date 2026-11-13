@@ -307,7 +307,7 @@ El alumno activa/desactiva pares con botones. El sistema evalúa si la relación
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeV_XeQZf7r-5NqLetgV9B_T4kqoBUfwSVnsk98pok2VGhrgw/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s5_c2_concepto_funcion" target="_blank" class="quizizz-btn">
     📝 Practicar: Concepto de función
   </a>
 </div>

@@ -310,7 +310,7 @@ Una balanza muestra la ecuación 3x-6=9 en 5 pasos. Los botones "Anterior/Siguie
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwotub2Znx01E4pKsoN5tIe5ZiS8kO1SUDrUO0A3RF43IOqg/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s6_c1_propiedades_igualdad" target="_blank" class="quizizz-btn">
     📝 Practicar: Propiedades de la igualdad
   </a>
 </div>

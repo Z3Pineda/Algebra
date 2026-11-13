@@ -343,7 +343,7 @@ Dos bloques apilados representan los términos $ax^2$ (azul) y $bx$ (naranja). L
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqC62-dwpR_EtXzy9hX_I185EDkxJFxv_4bdWjLpsUdjk2oQ/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s8_c1_factor_comun" target="_blank" class="quizizz-btn">
     📝 Practicar: Factor común
   </a>
 </div>

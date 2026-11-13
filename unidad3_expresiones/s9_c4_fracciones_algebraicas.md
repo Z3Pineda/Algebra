@@ -218,7 +218,7 @@ Muestra la simplificación de $(x^2-9)/(x^2+5x+6)$ en cinco etapas: factorizaci�
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIwQG3jfh0gbOG4NeDfkkeJN_mQfN72jE3DS-z4ZBEu36c6A/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s9_c4_fracciones_algebraicas" target="_blank" class="quizizz-btn">
     📝 Practicar: Fracciones algebraicas
   </a>
 </div>

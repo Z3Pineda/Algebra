@@ -289,7 +289,7 @@ Botones para activar/desactivar pares (a→b). Las flechas aparecen en el diagra
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbpsFvnaTJOwz-LEj25f5AcXy33I5E3xXqrjEs4w1hDBDZhA/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s5_c1_concepto_relacion" target="_blank" class="quizizz-btn">
     📝 Practicar: Concepto de relación
   </a>
 </div>

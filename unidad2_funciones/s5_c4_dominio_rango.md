@@ -305,7 +305,7 @@ Explora el dominio y rango de distintas funciones. Mueve el deslizador y observa
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScXObkX0V0Y35vc_WJ5STbX6-R9jk91acPzLiT21e0bjG8HiA/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s5_c4_dominio_rango" target="_blank" class="quizizz-btn">
     📝 Practicar: Dominio y rango
   </a>
 </div>

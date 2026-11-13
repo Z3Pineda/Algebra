@@ -225,7 +225,7 @@ Deslizadores para a y b en (ax+b)(ax-b). Muestra los 4 términos FOIL coloreados
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0MaPkLbw54KApNUMU6SzA1GZRR2_rfWnrhYOPP1_OuJcNug/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s7_c2_binomios_conjugados" target="_blank" class="quizizz-btn">
     📝 Practicar: Producto de binomios conjugados
   </a>
 </div>

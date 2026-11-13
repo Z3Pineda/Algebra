@@ -286,7 +286,7 @@ Para la suma de cubos muestra los 6 productos parciales con los 4 que se cancela
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZnTbEzMVs5ddf18riDXiI_ElyRgP1JM8jXX2NdQc8su7u2g/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s7_c4_binomio_por_trinomio" target="_blank" class="quizizz-btn">
     📝 Practicar: Binomio por trinomio
   </a>
 </div>

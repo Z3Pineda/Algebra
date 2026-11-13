@@ -277,7 +277,7 @@ Identifica los términos semejantes y observa cómo se combinan.
 
 ```{raw} html
 <div class="quizizz-link">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScxmkH1NJGIflZGXP7PQ_S4cgjT1fN0iqBtxA0FdSPB31nOhw/viewform" target="_blank" class="quizizz-btn">
+  <a href="https://script.google.com/macros/s/AKfycbwLgJRMY4D7k5XMZStvtKwk4lAV0kaq6XS9zQy-fdjeWrUP6rcRKh0JdQ5a370w_hC8/exec?quiz=s6_c2_expresion_algebraica_terminos" target="_blank" class="quizizz-btn">
     📝 Practicar: Expresiones y términos semejantes
   </a>
 </div>
